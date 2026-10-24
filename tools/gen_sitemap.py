@@ -14,7 +14,7 @@ def page_url(rel):
         return DOMAIN + "/"
     u = DOMAIN + "/" + rel
     if u.endswith("index.html"):
-        u = u[:-len("index.html")] + "/"
+        u = u[:-len("index.html")]
     elif u.endswith(".html"):
         u = u[:-5] + "/"
     return u
