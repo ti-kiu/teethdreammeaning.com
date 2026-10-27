@@ -23,7 +23,7 @@
 |---|---|---|---|---|---|
 | 1 [DONE 2026-10-26 补记: 已由 /dream/teeth-falling-out/ 覆盖(10-24上线), log.md 今晨补录] | teeth falling out dream meaning biblical/islamic classical | smileessentials 泛说基督教 | 任何带页码的古典条目 | Ibn Sirin "Teeth" 条 (1992编译本, Al-Akili, ISBN 1879405032) + Nabulsi سن 条 shamela 1217/177(ص180) | Frontiers Psych 9:1812 2018 (Rozen & Soffer-Dudek, n=210, PubMed 30319507) dental-irritation 假说 |
 | 2 [DONE 2026-10-26 → /dream/one-tooth-vs-all-teeth/] | 一颗牙 vs 全口牙 | 无一家区分单颗/全口的古典细则 | 全口=全家/还债细则 | Nabulsi 1217/177 同页: تساقط جميع الأسنان 段(全家) + من كان عليه دين 段(还债) | Yu 2012 Dreaming 22(1):18-52 DOI 10.1037/a0026171 (39/16.2/8.2%) |
-| 3 | 掉牙带血 | sleepfoundation 提"real-life dental issues" | 带血/不带血的分读 | Ibn Sirin Teeth 条: "front teeth fall and cause pain and bleeding...incompetence or inability to complete a project" + Nabulsi: مع وجع أو خروج دم 段 | Frontiers 2018 同文: TD 与 dental irritation(waking tension)相关、与心理痛苦不相关 |
+| 3 [DONE 2026-10-27 → /dream/teeth-falling-out-with-blood/] | 掉牙带血 | sleepfoundation 提"real-life dental issues" | 带血/不带血的分读 | Ibn Sirin Teeth 条: "front teeth fall and cause pain and bleeding...incompetence or inability to complete a project" + Nabulsi: مع وجع أو خروج دم 段 | Frontiers 2018 同文: TD 与 dental irritation(waking tension)相关、与心理痛苦不相关 |
 | 4 | 牙掉进手里/膝上/地上 | 无 | 手膝地三句+接住断嗣同页矛盾 | Nabulsi 1217/177: في يده مال/في حجره ولد/إلى الأرض مصيبة + يأخذها بيده...تنقطع | (L2 取 Frontiers teeth-grinding 段, 已核) |
 | 5 | teeth dream and stress 磨牙 | 三站都有 stress/bruxism | 与古典并排对照 | 同上 Teeth 条 longevity 开头 | Frontiers 2018 + sleepfoundation 自家调查 20% |
 | 6 | 掉牙梦是凶是吉 | smileessentials 说"不是坏兆头"无出处 | 凶吉两读并列+例外条款 | Nabulsi 1217/177: 病人=痊愈/仆人=自由/商旅=轻装 例外段 | (同上) |
