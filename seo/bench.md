@@ -27,7 +27,7 @@
 | 4 [DONE 2026-10-28 → /dream/teeth-falling-into-hand-lap-ground/] | 牙掉进手里/膝上/地上 | 无 | 手膝地三句+接住断嗣同页矛盾 | Nabulsi 1217/177: في يده مال/في حجره ولد/إلى الأرض مصيبة + يأخذها بيده...تنقطع | (L2 取 Frontiers teeth-grinding 段, 已核) |
 | 5 [DONE 2026-10-29 → /dream/teeth-dreams-and-stress/] | teeth dream and stress 磨牙 | 三站都有 stress/bruxism | 与古典并排对照 | 同上 Teeth 条 longevity 开头 | Frontiers 2018 + sleepfoundation 自家调查 20% |
 | 6 [DONE 2026-10-30 → /dream/teeth-falling-out-good-or-bad-omen/] | 掉牙梦是凶是吉 | smileessentials 说"不是坏兆头"无出处 | 凶吉两读并列+例外条款 | Nabulsi 1217/177: 病人痊愈/仆人=自由/商旅=轻装 例外段 | (同上) |
-| 7 | 梦见掉牙亲人去世? | smileessentials 引"folk"无出处 | 古典原文里死读的精确条件(掉+失/埋) | Ibn Sirin: "cannot find his teeth...family will die before him" + Nabulsi 埋牙段 | sleepfoundation 调查: 受访者自link为 stress/失控/牙痛 |
+| 7 [DONE 2026-10-31 → /dream/teeth-falling-out-and-death/] | 梦见掉牙亲人去世? | smileessentials 引"folk"无出处 | 古典原文里死读的精确条件(掉+失/埋) | Ibn Sirin: "cannot find his teeth...family will die before him" + Nabulsi 埋牙段 | sleepfoundation 调查: 受访者自link为 stress/失控/牙痛 |
 
 ## 写作顺序: 1→2→3→4→5→6→7 (缺口大→小)
 ## 明天第一篇: #1 古典层缺席(它们引 spirituality 却没有一本古典书的原文)
