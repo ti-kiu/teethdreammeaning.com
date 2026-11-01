@@ -1,16 +1,16 @@
 # 30 符号双出处定位表 (2026-10-31 全量核对)
 
-## 已上线 (8)
+## 已上线 (9)
 | slug | Ibn Sirin 印页 | Nabulsi |
 |---|---|---|
 | teeth-falling-out 簇(7页) | 281 | shamela 177 (印180) |
 | snake | 397 | shamela 54 (印57) + shamela 94 (印97) |
+| dead-person-resurrected | 111–114 (Death 条) | shamela 344 (印347) + shamela 345 (印348) |
 | water | 469 | shamela 316 (印319) |
 
 ## 待日更 — 双出处齐 (22, 优先队列)
 | slug | Ibn Sirin 印页 | Nabulsi |
 |---|---|---|
-| dead-person-resurrected | 111 | shamela 344 (印347) |
 | kaaba | 235 | shamela 289 (印292) |
 | wedding | 265 | shamela 145 (印148) |
 | gold | 189 | shamela 124 (印127) + shamela 125 (印128) |
