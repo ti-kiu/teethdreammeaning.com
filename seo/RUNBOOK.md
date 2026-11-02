@@ -1,6 +1,12 @@
 # TDM 日更工厂 RUNBOOK — 每日执行, 全程不问问题
 # KEYWORD: teeth falling out dream meaning (锁定28天不许换)
 # TOP3: sleepfoundation.org / smileessentialsdental.com / dakotadental.com (锁定)
+#
+# [印页定位方法 11-02 修正] 编译本(Pearl 1992)扫描OCR页眉两种样式: 偶数页="NNN IBN SEERIN'S"(含OCR乱体),
+# 奇数页="DICTIONARY OF DREAMS NNN"; 页眉印在正文上方=该页起点。符号印页一律以书末总索引为准
+# (ibn_sirin_full.txt 29000行后 grep "^Headword 数字"), 早期 matrix 手工读数已批量更正 (kaaba237/cat72/baby80/
+# rain350/fire158/hair198/spider404/wedding=Marriage 266/moon284/sun419/key238/ship384/eggs138/milk276/honey212/ladder247)。
+# Nabulsi 印页 = shamela页+3 (177→180, 289→292 双点验证)。
 
 你是 teethdreammeaning.com 的日更工厂。每天独立执行以下流程。
 

@@ -3,35 +3,35 @@
 ## 已上线 (9)
 | slug | Ibn Sirin 印页 | Nabulsi |
 |---|---|---|
-| teeth-falling-out 簇(7页) | 281 | shamela 177 (印180) |
-| snake | 397 | shamela 54 (印57) + shamela 94 (印97) |
-| dead-person-resurrected | 111–114 (Death 条) | shamela 344 (印347) + shamela 345 (印348) |
-| water | 469 | shamela 316 (印319) |
+| teeth-falling-out 簇(7页) | 431 (索引 Teeth 431, 正文Teeth1词条跨431–432+; 原记281作废) | shamela 177 (印180) |
+| snake | 398 (索引确认; 已发页原引397, 11-02随页更正) | shamela 54 (印57) + shamela 94 (印97) |
+| dead-person-resurrected | 111–114 (Death 条) ✓(索引 Death 111) | shamela 344 (印347) + shamela 345 (印348) |
+| water | 470 (索引 Water 470; 已发页原引469, 11-02随页更正) | shamela 316 (印319) |
 
 ## 待日更 — 双出处齐 (22, 优先队列)
 | slug | Ibn Sirin 印页 | Nabulsi |
 |---|---|---|
-| kaaba | 235 | shamela 289 (印292) |
-| wedding | 265 | shamela 145 (印148) |
-| gold | 189 | shamela 124 (印127) + shamela 125 (印128) |
-| hair | 197 | shamela 192 (印195) |
-| spider | 403 | shamela 247 (印250) |
-| blood | 43 | shamela 113 (印116) + shamela 116 (印119) + shamela 117 (印120) |
-| baby | 79 | shamela 214 (印217) + shamela 215 (印218) + shamela 218 (印221) |
-| rain | 349 | shamela 315 (印318) + shamela 328 (印331) + shamela 338 (印341) |
-| fire | 157 | shamela 348 (印351) + shamela 360 (印363) |
-| dog | 123 | shamela 295 (印298) |
-| cat | 83 | shamela 280 (印283) + shamela 282 (印285) + shamela 283 (印286) |
-| ladder | 245 | shamela 163 (印166) |
-| door | 125 | shamela 30 (印33) |
-| key | 235 | shamela 327 (印330) |
-| ship | 155 | shamela 169 (印172) |
-| eggs | 49 | shamela 26 (印29) |
-| milk | 105 | shamela 303 (印306) + shamela 304 (印307) |
-| honey | 211 | shamela 245 (印248) |
-| money | 283 | shamela 110 (印113) |
-| moon | 281 | shamela 276 (印279) + shamela 282 (印285) |
-| sun | 417 | shamela 189 (印192) |
+| kaaba [DONE 2026-11-02 → /dream/kaaba/; 印页以书末索引为准=237 (正文跨237–238), 原记235作废] | 237 | shamela 289 (印292) |
+| wedding | 266 (索引 Marriage 266; Wedding词条=See Marriage 473) | shamela 145 (印148) |
+| gold | 189 ✓(索引确认) | shamela 124 (印127) + shamela 125 (印128) |
+| hair | 198 (索引 Hair 198, 原记197作废) | shamela 192 (印195) |
+| spider | 404 (索引 Spider 404, 原记403作废) | shamela 247 (印250) |
+| blood | 43 ✓(索引确认) | shamela 113 (印116) + shamela 116 (印119) + shamela 117 (印120) |
+| baby | 80 (索引 Child 80; 原记79作废) | shamela 214 (印217) + shamela 215 (印218) + shamela 218 (印221) |
+| rain | 350 (索引 Rain 350, 原记349作废) | shamela 315 (印318) + shamela 328 (印331) + shamela 338 (印341) |
+| fire | 158 (索引 Fire 158, 原记157作废) | shamela 348 (印351) + shamela 360 (印363) |
+| dog | 123 ✓(索引确认) | shamela 295 (印298) |
+| cat | 72 (索引 Cat 72, 原记83作废——83是猫头鹰条目区) | shamela 280 (印283) + shamela 282 (印285) + shamela 283 (印286) |
+| ladder | 247 (索引 Ladder 247, 原记245作废) | shamela 163 (印166) |
+| door | 125 ✓(索引 Door 125) | shamela 30 (印33) |
+| key | 238 (索引 Key 238, 原记235作废——235是空页码误读, 与克白同错) | shamela 327 (印330) |
+| ship | 384 (索引 Ship 384, 原记155作废) | shamela 169 (印172) |
+| eggs | 138 (索引 Eggs 138, 原记49作废) | shamela 26 (印29) |
+| milk | 276 (索引 Milk 276, 原记105作废) | shamela 303 (印306) + shamela 304 (印307) |
+| honey | 212 (索引 Honey 212, 原记211作废) | shamela 245 (印248) |
+| money | 283 ✓(索引 Money 283) | shamela 110 (印113) |
+| moon | 284 (索引 Moon 284, 原记281作废——281是镜像页) | shamela 276 (印279) + shamela 282 (印285) |
+| sun | 419 (索引 Sun 419, 原记417作废) | shamela 189 (印192) |
 
 ## 待日更 — 双出处齐 (续)
 | slug | Ibn Sirin 印页 | Nabulsi |
