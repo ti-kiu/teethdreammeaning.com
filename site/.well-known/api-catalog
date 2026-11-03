@@ -1,0 +1,9 @@
+{
+  "linkset": [
+    {
+      "anchor": "https://teethdreammeaning.com/",
+      "service-desc": [{"href": "https://teethdreammeaning.com/openapi.json", "type": "application/json"}],
+      "service-doc": [{"href": "https://teethdreammeaning.com/llms.txt", "type": "text/plain"}]
+    }
+  ]
+}

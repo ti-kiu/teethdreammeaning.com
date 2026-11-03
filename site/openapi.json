@@ -1,0 +1,31 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "Teeth Dream Meaning — classical dream source lookup",
+    "version": "1.0.0",
+    "description": "Read-only lookup of verified dream-symbol pages. Each page places the Ibn Sirin compilation and Al-Nabulsi's Ta'tir al-Anam side by side with checkable printed-page and library locations."
+  },
+  "servers": [{"url": "https://teethdreammeaning.com"}],
+  "paths": {
+    "/api/agent/symbols": {
+      "get": {
+        "summary": "List all published dream-symbol pages",
+        "operationId": "listSymbols",
+        "responses": {
+          "200": {"description": "Array of symbols with slug, title and source locations", "content": {"application/json": {"schema": {"type": "object", "properties": {"symbols": {"type": "array", "items": {"type": "object", "properties": {"slug": {"type": "string"}, "title": {"type": "string"}, "url": {"type": "string"}, "sources": {"type": "string"}}}}}}}}}
+        }
+      }
+    },
+    "/api/agent/symbols/{slug}": {
+      "get": {
+        "summary": "Read one dream-symbol page summary",
+        "operationId": "getSymbol",
+        "parameters": [{"name": "slug", "in": "path", "required": true, "schema": {"type": "string"}, "description": "URL slug, e.g. snake, gold, wedding"}],
+        "responses": {
+          "200": {"description": "Page summary with headline reading and source citations", "content": {"application/json": {"schema": {"type": "object"}}}},
+          "404": {"description": "Unknown slug", "content": {"application/json": {"schema": {"type": "object", "properties": {"error": {"type": "string"}}}}}}
+        }
+      }
+    }
+  }
+}

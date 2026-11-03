@@ -1,0 +1,29 @@
+{
+  "specVersion": "1.0",
+  "host": {
+    "displayName": "Teeth Dream Meaning",
+    "identifier": "did:web:teethdreammeaning.com"
+  },
+  "entries": [
+    {
+      "identifier": "urn:air:teethdreammeaning.com:server:dream-lookup",
+      "displayName": "Dream symbol lookup",
+      "type": "application/mcp-server-card+json",
+      "url": "https://teethdreammeaning.com/.well-known/mcp/server-card.json",
+      "representativeQueries": [
+        "What does dreaming of gold mean in Ibn Sirin?",
+        "Snake bite dream classical interpretation",
+        "Dream of teeth falling out with blood"
+      ]
+    },
+    {
+      "identifier": "urn:air:teethdreammeaning.com:skill:dream-lookup",
+      "displayName": "Dream symbol lookup skill",
+      "type": "text/markdown",
+      "url": "https://teethdreammeaning.com/ai/skills/dream-lookup/SKILL.md",
+      "representativeQueries": [
+        "How to look up a dream symbol with source citations"
+      ]
+    }
+  ]
+}

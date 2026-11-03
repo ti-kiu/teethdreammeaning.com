@@ -1,0 +1,7 @@
+{
+  "status": "under_construction",
+  "available": false,
+  "capabilities_status": "planned_contract_only",
+  "message": "Token validation is not active. Authentication is under construction; no keys are published.",
+  "keys": []
+}

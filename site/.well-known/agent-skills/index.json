@@ -1,0 +1,12 @@
+{
+  "$schema": "https://schemas.agentskills.io/discovery/0.2.0/schema.json",
+  "skills": [
+    {
+      "name": "dream-lookup",
+      "type": "skill-md",
+      "description": "Find and read verified classical dream-interpretation pages (Ibn Sirin + Al-Nabulsi) by symbol slug, with printed-page citations",
+      "url": "https://teethdreammeaning.com/ai/skills/dream-lookup/SKILL.md",
+      "digest": "sha256:15b7a3cfcc4ef3dc92b186385d4e043ec63a7d6755c609cbbe85c64b6d55665d"
+    }
+  ]
+}

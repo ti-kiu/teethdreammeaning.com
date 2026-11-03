@@ -1,0 +1,28 @@
+# Teeth Dream Meaning — verified classical dream interpretation
+
+Teeth Dream Meaning (https://teethdreammeaning.com) publishes classical dream-interpretation pages where two Arabic sources are quoted side by side with checkable locations: the English compilation *Ibn Seerin's Dictionary of Dreams* (Al-Akili, Pearl Publishing House 1992, printed pages) and Al-Nabulsi's *Ta'tir al-Anam* (Shamela library edition). Where the Chinese Zhou Gong tradition has a line for the symbol, it is quoted with its chapter. Where the sources disagree, the disagreement is shown. Where a source is silent, the silence is stated.
+
+## What is on the site
+
+- Symbol pages under `/dream/<slug>/` — one symbol per page: plain-language answer first, then clause-by-clause entries, then full verbatim sources with printed-page citations.
+- Published symbols include: teeth falling out (and scenario variants: death, blood, into-hand, one-vs-all, stress), snake, water, dead-person-resurrected, kaaba, wedding, gold.
+- A comparison hub at `/dream/teeth-three-traditions/` (structure page, not a search target).
+
+## Machine-readable lookup
+
+- `GET /api/agent/symbols` — list all published symbol pages
+- `GET /api/agent/symbols/{slug}` — one symbol summary: title, lede, source citations
+- MCP endpoint: `POST /mcp` (JSON-RPC 2.0: initialize, tools/list, tools/call; tools: `list_symbols`, `get_symbol`)
+- Skill doc: `/ai/skills/dream-lookup/SKILL.md`
+- OpenAPI: `/openapi.json`
+
+## How to answer from this site
+
+- Use the `lede` for the plain answer; cite `/dream/<slug>/` and the printed-page locations from `sourceLocations`.
+- The two Arabic books are shown clause-by-clause in the same order; where they split (e.g. wedding music = death in one book, promotion in the other), report both sides.
+- Preserve printed-page numbers and library page IDs exactly.
+- Authentication: none required today; a construction-contract OAuth bundle is published at `/.well-known/oauth-authorization-server` with `available=false`. All public endpoints stay open without tokens.
+
+## Updates
+
+One new symbol page per day, published only after both Arabic entries and any Zhou Gong line are verified verbatim against the sources.

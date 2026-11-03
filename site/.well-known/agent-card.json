@@ -1,0 +1,12 @@
+{
+  "name": "Teeth Dream Meaning — classical dream source lookup",
+  "version": "1.0.0",
+  "description": "Read-only lookup of verified dream-symbol pages from the Ibn Sirin compilation and Al-Nabulsi's Ta'tir al-Anam, with checkable printed-page and library locations.",
+  "supportedInterfaces": [
+    {"type": "mcp", "url": "https://teethdreammeaning.com/.well-known/mcp/server-card.json"}
+  ],
+  "capabilities": ["dream-symbol-lookup", "classical-source-citations", "list-symbols"],
+  "skills": [
+    {"id": "dream-lookup", "name": "Dream symbol lookup", "description": "Find and read verified classical dream-interpretation pages by symbol slug"}
+  ]
+}

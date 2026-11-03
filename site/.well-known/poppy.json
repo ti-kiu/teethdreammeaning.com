@@ -1,0 +1,9 @@
+{
+  "iss": "https://teethdreammeaning.com",
+  "nbf": 1730601600,
+  "jwks": {
+    "keys": []
+  },
+  "under_construction": true,
+  "note": "Personal Agent Protocol issuer record is under construction. No signing keys are published and no identity claims are available yet. This placeholder discloses the planned issuer origin; it does not validate tokens."
+}

@@ -1,0 +1,33 @@
+{
+  "protocolVersion": "2025-03-26",
+  "serverInfo": {
+    "name": "teeth-dream-meaning-lookup",
+    "version": "1.0.0",
+    "description": "Read-only lookup of verified classical dream-symbol pages (Ibn Sirin compilation + Al-Nabulsi) with printed-page and library citations."
+  },
+  "capabilities": {
+    "tools": {"listChanged": false}
+  },
+  "endpoints": {
+    "transport": "https://teethdreammeaning.com/mcp",
+    "protocol": "JSON-RPC 2.0 over HTTP POST"
+  },
+  "tools": [
+    {
+      "name": "list_symbols",
+      "description": "List all published dream-symbol pages with slugs and titles",
+      "inputSchema": {"type": "object", "properties": {}}
+    },
+    {
+      "name": "get_symbol",
+      "description": "Read one dream-symbol page summary: headline reading, lede and source citations (printed pages + library locations)",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "slug": {"type": "string", "description": "Symbol slug, e.g. snake, gold, wedding, teeth-falling-out"}
+        },
+        "required": ["slug"]
+      }
+    }
+  ]
+}

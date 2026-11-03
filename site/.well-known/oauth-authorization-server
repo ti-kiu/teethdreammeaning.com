@@ -1,0 +1,30 @@
+{
+  "status": "under_construction",
+  "available": false,
+  "capabilities_status": "planned_contract_only",
+  "message": "Coming soon. Authentication is unavailable. All public lookup endpoints remain open without authentication.",
+  "launch_date": null,
+  "issuer": "https://teethdreammeaning.com",
+  "authorization_endpoint": "https://teethdreammeaning.com/agent-auth/authorize",
+  "token_endpoint": "https://teethdreammeaning.com/agent-auth/token",
+  "jwks_uri": "https://teethdreammeaning.com/.well-known/jwks.json",
+  "grant_types_supported": ["authorization_code", "urn:ietf:params:oauth:grant-type:jwt-bearer"],
+  "response_types_supported": ["code"],
+  "code_challenge_methods_supported": ["S256"],
+  "scopes_supported": ["site:read"],
+  "agent_auth": {
+    "status": "under_construction",
+    "available": false,
+    "capabilities_status": "planned_contract_only",
+    "skill": "https://teethdreammeaning.com/auth.md",
+    "register_uri": "https://teethdreammeaning.com/agent-auth/register",
+    "claim_uri": "https://teethdreammeaning.com/agent-auth/claim",
+    "identity_types_supported": ["anonymous"],
+    "anonymous": {
+      "status": "under_construction",
+      "available": false,
+      "capabilities_status": "planned_contract_only",
+      "credential_types_supported": ["access_token"]
+    }
+  }
+}
