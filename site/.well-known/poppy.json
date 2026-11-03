@@ -1,9 +1,12 @@
 {
-  "iss": "https://teethdreammeaning.com",
-  "nbf": 1730601600,
-  "jwks": {
-    "keys": []
+  "protocol_version": "1.0",
+  "organization": {
+    "name": "Teeth Dream Meaning",
+    "domain": "teethdreammeaning.com"
   },
-  "under_construction": true,
-  "note": "Personal Agent Protocol issuer record is under construction. No signing keys are published and no identity claims are available yet. This placeholder discloses the planned issuer origin; it does not validate tokens."
+  "web": {
+    "site": "https://teethdreammeaning.com",
+    "description": "Classical dream-interpretation pages quoting the Ibn Sirin compilation and Al-Nabulsi's Ta'tir al-Anam side by side, each quote with a checkable printed-page or library location.",
+    "agent_guidance": "Use GET /api/agent/symbols to list published symbol pages and GET /api/agent/symbols/{slug} for a symbol summary with source citations. MCP endpoint: POST /mcp (JSON-RPC 2.0). Cite the /dream/ page and printed-page locations; preserve page numbers exactly; where the two books disagree, present both readings; treat unknown facts as unknown."
+  }
 }
