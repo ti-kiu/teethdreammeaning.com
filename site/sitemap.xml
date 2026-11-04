@@ -2,6 +2,14 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://teethdreammeaning.com/</loc>
+    <lastmod>2026-11-04</lastmod>
+  </url>
+  <url>
+    <loc>https://teethdreammeaning.com/about/</loc>
+    <lastmod>2026-11-03</lastmod>
+  </url>
+  <url>
+    <loc>https://teethdreammeaning.com/disclaimer/</loc>
     <lastmod>2026-11-03</lastmod>
   </url>
   <url>
@@ -10,7 +18,11 @@
   </url>
   <url>
     <loc>https://teethdreammeaning.com/dream/gold/</loc>
-    <lastmod>2026-11-03</lastmod>
+    <lastmod>2026-11-04</lastmod>
+  </url>
+  <url>
+    <loc>https://teethdreammeaning.com/dream/hair/</loc>
+    <lastmod>2026-11-04</lastmod>
   </url>
   <url>
     <loc>https://teethdreammeaning.com/dream/kaaba/</loc>
@@ -46,7 +58,7 @@
   </url>
   <url>
     <loc>https://teethdreammeaning.com/dream/teeth-falling-out/</loc>
-    <lastmod>2026-10-31</lastmod>
+    <lastmod>2026-11-04</lastmod>
   </url>
   <url>
     <loc>https://teethdreammeaning.com/dream/teeth-three-traditions/</loc>
@@ -61,19 +73,11 @@
     <lastmod>2026-11-03</lastmod>
   </url>
   <url>
-    <loc>https://teethdreammeaning.com/about/</loc>
-    <lastmod>2026-11-04</lastmod>
-  </url>
-  <url>
-    <loc>https://teethdreammeaning.com/disclaimer/</loc>
-    <lastmod>2026-11-04</lastmod>
+    <loc>https://teethdreammeaning.com/privacy/</loc>
+    <lastmod>2026-11-03</lastmod>
   </url>
   <url>
     <loc>https://teethdreammeaning.com/terms/</loc>
-    <lastmod>2026-11-04</lastmod>
-  </url>
-  <url>
-    <loc>https://teethdreammeaning.com/privacy/</loc>
-    <lastmod>2026-11-04</lastmod>
+    <lastmod>2026-11-03</lastmod>
   </url>
 </urlset>
