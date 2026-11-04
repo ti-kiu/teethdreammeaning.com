@@ -14,7 +14,7 @@
 | kaaba [DONE 2026-11-02 → /dream/kaaba/; 印页以书末索引为准=237 (正文跨237–238), 原记235作废] | 237 | shamela 289 (印292) |
 | wedding [DONE 2026-11-03 → /dream/wedding/; 印页核: Marriage 266–267, Wedding 473, Bride 57, Death 111, Officiant 309, Dower 125, Wife 475; Nabulsi shamela 145(印148)+344(印347)死=婚句] | 266 (索引 Marriage 266; Wedding词条=See Marriage 473) | shamela 145 (印148) |
 | gold | 189 ✓(索引确认) | shamela 124 (印127) + shamela 125 (印128) |
-| hair | 198 (索引 Hair 198, 原记197作废) | shamela 192 (印195) |
+| hair [DONE 2026-11-04 → /dream/hair/; 印页核: Hair 198, Braiding 54, Haircut+Hairdresser 200, Shaving 382, Strand of hair 415, 'Aqiqah rites 印15(索引不收); Nabulsi shamela 192(印195)+193(印196) 跨页同条; 诗/发同词(شعر)页192另条已引] | 198 (索引 Hair 198, 原记197作废) | shamela 192 (印195) |
 | spider | 404 (索引 Spider 404, 原记403作废) | shamela 247 (印250) |
 | blood | 43 ✓(索引确认) | shamela 113 (印116) + shamela 116 (印119) + shamela 117 (印120) |
 | baby | 80 (索引 Child 80; 原记79作废) | shamela 214 (印217) + shamela 215 (印218) + shamela 218 (印221) |
