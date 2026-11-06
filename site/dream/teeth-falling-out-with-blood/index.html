@@ -16,33 +16,92 @@
 <title>Teeth Falling Out With Blood: What the Books Say</title>
 <meta name="description" content="Blood changes the reading: it spoils a project at the front teeth, flips a caught tooth to severed ties, and gets re-read as a debt before a death omen.">
 <style>
-:root{--ink:#1a1a1a;--paper:#fdfcf9;--accent:#7a5c2e;--line:#e4ddcf;--soft:#6b6357}
+:root{--ink:#1a1a1a;--paper:#fdfcf9;--accent:#7a5c2e;--line:#e4ddcf;--soft:#6b6357;--card:#f9f5f0}
 *{margin:0;padding:0;box-sizing:border-box}
 body{font-family:Georgia,'Times New Roman',serif;background:var(--paper);color:var(--ink);line-height:1.75}
-.wrap{max-width:720px;margin:0 auto;padding:48px 24px}
-h1{font-size:clamp(28px,5vw,38px);font-weight:400;line-height:1.25;margin-bottom:12px}
-.lede{font-size:18px;color:#333;margin-bottom:28px}
+.wrap{max-width:1000px;margin:0 auto;padding:40px 24px 56px}
+.cols{display:grid;grid-template-columns:190px minmax(0,1fr);gap:48px}
+@media(max-width:860px){.cols{grid-template-columns:1fr;gap:0}}
+.top{display:flex;justify-content:space-between;align-items:baseline;gap:20px;
+     border-bottom:2px solid var(--ink);padding-bottom:20px;margin-bottom:36px}
+.top .brand{font-size:16.5px}
+.top .brand a{color:var(--ink);text-decoration:none;font-weight:700}
+.top .brand em{color:#555;font-weight:400}
+.topnav{font-family:Helvetica,Arial,sans-serif;font-size:13.5px;flex-shrink:0}
+.topnav a{color:#555;text-decoration:none}
+.topnav a:hover{color:var(--accent);text-decoration:underline}
+.topnav span{color:#bbb;margin:0 5px}
+aside{position:sticky;top:24px;align-self:start;font-size:15px}
+aside .lbl{font-weight:700;margin-bottom:12px}
+aside ul{list-style:none}
+aside li{margin-bottom:11px}
+aside a{color:#555;text-decoration:none;line-height:1.4;display:block}
+aside a:hover{color:var(--accent);text-decoration:underline}
+@media(max-width:860px){
+  aside{position:static;border:1px solid var(--line);border-radius:6px;background:var(--card);padding:16px 20px;margin-bottom:34px}
+}
+article{max-width:680px}
+h1{font-size:clamp(28px,4.5vw,38px);font-weight:400;line-height:1.25;margin-bottom:12px}
+.lede{font-size:18px;color:#333;margin-bottom:24px}
+.tldr{background:#faf5ed;border:1px solid #e0d9d0;border-radius:4px;padding:18px 22px;margin:0 0 28px}
+.tldr strong{display:block;font-size:13.5px;letter-spacing:.4px;text-transform:uppercase;color:var(--accent);margin-bottom:8px;font-family:Helvetica,Arial,sans-serif}
+.tldr p{font-size:15.5px;line-height:1.65;margin-bottom:10px}
+.tldr p:last-child{margin-bottom:0}
 h2{font-size:22px;font-weight:400;margin:44px 0 16px}
 h3{font-size:17px;font-weight:700;margin:28px 0 8px}
 p{margin-bottom:16px}
-blockquote{border-left:3px solid var(--accent);padding:12px 20px;margin:16px 0 20px;background:#f7f3ea;font-style:italic}
-blockquote p:last-child{margin-bottom:0}
-.loc{font-family:Menlo,Consolas,monospace;font-size:12.5px;color:var(--soft);margin:-8px 0 24px}
 .qa{border-bottom:1px solid var(--line);padding:18px 0}
 .qa h3{margin:0 0 8px}
 .qa p:last-child{margin-bottom:0}
-.note{background:#f5f1e6;border:1px solid var(--line);padding:16px 20px;font-size:14.5px;color:var(--soft);margin:28px 0}
-footer{border-top:1px solid var(--line);margin-top:56px;padding-top:24px;color:var(--soft);font-size:14px}
+.cites{margin:24px 0 0;border-top:2px solid var(--ink)}
+.cite-hd{display:grid;grid-template-columns:minmax(0,1fr) 160px;gap:20px;padding:8px 0;
+         font-family:Helvetica,Arial,sans-serif;font-size:11px;letter-spacing:.8px;text-transform:uppercase;color:#999}
+.cite-row{display:grid;grid-template-columns:minmax(0,1fr) 160px;gap:20px;
+          padding:16px 0;border-bottom:1px solid var(--line)}
+.cite-row .txt{font-size:16px;font-style:italic;color:#2e2a24;line-height:1.7}
+.cite-row .txt p{margin-bottom:0}
+.cite-row .src{font-size:13px;color:#777;align-self:start;line-height:1.5}
+.cite-note{font-size:14.5px;color:#555;margin:14px 0 28px}
+@media(max-width:560px){.cite-row{grid-template-columns:1fr;gap:6px}.cite-hd{grid-template-columns:1fr}.cite-hd .src-hd{display:none}}
+.ar{font-size:16.5px;color:#3a362f;direction:rtl;text-align:right;line-height:2;margin:10px 0 0;font-style:normal}
+/* fallbacks for unpaired legacy elements */
+blockquote{border-left:3px solid var(--accent);padding:12px 20px;margin:16px 0 20px;background:#f7f3ea;font-style:italic}
+blockquote p:last-child{margin-bottom:0}
+.loc{font-family:Menlo,Consolas,monospace;font-size:12.5px;color:var(--soft);margin:-8px 0 24px}
+.note{background:#faf5ed;border:1px solid #e0d9d0;border-radius:4px;padding:16px 20px;font-size:14.5px;color:#555;margin:30px 0}
+.note p:last-child{margin-bottom:0}
+footer{border-top:1px solid var(--line);margin-top:48px;padding-top:20px;
+       font-family:Helvetica,Arial,sans-serif;font-size:13px;color:#777;grid-column:1 / -1}
+footer a{color:#777;text-decoration:none}
+footer a:hover{color:var(--accent)}
+footer span{color:#bbb;margin:0 5px}
 a{color:var(--accent)}
-nav.top{font-size:14px;margin-bottom:32px;color:var(--soft)}
+.rel ul{list-style:none;padding:0}
+.rel li{padding:8px 0;border-bottom:1px solid var(--line)}
 </style>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "author": {"@type": "Organization", "name": "Teeth Dream Meaning", "url": "https://teethdreammeaning.com/"}, "datePublished": "2026-10-31", "dateModified": "2026-10-31", "publisher": {"@type": "Organization", "name": "Teeth Dream Meaning", "url": "https://teethdreammeaning.com/"},  "headline": "Teeth Falling Out With Blood in a Dream: What the Classical Dream Books Say", "url": "https://teethdreammeaning.com/dream/teeth-falling-out-with-blood/", "inLanguage": "en", "about": {"@type": "Thing", "name": "dream interpretation"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "author": {"@type": "Organization", "name": "Teeth Dream Meaning", "url": "https://teethdreammeaning.com/"}, "datePublished": "2026-10-31", "dateModified": "2026-11-06", "publisher": {"@type": "Organization", "name": "Teeth Dream Meaning", "url": "https://teethdreammeaning.com/"},  "headline": "Teeth Falling Out With Blood in a Dream: What the Classical Dream Books Say", "url": "https://teethdreammeaning.com/dream/teeth-falling-out-with-blood/", "inLanguage": "en", "about": {"@type": "Thing", "name": "dream interpretation"}}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Front teeth fell out with pain and blood", "acceptedAnswer": {"@type": "Answer", "text": "Both books rule the same way here. Ibn Sirin's compilation: incompetence, or inability to complete a project. Al-Nabulsi, in Arabic: the affair the dreamer intends comes to nothing or is spoiled. The pain-and-blood version is the bad version — the same teeth falling out cleanly reads differently in both books."}}, {"@type": "Question", "name": "A tooth fell, you held it, and there was blood", "acceptedAnswer": {"@type": "Answer", "text": "Al-Nabulsi has a whole sequence for this on one page: a single incisor taken in hand or wrapped in cloth normally means a new child or a reconciliation with a relative you had cut off. But \"if there was blood, that is the sin of cutting family ties — unless he owes a debt, in which case he will be pressed to pay it.\" Blood converts the good reading into its opposite, then debt converts it again."}}, {"@type": "Question", "name": "Gums bleeding, no tooth lost", "acceptedAnswer": {"@type": "Answer", "text": "The compilation's \"Teeth\" entry: \"If his gums bleed, it means that he will forsake his family, except if he owed someone money, then it means that he will be asked to pay.\" The same book's separate \"Toothbrush\" entry reads brushing-with-blood the opposite way first — freedom from sins — before listing the dark reading too. Same symptom, two entries, and the direction depends on what the mouth was doing in the dream."}}, {"@type": "Question", "name": "Blood but no pain", "acceptedAnswer": {"@type": "Answer", "text": "Honest answer: the Arabic page does not settle it. Al-Nabulsi writes pain, blood, and flesh as an either/or bundle — \"if there was pain, or the coming out of blood, or flesh\" — one ruling for the whole set. He never adjudicates blood alone without pain, and neither does the compilation. If you are looking for a classical verdict on that exact combination, these two books do not print one."}}, {"@type": "Question", "name": "Back teeth came out, with or without blood", "acceptedAnswer": {"@type": "Answer", "text": "Neither entry gives back teeth a bleeding clause. What they do give: lower teeth falling out at all means \"pain, sufferings, sorrows and distress\" (compilation) and the same four words in Arabic (Al-Nabulsi: وجعاً وألماً وهماً وغماً). Blood as a ruling enters the text only at the front teeth and at the gums."}}]}</script>
 </head>
 <body>
 <div class="wrap">
-<nav class="top"><a href="/">Teeth Dream Meaning</a> · classical sources, checked page by page</nav>
+<div class="top">
+  <div class="brand"><a href="/">Teeth Dream Meaning</a> <em>· classical sources, checked page by page</em></div>
+  <nav class="topnav"><a href="/about/">About</a><span>·</span><a href="/disclaimer/">Disclaimer</a><span>·</span><a href="/about/">Sources</a></nav>
+</div>
 
+<div class="cols">
+<aside>
+<div class="lbl">On this page</div>
+<ul>
+<li><a href="#the-front-teeth-ruling-from-the-arabic-p">The front-teeth ruling, from the Arabic page</a></li>
+<li><a href="#the-same-ruling-in-the-ibn-sirin-compila">The same ruling in the Ibn Sirin compilation — in its own words</a></li>
+<li><a href="#blood-on-a-caught-tooth-the-reversal-al-">Blood on a caught tooth: the reversal Al-Nabulsi spells out</a></li>
+<li><a href="#the-clause-both-books-share-almost-word-">The clause both books share almost word for word</a></li>
+<li><a href="#what-modern-research-measured-next-to-th">What modern research measured — next to the entries</a></li>
+<li><a href="#related-questions">Related questions</a></li>
+</ul>
+</aside>
+<main><article>
 <h1>Teeth Falling Out With Blood: The Classical Books Give Blood Three Different Jobs</h1>
 <p class="lede">If your dream had blood in it, the two classical dream dictionaries do not shrug — they split the case. Front teeth out <strong>with pain and bleeding</strong> is a project that will be left unfinished. Blood attached to <strong>a tooth you caught</strong> turns a good omen into the sin of cutting family ties. And blood at the <strong>gums</strong> may not be about teeth at all, but about money you owe. The escape clause is the same in both books, written almost word for word.</p>
 
@@ -73,45 +132,59 @@ nav.top{font-size:14px;margin-bottom:32px;color:var(--soft)}
 <p>Neither entry gives back teeth a bleeding clause. What they do give: lower teeth falling out at all means "pain, sufferings, sorrows and distress" (compilation) and the same four words in Arabic (Al-Nabulsi: وجعاً وألماً وهماً وغماً). Blood as a ruling enters the text only at the <em>front</em> teeth and at the gums.</p>
 </div>
 
-<h2>The front-teeth ruling, from the Arabic page</h2>
+<h2 id="the-front-teeth-ruling-from-the-arabic-p">The front-teeth ruling, from the Arabic page</h2>
 <p>The core passage sits in Al-Nabulsi's tooth entry, mid-page:</p>
-<blockquote>
-<p>"And if the <strong>front teeth</strong> fell — if there was with them <strong>pain, or the coming out of blood, or flesh</strong> — then the affair the dreamer intends comes to nothing or is spoiled. If they fell <strong>without pain</strong>, then what he owns goes away."</p>
-</blockquote>
-<p class="loc">Al-Nabulsi, Ta'tir al-Anam fi Ta'bir al-Manam (Dar al-Fikr ed.) — shamela.ws/book/1217/177 (printed ص180), مقاديم الأسنان passage. Translated from the Arabic; no standard English edition exists.</p>
+<div class="cites">
+<div class="cite-hd"><div>Text</div><div class="src-hd">Source</div></div>
+<div class="cite-row">
+  <div class="txt"><p>"And if the <strong>front teeth</strong> fell — if there was with them <strong>pain, or the coming out of blood, or flesh</strong> — then the affair the dreamer intends comes to nothing or is spoiled. If they fell <strong>without pain</strong>, then what he owns goes away."</p></div>
+  <div class="src">Al-Nabulsi, Ta'tir al-Anam fi Ta'bir al-Manam (Dar al-Fikr ed.) — shamela.ws/book/1217/177 (printed ص180), مقاديم الأسنان passage. Translated from the Arabic; no standard English edition exists.</div>
+</div>
+</div>
 <p>Three conditions, three outcomes, one sentence: pain-or-blood-or-flesh spoils a <em>project</em>; no pain costs <em>property</em>; and a few lines earlier the same page says teeth falling out with pain alone means "something leaving his house." The classical genre does not average these cases — it branches on them.</p>
 
-<h2>The same ruling in the Ibn Sirin compilation — in its own words</h2>
-<blockquote>
-<p>"If the front teeth fall and cause <strong>pain and bleeding</strong> in the dream, they represent one's <strong>incompetence or inability to complete a project</strong>. If the front teeth fall <strong>without pain or bleeding</strong> in the dream, then they mean losing one's property."</p>
-</blockquote>
-<p class="loc">Ibn Seerin's Dictionary of Dreams, compiled by Muhammad M. Al-Akili, Pearl Publishing House 1992 (ISBN 1879405032), "Teeth" entry. A later compilation attributed to the 8th-century scholar, not his autograph; checked against the scanned copy.</p>
+<h2 id="the-same-ruling-in-the-ibn-sirin-compila">The same ruling in the Ibn Sirin compilation — in its own words</h2>
+<div class="cites">
+<div class="cite-hd"><div>Text</div><div class="src-hd">Source</div></div>
+<div class="cite-row">
+  <div class="txt"><p>"If the front teeth fall and cause <strong>pain and bleeding</strong> in the dream, they represent one's <strong>incompetence or inability to complete a project</strong>. If the front teeth fall <strong>without pain or bleeding</strong> in the dream, then they mean losing one's property."</p></div>
+  <div class="src">Ibn Seerin's Dictionary of Dreams, compiled by Muhammad M. Al-Akili, Pearl Publishing House 1992 (ISBN 1879405032), "Teeth" entry. A later compilation attributed to the 8th-century scholar, not his autograph; checked against the scanned copy.</div>
+</div>
+</div>
 <p>Read the two pages side by side and the pairing is exact: bleeding front teeth spoil the intended affair, clean-falling front teeth cost property. The compilation collapses Al-Nabulsi's three-item bundle (pain <em>or</em> blood <em>or</em> flesh) into a conjunction — pain <em>and</em> bleeding — which is a small but real difference: on the Arabic page, blood alone can trigger the ruling.</p>
 
-<h2>Blood on a caught tooth: the reversal Al-Nabulsi spells out</h2>
-<blockquote>
-<p>"A single tooth falling, without treatment, taken in his hand or wrapped in his cloth: if there is a pregnant woman in the house, a child comes to him; if not, he reconciles with a brother or relative he had cut off. <strong>And if there was blood, that is the sin of cutting family ties — unless he owes a debt, in which case he will be demanded to pay it and pressed to settle it.</strong>"</p>
-</blockquote>
-<p class="loc">shamela.ws/book/1217/177 (printed ص180), ثنية passage (the incisor block). The tooth-first, reconciliation reading sits immediately before the blood clause on the same page.</p>
+<h2 id="blood-on-a-caught-tooth-the-reversal-al-">Blood on a caught tooth: the reversal Al-Nabulsi spells out</h2>
+<div class="cites">
+<div class="cite-hd"><div>Text</div><div class="src-hd">Source</div></div>
+<div class="cite-row">
+  <div class="txt"><p>"A single tooth falling, without treatment, taken in his hand or wrapped in his cloth: if there is a pregnant woman in the house, a child comes to him; if not, he reconciles with a brother or relative he had cut off. <strong>And if there was blood, that is the sin of cutting family ties — unless he owes a debt, in which case he will be demanded to pay it and pressed to settle it.</strong>"</p></div>
+  <div class="src">shamela.ws/book/1217/177 (printed ص180), ثنية passage (the incisor block). The tooth-first, reconciliation reading sits immediately before the blood clause on the same page.</div>
+</div>
+</div>
 <p>This is the sharpest thing either book says about blood: it does not add meaning to a neutral dream, it <em>flips</em> a positive one. A tooth kept = new life or restored kinship. The same tooth kept, with blood = the guilt of the severed tie itself. And then the exception stack continues — debt re-flips it, because blood-as-debt-warning is Al-Nabulsi's most frequent use of the sign at all.</p>
 
-<h2>The clause both books share almost word for word</h2>
+<h2 id="the-clause-both-books-share-almost-word-">The clause both books share almost word for word</h2>
 <p>Here is Ibn Sirin's compilation on gums, from the "Teeth" entry:</p>
-<blockquote>
-<p>"If his gums bleed, it means that he will <strong>forsake his family</strong>, except if he owed someone money, then it means that <strong>he will be asked to pay</strong>, or that he will be forced to comply."</p>
-</blockquote>
-<p class="loc">Same book, "Teeth" entry, following the sentence about pulling a tooth easily for a pregnant wife.</p>
+<div class="cites">
+<div class="cite-hd"><div>Text</div><div class="src-hd">Source</div></div>
+<div class="cite-row">
+  <div class="txt"><p>"If his gums bleed, it means that he will <strong>forsake his family</strong>, except if he owed someone money, then it means that <strong>he will be asked to pay</strong>, or that he will be forced to comply."</p></div>
+  <div class="src">Same book, "Teeth" entry, following the sentence about pulling a tooth easily for a pregnant wife.</div>
+</div>
+</div>
 <p>And here is Al-Nabulsi on the caught tooth, from the section above: blood is the sin of cutting family ties — <em>unless he owes a debt</em>, in which case it is about being pressed to pay. Forsaking family vs cutting ties; asked to pay vs demanded to pay. Whatever the transmission history, the shape is identical: <strong>blood first reads as kinship, and debt is the standing exemption.</strong> No other dream sign in either tooth entry gets that double lock, which is why the folk habit of treating any bloody teeth dream as a death omen goes backward on the sources — in both books, blood is the sign the page is trying <em>not</em> to read as death.</p>
 
-<h2>What modern research measured — next to the entries</h2>
+<h2 id="what-modern-research-measured-next-to-th">What modern research measured — next to the entries</h2>
 <p>Rozen &amp; Soffer-Dudek, <em>Dreams of Teeth Falling Out: An Empirical Investigation of Physiological and Psychological Correlates</em> (Frontiers in Psychology 9:1812, 2018; PubMed 30319507), surveyed 210 participants. Teeth dreams correlated with <strong>dental irritation</strong> — which the study defines as tension sensations in the teeth, <strong>gums</strong>, or jaws upon awakening — while other dream types did not. Psychological distress correlated with dreams of falling and smothering, but <em>not</em> with teeth dreams.</p>
 <p>Frequency, from Calvin Kai-Ching Yu's Dream Motif Scale survey (<em>Dreaming</em> 22(1):18–52, 2012, DOI 10.1037/a0026171), as reported in the 2018 paper: 39.0% of respondents had a teeth dream at least once, 16.2% recurrently, 8.2% regularly.</p>
 <p>Set the layers side by side and note who talks about gums. The classical page attaches blood to the gums and the front teeth; the 2018 study attaches waking <em>tension</em> to the gums and the jaw — the same anatomical zone, two different signs. But the study coded teeth dreams by frequency only. Whether the dream had blood, pain, or flesh in it is not a variable in any modern study we can cite, so the empirical record has no answer to the classical branching. It can say the teeth-and-gum zone is where the waking signal lives; it cannot say what the blood meant. The two layers answer different questions; neither refutes the other.</p>
 
 <div class="note"><p>This page reports what two classical texts say. It is not a prediction, a medical or religious ruling, and no dream book — classical or modern — settles what a dream means for the person who had it.</p></div>
 
-<section style="border-top:1px solid var(--line);margin-top:40px;padding-top:20px"><h2 style="font-size:18px;font-weight:400">Related questions</h2><ul style="list-style:none;padding:0"><li style="padding:8px 0;border-bottom:1px solid var(--line)"><a href="/dream/teeth-falling-out/">Teeth falling out — the full answer</a></li><li style="padding:8px 0;border-bottom:1px solid var(--line)"><a href="/dream/teeth-falling-out-and-death/">Does it mean someone will die?</a></li><li style="padding:8px 0;border-bottom:1px solid var(--line)"><a href="/dream/one-tooth-vs-all-teeth/">One tooth or the whole mouth?</a></li><li style="padding:8px 0;border-bottom:1px solid var(--line)"><a href="/dream/water/">Water dreams: clear = fortune, murky = trouble</a></li><li style="padding:8px 0;border-bottom:1px solid var(--line)"><a href="/dream/blood/">Blood in a dream — the full blood entry behind this page's money and debt readings</a></li></ul></section>
-<footer>
+<section style="border-top:1px solid var(--line);margin-top:40px;padding-top:20px"><h2 id="related-questions" style="font-size:18px;font-weight:400">Related questions</h2><ul style="list-style:none;padding:0"><li style="padding:8px 0;border-bottom:1px solid var(--line)"><a href="/dream/teeth-falling-out/">Teeth falling out — the full answer</a></li><li style="padding:8px 0;border-bottom:1px solid var(--line)"><a href="/dream/teeth-falling-out-and-death/">Does it mean someone will die?</a></li><li style="padding:8px 0;border-bottom:1px solid var(--line)"><a href="/dream/one-tooth-vs-all-teeth/">One tooth or the whole mouth?</a></li><li style="padding:8px 0;border-bottom:1px solid var(--line)"><a href="/dream/water/">Water dreams: clear = fortune, murky = trouble</a></li><li style="padding:8px 0;border-bottom:1px solid var(--line)"><a href="/dream/blood/">Blood in a dream — the full blood entry behind this page's money and debt readings</a></li></ul></section>
+</article></main>
+</div>
+\1>
 <p>Teeth Dream Meaning · <a href="/">Home</a> · <a href="/dream/teeth-falling-out/">Teeth falling out: both entries side by side</a> · <a href="/dream/one-tooth-vs-all-teeth/">One tooth or the whole mouth?</a> · <a href="/dream/teeth-falling-into-hand-lap-ground/">Hand, lap, or ground</a> · <a href="/disclaimer/">Disclaimer</a></p>
 </footer>
 </div>

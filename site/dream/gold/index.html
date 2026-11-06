@@ -16,35 +16,91 @@
 <title>Dreaming of Gold: What It Means in the Dream Books</title>
 <meta name="description" content="Gold in a dream: a disliked element that costs you, then joy, provision and leadership. Both Arabic books agree clause by clause; gold turning silver flips fortune.">
 <style>
-:root{--ink:#1a1a1a;--paper:#fdfcf9;--accent:#7a5c2e;--line:#e4ddcf;--soft:#6b6357}
+:root{--ink:#1a1a1a;--paper:#fdfcf9;--accent:#7a5c2e;--line:#e4ddcf;--soft:#6b6357;--card:#f9f5f0}
 *{margin:0;padding:0;box-sizing:border-box}
 body{font-family:Georgia,'Times New Roman',serif;background:var(--paper);color:var(--ink);line-height:1.75}
-.wrap{max-width:720px;margin:0 auto;padding:48px 24px}
-h1{font-size:clamp(28px,5vw,38px);font-weight:400;line-height:1.25;margin-bottom:12px}
-.lede{font-size:18px;color:#333;margin-bottom:28px}
+.wrap{max-width:1000px;margin:0 auto;padding:40px 24px 56px}
+.cols{display:grid;grid-template-columns:190px minmax(0,1fr);gap:48px}
+@media(max-width:860px){.cols{grid-template-columns:1fr;gap:0}}
+.top{display:flex;justify-content:space-between;align-items:baseline;gap:20px;
+     border-bottom:2px solid var(--ink);padding-bottom:20px;margin-bottom:36px}
+.top .brand{font-size:16.5px}
+.top .brand a{color:var(--ink);text-decoration:none;font-weight:700}
+.top .brand em{color:#555;font-weight:400}
+.topnav{font-family:Helvetica,Arial,sans-serif;font-size:13.5px;flex-shrink:0}
+.topnav a{color:#555;text-decoration:none}
+.topnav a:hover{color:var(--accent);text-decoration:underline}
+.topnav span{color:#bbb;margin:0 5px}
+aside{position:sticky;top:24px;align-self:start;font-size:15px}
+aside .lbl{font-weight:700;margin-bottom:12px}
+aside ul{list-style:none}
+aside li{margin-bottom:11px}
+aside a{color:#555;text-decoration:none;line-height:1.4;display:block}
+aside a:hover{color:var(--accent);text-decoration:underline}
+@media(max-width:860px){
+  aside{position:static;border:1px solid var(--line);border-radius:6px;background:var(--card);padding:16px 20px;margin-bottom:34px}
+}
+article{max-width:680px}
+h1{font-size:clamp(28px,4.5vw,38px);font-weight:400;line-height:1.25;margin-bottom:12px}
+.lede{font-size:18px;color:#333;margin-bottom:24px}
+.tldr{background:#faf5ed;border:1px solid #e0d9d0;border-radius:4px;padding:18px 22px;margin:0 0 28px}
+.tldr strong{display:block;font-size:13.5px;letter-spacing:.4px;text-transform:uppercase;color:var(--accent);margin-bottom:8px;font-family:Helvetica,Arial,sans-serif}
+.tldr p{font-size:15.5px;line-height:1.65;margin-bottom:10px}
+.tldr p:last-child{margin-bottom:0}
 h2{font-size:22px;font-weight:400;margin:44px 0 16px}
 h3{font-size:17px;font-weight:700;margin:28px 0 8px}
 p{margin-bottom:16px}
-blockquote{border-left:3px solid var(--accent);padding:12px 20px;margin:16px 0 20px;background:#f7f3ea;font-style:italic}
-blockquote p:last-child{margin-bottom:0}
-blockquote[dir="rtl"]{font-style:normal;font-size:17px;text-align:right;border-left:0;border-right:3px solid var(--accent)}
-.loc{font-family:Menlo,Consolas,monospace;font-size:12.5px;color:var(--soft);margin:-8px 0 24px}
 .qa{border-bottom:1px solid var(--line);padding:18px 0}
 .qa h3{margin:0 0 8px}
 .qa p:last-child{margin-bottom:0}
-.note{background:#f5f1e6;border:1px solid var(--line);padding:16px 20px;font-size:14.5px;color:var(--soft);margin:28px 0}
-footer{border-top:1px solid var(--line);margin-top:56px;padding-top:24px;color:var(--soft);font-size:14px}
+.cites{margin:24px 0 0;border-top:2px solid var(--ink)}
+.cite-hd{display:grid;grid-template-columns:minmax(0,1fr) 160px;gap:20px;padding:8px 0;
+         font-family:Helvetica,Arial,sans-serif;font-size:11px;letter-spacing:.8px;text-transform:uppercase;color:#999}
+.cite-row{display:grid;grid-template-columns:minmax(0,1fr) 160px;gap:20px;
+          padding:16px 0;border-bottom:1px solid var(--line)}
+.cite-row .txt{font-size:16px;font-style:italic;color:#2e2a24;line-height:1.7}
+.cite-row .txt p{margin-bottom:0}
+.cite-row .src{font-size:13px;color:#777;align-self:start;line-height:1.5}
+.cite-note{font-size:14.5px;color:#555;margin:14px 0 28px}
+@media(max-width:560px){.cite-row{grid-template-columns:1fr;gap:6px}.cite-hd{grid-template-columns:1fr}.cite-hd .src-hd{display:none}}
+.ar{font-size:16.5px;color:#3a362f;direction:rtl;text-align:right;line-height:2;margin:10px 0 0;font-style:normal}
+/* fallbacks for unpaired legacy elements */
+blockquote{border-left:3px solid var(--accent);padding:12px 20px;margin:16px 0 20px;background:#f7f3ea;font-style:italic}
+blockquote p:last-child{margin-bottom:0}
+.loc{font-family:Menlo,Consolas,monospace;font-size:12.5px;color:var(--soft);margin:-8px 0 24px}
+.note{background:#faf5ed;border:1px solid #e0d9d0;border-radius:4px;padding:16px 20px;font-size:14.5px;color:#555;margin:30px 0}
+.note p:last-child{margin-bottom:0}
+footer{border-top:1px solid var(--line);margin-top:48px;padding-top:20px;
+       font-family:Helvetica,Arial,sans-serif;font-size:13px;color:#777;grid-column:1 / -1}
+footer a{color:#777;text-decoration:none}
+footer a:hover{color:var(--accent)}
+footer span{color:#bbb;margin:0 5px}
 a{color:var(--accent)}
-nav.top{font-size:14px;margin-bottom:32px;color:var(--soft)}
-.src{font-size:14px;color:var(--soft)}
+.rel ul{list-style:none;padding:0}
+.rel li{padding:8px 0;border-bottom:1px solid var(--line)}
 </style>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "author": {"@type": "Organization", "name": "Teeth Dream Meaning", "url": "https://teethdreammeaning.com/"}, "datePublished": "2026-11-04", "dateModified": "2026-11-04", "publisher": {"@type": "Organization", "name": "Teeth Dream Meaning", "url": "https://teethdreammeaning.com/"},  "headline": "Dreaming of Gold: What the Two Arabic Books Actually Say", "url": "https://teethdreammeaning.com/dream/gold/", "inLanguage": "en", "about": {"@type": "Thing", "name": "dream interpretation"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "author": {"@type": "Organization", "name": "Teeth Dream Meaning", "url": "https://teethdreammeaning.com/"}, "datePublished": "2026-11-04", "dateModified": "2026-11-06", "publisher": {"@type": "Organization", "name": "Teeth Dream Meaning", "url": "https://teethdreammeaning.com/"},  "headline": "Dreaming of Gold: What the Two Arabic Books Actually Say", "url": "https://teethdreammeaning.com/dream/gold/", "inLanguage": "en", "about": {"@type": "Thing", "name": "dream interpretation"}}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What does it mean to dream of gold?", "acceptedAnswer": {"@type": "Answer", "text": "The Ibn Sirin compilation opens cold: gold is a disliked element which causes damages, anxiety and losses (printed p. 189). Al-Nabulsi's entry opens the same way: dhahab in a dream is a detestable matter, and it costs you property (shamela 124, printed p. 127). Then both books turn the same corner: a necklace of gold, silver or gems means leadership or something entrusted to you, and the vision as a whole stands for festivities, joy, profits, good deeds, dispelling stress, marriage, children, knowledge and guidance. The same entry carries both verdicts: gold costs you, and gold crowns you."}}, {"@type": "Question", "name": "Why is gold read as a bad omen in these books?", "acceptedAnswer": {"@type": "Answer", "text": "Because both entries price gold as a burden before they praise it. The compilation: wearing a golden ornament means marriage to an incompatible person, receiving a golden bar means losing money or business, and melting gold means you will be persecuted for a loathsome act and become the talk of the town. Al-Nabulsi, clause for clause: wearing anything of gold means you marry into people unfit for you; a gold ingot means money lost, or sorrow measured out by the amount of gold; melting it means a dispute in a detestable matter and the tongues of the people. The transformation clauses complete the picture: gold turning to silver means a fall from increase to decrease; silver turning to gold means the reverse, a rise."}}, {"@type": "Question", "name": "What do specific gold dreams mean - wearing it, finding it, a house of gold?", "acceptedAnswer": {"@type": "Answer", "text": "The books run the scenarios in the same order. Bracelet: an inheritance falls into your hand (both books). Broken chips or whole coins: you meet the ruler and return safe (compilation); you see the ruler's face and come back unharmed (Al-Nabulsi). Minting or melting gold: evil, death or destruction (compilation); evil and perdition (Al-Nabulsi). A house turning gold: fire consumes it. Hands of gold: paralyzed, without movement. Eyes of gold: blindness. A large piece given to you: authority and leadership. The clauses match line for line across a thousand years."}}, {"@type": "Question", "name": "What does the Chinese Zhou Gong book say about gold dreams?", "acceptedAnswer": {"@type": "Answer", "text": "One chapter, verdict lines only. The received Zhou Gong text, chapter 9 (gold, silver, pearls and jade): gold and silver treasures mean wealth and honor; gold and silver with pearls and jade is great fortune; cups and dishes of gold and silver mean a noble pregnancy; obtaining a gold or jade ring means the birth of an honored son; jade piled like a mountain means great wealth. Where the Arabic books build a clause machine out of what you did with the gold, the Chinese book grades the treasure by its form and answers fortune or misfortune in four characters."}}, {"@type": "Question", "name": "What does dream research say about gold and money dreams?", "acceptedAnswer": {"@type": "Answer", "text": "The best-measured number is about finding money, not gold: roughly 16% of participants in four German surveys (1956-2000, overall N = 4,613) reported a finding-money dream in the last few months, more often men than women (Schredl, International Journal of Dream Research 16(1):91-94, 2023, DOI 10.11588/ijodr.2023.1.91319). In the Typical Dreams Questionnaire study of 1,181 Canadian students, finding money had a lifetime prevalence of 25.7% - men 34.0% vs women 22.3% - and its earliest recall came around age 9 (Nielsen et al., Dreaming 13(4):211-235, 2003, DOI 10.1023/B:DREM.0000003144.40929.0b). Research counts how often the theme appears; the classical books assign what the metal means."}}]}</script>
 </head>
 <body>
 <div class="wrap">
-<nav class="top"><a href="/">Teeth Dream Meaning</a> · classical sources, checked page by page</nav>
+<div class="top">
+  <div class="brand"><a href="/">Teeth Dream Meaning</a> <em>· classical sources, checked page by page</em></div>
+  <nav class="topnav"><a href="/about/">About</a><span>·</span><a href="/disclaimer/">Disclaimer</a><span>·</span><a href="/about/">Sources</a></nav>
+</div>
 
+<div class="cols">
+<aside>
+<div class="lbl">On this page</div>
+<ul>
+<li><a href="#the-finding-a-thousand-year-mirror-claus">The finding: a thousand-year mirror, clause for clause</a></li>
+<li><a href="#the-entries-briefly">The entries, briefly</a></li>
+<li><a href="#what-modern-research-adds-and-what-it-do">What modern research adds — and what it doesn&#x27;t</a></li>
+<li><a href="#sources-all-passages-checked-against-the">Sources (all passages checked against the cited pages)</a></li>
+<li><a href="#related-questions">Related questions</a></li>
+</ul>
+</aside>
+<main><article>
 <h1>Dreaming of Gold: What It Means</h1>
 <p class="lede">Dreaming of gold is read by both classical Arabic books as a dream about <strong>a treasure that tests you before it rewards you</strong>. The <em>Ibn Sirin</em> compilation and Al-Nabulsi open the same way — gold in a dream is a disliked element that brings damage, worry and loss — and then run the same machine clause by clause: a bracelet means an inheritance falls into your hand; wearing gold means marriage into people unfit for you; an ingot means money lost or sorrow in proportion to the gold; melting it means a public scandal; a house of gold means fire; hands and eyes of gold mean paralysis and blindness; but a necklace of gold, silver or gems means leadership or a trust, and the vision in general stands for festivities, joy, profits, good deeds, the departure of worries, marriage, children, knowledge and guidance.</p>
 
@@ -75,35 +131,35 @@ nav.top{font-size:14px;margin-bottom:32px;color:var(--soft)}
 <p>The nightmares of the entry, in both books, same order. A house turning gold: a fire consumes it. Hands of gold: paralyzed, without movement — Al-Nabulsi: both cease and become without motion. Eyes of gold: blindness — Al-Nabulsi: his sight is blinded. And the master clause that explains them: gold turning to silver in a dream means decrease — in value, or in the conditions of the women, children and properties the gold stands for; silver turning to gold means the increase, "the rising moon of one's wife, children, business or clan." Gold is not cursed in these books; it is unstable — and every clause measures which way it is tipping.</p>
 </div>
 
-<h2>The finding: a thousand-year mirror, clause for clause</h2>
+<h2 id="the-finding-a-thousand-year-mirror-claus">The finding: a thousand-year mirror, clause for clause</h2>
 <p>Set the two entries side by side and the order of clauses matches: disliked element costing property, bracelet = inheritance, wearing gold = unfit marriage-alliance, ingot = loss or proportional sorrow, ruler's anger and fine, melting = scandal and tongues of people, large piece = sultanate and leadership, broken chips or sound dinars = the ruler's face and a safe return, minting = evil and perdition, house of gold = fire, hands of gold = paralysis, eyes of gold = blindness, necklace = authority and trust, and the general reading — festivities, provisions, good deeds, worries departing, wives, children, knowledge, guidance. Al-Nabulsi (d. 1731) wrote a millennium after the material attributed to Ibn Sirin — and the compilation's English and his Arabic run the same machine in the same order. The differences are single rooms each book adds: the compilation alone prices the pure metal — pure gold or silver means purity and sincerity of intention, a true covenant or a peace treaty — while Al-Nabulsi alone carries the textile clauses on his next page: gold-woven and embroidered high garments are nearness to God for whoever wears them, or tribulation for their owners; plated metal means resembling the people of this world; gold leaf that peels means short deeds, fluctuating matters, forgetting; and spun gold means unbroken provision.</p>
 
 <p>And both books share the one move the folk summaries never repeat: <strong>the base metal is judged by what it turns into</strong>. The compilation: "If one sees gold turning into silver in a dream, it means decrease in value, or changing conditions in relation to women, children or properties. The opposite is also true." Al-Nabulsi, one clause: gold becoming silver indicates the state of the person indicated — women, wealth, children, servants — changing from increase to decrease; silver becoming gold indicates a good state. The Chinese book works the same logic in verdict form: gold and silver treasures mean wealth and honor, but pearls and jade covering your body mean great misfortune — the treasure itself is neutral, the form decides. These books are not appraising metal. They are reading change: what tips up, what tips down, and which of your attachments is tipping with it.</p>
 
-<h2>The entries, briefly</h2>
+<h2 id="the-entries-briefly">The entries, briefly</h2>
 <p class="src">The Arabic side comes from two books: the compiled English dictionary attributed to Ibn Sirin (Pearl Publishing House, 1992 — "Gold" entry printed p. 189, per the book's own end-of-volume page index and printed running heads) and the Arabic original of Al-Nabulsi's <em>Ta'tir al-Anam</em>, whose (ذهب) headword sits at shamela.ws/book/1217/124 (printed p. 127, باب الذال) with the transformation clauses continuing at shamela.ws/book/1217/125 (printed p. 128). The Chinese side is one chapter of verdict lines: the received Zhou Gong book, ch. 9 (gold, silver, pearls and jade). One sample of each book, translated, then the full checked passages are in the sources section at the bottom.</p>
 
-<blockquote>
-<p>"Gold: In a dream, gold is a disliked element which cause damages, anxiety and losses. Wearing a golden bracelet in a dream means receiving an inheritance... Gold in a dream also represents the elements of festivities, joy, profits, good deeds, dispelling stress, marriage, children, knowledge, spiritual guidance, or literally the business of goldsmithing."</p>
-</blockquote>
-<p class="loc">Ibn Seerin's Dictionary of Dreams (Al-Akili compilation, Pearl 1992) — "Gold," printed p. 189. Translated/compiled English.</p>
-
-<blockquote dir="rtl" lang="ar">
-<p>(ذهب) هو في المنام أمر مكروه وغرم مال والسوار منه إذا لبسه ميراث يقع في يده</p>
-</blockquote>
-<p class="loc">Al-Nabulsi, Ta'tir al-Anam — shamela.ws/book/1217/124 (printed p. 127), the headword line, verbatim: dhahab in a dream is a detestable matter, and it costs property; its bracelet, if worn, is an inheritance that falls into the hand.</p>
-
-<blockquote dir="rtl" lang="ar">
-<p>والذهب إذا صار في المنام فضة دل على تغير حال من دل عليه من النساء والأموال والأولاد والخدم من الزيادة إلى النقص</p>
-</blockquote>
-<p class="loc">Same book — shamela.ws/book/1217/125 (printed p. 128), the transformation clause, verbatim: gold becoming silver in a dream indicates the state of those it stands for — women, wealth, children, servants — changing from increase to decrease.</p>
-
+<div class="cites">
+<div class="cite-hd"><div>Text</div><div class="src-hd">Source</div></div>
+<div class="cite-row">
+  <div class="txt"><p>"Gold: In a dream, gold is a disliked element which cause damages, anxiety and losses. Wearing a golden bracelet in a dream means receiving an inheritance... Gold in a dream also represents the elements of festivities, joy, profits, good deeds, dispelling stress, marriage, children, knowledge, spiritual guidance, or literally the business of goldsmithing."</p></div>
+  <div class="src">Ibn Seerin's Dictionary of Dreams (Al-Akili compilation, Pearl 1992) — "Gold," printed p. 189. Translated/compiled English.</div>
+</div>
+<div class="cite-row">
+  <div class="txt"><p class="ar">(ذهب) هو في المنام أمر مكروه وغرم مال والسوار منه إذا لبسه ميراث يقع في يده</p></div>
+  <div class="src">Al-Nabulsi, Ta'tir al-Anam — shamela.ws/book/1217/124 (printed p. 127), the headword line, verbatim: dhahab in a dream is a detestable matter, and it costs property; its bracelet, if worn, is an inheritance that falls into the hand.</div>
+</div>
+<div class="cite-row">
+  <div class="txt"><p class="ar">والذهب إذا صار في المنام فضة دل على تغير حال من دل عليه من النساء والأموال والأولاد والخدم من الزيادة إلى النقص</p></div>
+  <div class="src">Same book — shamela.ws/book/1217/125 (printed p. 128), the transformation clause, verbatim: gold becoming silver in a dream indicates the state of those it stands for — women, wealth, children, servants — changing from increase to decrease.</div>
+</div>
+</div>
 <div class="note"><p>Zhou Gong, stated plainly: the received Chinese dream book carries no clause machine for gold either — a chapter of four-character verdicts (gold and silver treasures = wealth and honor; cups and dishes of gold and silver = a noble pregnancy; a gold or jade ring = an honored son; jade piled like a mountain = great wealth; but pearls and jade covering the body = great misfortune). All are quoted at chapter location in the sources section; nothing else is claimed for the Chinese side.</p></div>
 
-<h2>What modern research adds — and what it doesn't</h2>
+<h2 id="what-modern-research-adds-and-what-it-do">What modern research adds — and what it doesn't</h2>
 <p>No study in the empirical dream literature codes gold as a symbol; there is no published percentage of dreams that contain the metal, no research verdict on what a gold dream "means." What the research has measured is the nearest common cousin — finding money. Schredl (<em>International Journal of Dream Research</em> 16(1):91–94, 2023, DOI 10.11588/ijodr.2023.1.91319) pooled four representative German surveys from 1956 to 2000: about 16% of participants (overall N = 4,613) reported a "finding money" dream in the last few months, more often men than women, with the theme rising across the decades — the continuity hypothesis reading the dreamer's financial waking life straight into the dream. Nielsen and colleagues (<em>Dreaming</em> 13(4):211–235, 2003, DOI 10.1023/B:DREM.0000003144.40929.0b) administered the 55-item Typical Dreams Questionnaire to 1,181 Canadian university students: "finding money" had a lifetime prevalence of 25.7% — 34.0% of men vs 22.3% of women, one of the largest gender gaps on the list — and its earliest recalled occurrence sat around age 9 (9.3 ± 2.22 years), slightly younger than teeth falling out (9.7). That is the honest line under this page's mirror: the research counts how often people dream of treasure; the classical books assign what the treasure means — and both, working a millennium apart, refuse to make it simple.</p>
 
-<h2>Sources (all passages checked against the cited pages)</h2>
+<h2 id="sources-all-passages-checked-against-the">Sources (all passages checked against the cited pages)</h2>
 <div class="src">
 <p><strong>Ibn Sirin compilation — "Gold" entry, printed p. 189</strong> (Ibn Seerin's Dictionary of Dreams, compiled by Muhammad M. Al-Akili, Pearl Publishing House 1992, ISBN 1879405032; a later compilation attributed to the 8th-century scholar, not his autograph text; the book's own page index lists Gold at 189): "Gold: In a dream, gold is a disliked element which cause damages, anxiety and losses. Wearing a golden bracelet in a dream means receiving an inheritance. Wearing a golden ornament in a dream means marriage to an incompatible person. Any wedding gift one receives from such a person means trouble. Receiving a golden bar in a dream means losing money or business. If one sees himself melting a bar of gold in a dream, it means that he will be persecuted for committing a loathsome act and he will become the talk of the town. Seeing broken chips of gold or a whole coin of gold in a dream means meeting with the ruler of the country or with the governor of town. Minting gold in a dream represents evil, death or destruction. Seeing one's house turning gold in a dream means that a fire will consume his house. If one's hand turns gold in a dream, it means that it may be paralyzed. Seeing one's eyes turning gold in a dream means that he may become blind. Wearing a golden necklace, or a silver necklace, or a necklace studded with gems in a dream means that one will become a leader, or that he could receive something in trust. Gold in a dream also represents the elements of festivities, joy, profits, good deeds, dispelling stress, marriage, children, knowledge, spiritual guidance, or literally the business of goldsmithing. If one sees gold turning into silver in a dream, it means decrease in value, or changing conditions in relation to women, children or properties. The opposite is also true. If one sees silver turning into gold in a dream, it means increase in value, the rising moon of one's wife, children, business or clan. Any gold embroidered garment or fabric in a dream means religious offerings. Any gold plated ornaments in a dream means emulating mundane people, or outwardly imitating spiritual people, or ostentatiously acting like them. Pure gold or silver in a dream means purity and sincerity of one's intentions, making a true covenant or signing a peace treaty. Gold plated or silver plated ornaments or gold leaf objects in a dream represent a short life, changing circumstances, spending long and sleepless nights, or it could mean forgetfulness. Wearing any manufactured or handmade piece of jewelry in a dream means perpetual earnings. The same interpretation is given to gold foils. (Also see Goldsmith)" — related entry, same compilation: "Goldsmith: (Jeweler) In a dream, a goldsmith represents celebrations, joy, happiness or perhaps mixing truth with falsehood... If one is seen heating gold or silver in a dream, it means lies and deception."</p>
 <p><strong>Al-Nabulsi — (ذهب), shamela.ws/book/1217/124, printed p. 127</strong> (Ta'tir al-Anam fi Ta'bir al-Manam, Abd al-Ghani al-Nabulsi d. 1731 CE, Dar al-Fikr edition; باب الذال; translation ours): "(ذهب) هو في المنام أمر مكروه وغرم مال والسوار منه إذا لبسه ميراث يقع في يده. (ومن رأى) أنه لبس شيئاً من الذهب فإنه يصاهر قوماً غير أكفاء له فإن أصاب سبيكة ذهب منه مال أو أصابه هم بقدر ما أصاب من الذهب أو غضب عليه السلطان وغرمه فإن رأى أنه يذيب الذهب خوصم في أمر مكروه ووقع في ألسنة الناس. (ومن رأى) أنه أعطى قطعة ذهب كبيرة فإنه ينال سلطاناً ورياسة وإن رأى أنه وجد ذهباً مكسراً أو دنانير صحاحاً فإنه يرى وجه الملك ويرجع منه سالماً فإن رأى أنه سبك ذهباً نال شراً وهلاكاً ومن رأى أن بيته من ذهب أصابه حريق. (ومن رأى) أن يديه من ذهب بطلتا وصارتا بلا حركة. (ومن رأى) أن عينيه من ذهب عمي بصره. (ومن رأى) أن عليه قلادة من ذهب أو فضة أو خرز أو جوهر ولى ولاية وتقلد أمانة والذهب تدل رؤيته على الأفراح والأرزاق والأعمال الصالحة وذهاب الهموم وعلى الأزواج والأولاد والعلم والهدى وعلى ما يعمل منه أيضاً من حلل أو حلى — dhahab in a dream: a detestable matter and loss of property; its bracelet, worn: an inheritance falls into the hand; wearing anything of gold: he marries into people unfit for him; an ingot: money gone or sorrow in proportion to the gold, or the ruler's anger and a fine; melting it: a dispute in a detestable matter and the tongues of the people; a large piece given: sultanate and leadership; broken gold or sound dinars: the ruler's face, and a safe return; minting: evil and perdition; a house of gold: fire; hands of gold: paralyzed, without motion; eyes of gold: blinded sight; a necklace of gold, silver, beads or gems: authority and a trusteeship; and the vision of gold: joys, provisions, good deeds, the departure of worries, wives, children, knowledge, guidance — and whatever ornaments are made from it."</p>
@@ -114,8 +170,10 @@ nav.top{font-size:14px;margin-bottom:32px;color:var(--soft)}
 
 <div class="note"><p>This page reports what two classical texts and one Chinese tradition record say about dreams of gold, and what adjacent published research can see. It is not a prediction, a financial, medical or religious ruling, and no dream book — classical or modern — settles what a dream means for the person who had it. If this dream unsettled you, note the one move every tradition here makes in its own form: the metal is judged by what it becomes — inheritance or loss, crown or scandal — not by what it is.</p></div>
 
-<section style="border-top:1px solid var(--line);margin-top:40px;padding-top:20px"><h2 style="font-size:18px;font-weight:400">Related questions</h2><ul style="list-style:none;padding:0"><li style="padding:8px 0;border-bottom:1px solid var(--line)"><a href="/dream/wedding/">Dreaming of a wedding — the entry that shares the incompatible-marriage clause</a></li><li style="padding:8px 0;border-bottom:1px solid var(--line)"><a href="/dream/kaaba/">The Kaaba — the one symbol both books also gloss as a marrying-off</a></li><li style="padding:8px 0;border-bottom:1px solid var(--line)"><a href="/dream/hair/">Dreaming of hair falling out — the newborn's hair weighed in gold, the compilation's own ritual entry</a></li><li style="padding:8px 0;border-bottom:1px solid var(--line)"><a href="/dream/snake/">Snake bite dream: disgrace or windfall</a></li><li style="padding:8px 0;border-bottom:1px solid var(--line)"><a href="/dream/blood/">Blood in a dream — the unlawful-money ledger this page's gold clause shares</a></li><li style="padding:8px 0;border-bottom:1px solid var(--line)"><a href="/dream/water/">Water dreams: fitna or fortune</a></li><li style="padding:8px 0;border-bottom:1px solid var(--line)"><a href="/dream/teeth-falling-out/">Teeth falling out dream — the classic page that started this site</a></li></ul></section>
-<footer>
+<section style="border-top:1px solid var(--line);margin-top:40px;padding-top:20px"><h2 id="related-questions" style="font-size:18px;font-weight:400">Related questions</h2><ul style="list-style:none;padding:0"><li style="padding:8px 0;border-bottom:1px solid var(--line)"><a href="/dream/wedding/">Dreaming of a wedding — the entry that shares the incompatible-marriage clause</a></li><li style="padding:8px 0;border-bottom:1px solid var(--line)"><a href="/dream/kaaba/">The Kaaba — the one symbol both books also gloss as a marrying-off</a></li><li style="padding:8px 0;border-bottom:1px solid var(--line)"><a href="/dream/hair/">Dreaming of hair falling out — the newborn's hair weighed in gold, the compilation's own ritual entry</a></li><li style="padding:8px 0;border-bottom:1px solid var(--line)"><a href="/dream/snake/">Snake bite dream: disgrace or windfall</a></li><li style="padding:8px 0;border-bottom:1px solid var(--line)"><a href="/dream/blood/">Blood in a dream — the unlawful-money ledger this page's gold clause shares</a></li><li style="padding:8px 0;border-bottom:1px solid var(--line)"><a href="/dream/water/">Water dreams: fitna or fortune</a></li><li style="padding:8px 0;border-bottom:1px solid var(--line)"><a href="/dream/teeth-falling-out/">Teeth falling out dream — the classic page that started this site</a></li></ul></section>
+</article></main>
+</div>
+\1>
 <p>Teeth Dream Meaning · <a href="/">Home</a> · <a href="/dream/kaaba/">Kaaba dream</a> · <a href="/disclaimer/">Disclaimer</a></p>
 </footer>
 </div>

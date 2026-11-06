@@ -16,35 +16,91 @@
 <title>Dreaming of a Wedding: What the Two Arabic Books Say</title>
 <meta name="description" content="Marriage dream: God's care, then debt, office, trade. The two Arabic books mirror clause by clause; death reads as wedding, wedding as death.">
 <style>
-:root{--ink:#1a1a1a;--paper:#fdfcf9;--accent:#7a5c2e;--line:#e4ddcf;--soft:#6b6357}
+:root{--ink:#1a1a1a;--paper:#fdfcf9;--accent:#7a5c2e;--line:#e4ddcf;--soft:#6b6357;--card:#f9f5f0}
 *{margin:0;padding:0;box-sizing:border-box}
 body{font-family:Georgia,'Times New Roman',serif;background:var(--paper);color:var(--ink);line-height:1.75}
-.wrap{max-width:720px;margin:0 auto;padding:48px 24px}
-h1{font-size:clamp(28px,5vw,38px);font-weight:400;line-height:1.25;margin-bottom:12px}
-.lede{font-size:18px;color:#333;margin-bottom:28px}
+.wrap{max-width:1000px;margin:0 auto;padding:40px 24px 56px}
+.cols{display:grid;grid-template-columns:190px minmax(0,1fr);gap:48px}
+@media(max-width:860px){.cols{grid-template-columns:1fr;gap:0}}
+.top{display:flex;justify-content:space-between;align-items:baseline;gap:20px;
+     border-bottom:2px solid var(--ink);padding-bottom:20px;margin-bottom:36px}
+.top .brand{font-size:16.5px}
+.top .brand a{color:var(--ink);text-decoration:none;font-weight:700}
+.top .brand em{color:#555;font-weight:400}
+.topnav{font-family:Helvetica,Arial,sans-serif;font-size:13.5px;flex-shrink:0}
+.topnav a{color:#555;text-decoration:none}
+.topnav a:hover{color:var(--accent);text-decoration:underline}
+.topnav span{color:#bbb;margin:0 5px}
+aside{position:sticky;top:24px;align-self:start;font-size:15px}
+aside .lbl{font-weight:700;margin-bottom:12px}
+aside ul{list-style:none}
+aside li{margin-bottom:11px}
+aside a{color:#555;text-decoration:none;line-height:1.4;display:block}
+aside a:hover{color:var(--accent);text-decoration:underline}
+@media(max-width:860px){
+  aside{position:static;border:1px solid var(--line);border-radius:6px;background:var(--card);padding:16px 20px;margin-bottom:34px}
+}
+article{max-width:680px}
+h1{font-size:clamp(28px,4.5vw,38px);font-weight:400;line-height:1.25;margin-bottom:12px}
+.lede{font-size:18px;color:#333;margin-bottom:24px}
+.tldr{background:#faf5ed;border:1px solid #e0d9d0;border-radius:4px;padding:18px 22px;margin:0 0 28px}
+.tldr strong{display:block;font-size:13.5px;letter-spacing:.4px;text-transform:uppercase;color:var(--accent);margin-bottom:8px;font-family:Helvetica,Arial,sans-serif}
+.tldr p{font-size:15.5px;line-height:1.65;margin-bottom:10px}
+.tldr p:last-child{margin-bottom:0}
 h2{font-size:22px;font-weight:400;margin:44px 0 16px}
 h3{font-size:17px;font-weight:700;margin:28px 0 8px}
 p{margin-bottom:16px}
-blockquote{border-left:3px solid var(--accent);padding:12px 20px;margin:16px 0 20px;background:#f7f3ea;font-style:italic}
-blockquote p:last-child{margin-bottom:0}
-blockquote[dir="rtl"]{font-style:normal;font-size:17px;text-align:right;border-left:0;border-right:3px solid var(--accent)}
-.loc{font-family:Menlo,Consolas,monospace;font-size:12.5px;color:var(--soft);margin:-8px 0 24px}
 .qa{border-bottom:1px solid var(--line);padding:18px 0}
 .qa h3{margin:0 0 8px}
 .qa p:last-child{margin-bottom:0}
-.note{background:#f5f1e6;border:1px solid var(--line);padding:16px 20px;font-size:14.5px;color:var(--soft);margin:28px 0}
-footer{border-top:1px solid var(--line);margin-top:56px;padding-top:24px;color:var(--soft);font-size:14px}
+.cites{margin:24px 0 0;border-top:2px solid var(--ink)}
+.cite-hd{display:grid;grid-template-columns:minmax(0,1fr) 160px;gap:20px;padding:8px 0;
+         font-family:Helvetica,Arial,sans-serif;font-size:11px;letter-spacing:.8px;text-transform:uppercase;color:#999}
+.cite-row{display:grid;grid-template-columns:minmax(0,1fr) 160px;gap:20px;
+          padding:16px 0;border-bottom:1px solid var(--line)}
+.cite-row .txt{font-size:16px;font-style:italic;color:#2e2a24;line-height:1.7}
+.cite-row .txt p{margin-bottom:0}
+.cite-row .src{font-size:13px;color:#777;align-self:start;line-height:1.5}
+.cite-note{font-size:14.5px;color:#555;margin:14px 0 28px}
+@media(max-width:560px){.cite-row{grid-template-columns:1fr;gap:6px}.cite-hd{grid-template-columns:1fr}.cite-hd .src-hd{display:none}}
+.ar{font-size:16.5px;color:#3a362f;direction:rtl;text-align:right;line-height:2;margin:10px 0 0;font-style:normal}
+/* fallbacks for unpaired legacy elements */
+blockquote{border-left:3px solid var(--accent);padding:12px 20px;margin:16px 0 20px;background:#f7f3ea;font-style:italic}
+blockquote p:last-child{margin-bottom:0}
+.loc{font-family:Menlo,Consolas,monospace;font-size:12.5px;color:var(--soft);margin:-8px 0 24px}
+.note{background:#faf5ed;border:1px solid #e0d9d0;border-radius:4px;padding:16px 20px;font-size:14.5px;color:#555;margin:30px 0}
+.note p:last-child{margin-bottom:0}
+footer{border-top:1px solid var(--line);margin-top:48px;padding-top:20px;
+       font-family:Helvetica,Arial,sans-serif;font-size:13px;color:#777;grid-column:1 / -1}
+footer a{color:#777;text-decoration:none}
+footer a:hover{color:var(--accent)}
+footer span{color:#bbb;margin:0 5px}
 a{color:var(--accent)}
-nav.top{font-size:14px;margin-bottom:32px;color:var(--soft)}
-.src{font-size:14px;color:var(--soft)}
+.rel ul{list-style:none;padding:0}
+.rel li{padding:8px 0;border-bottom:1px solid var(--line)}
 </style>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "author": {"@type": "Organization", "name": "Teeth Dream Meaning", "url": "https://teethdreammeaning.com/"}, "datePublished": "2026-11-03", "dateModified": "2026-11-03", "publisher": {"@type": "Organization", "name": "Teeth Dream Meaning", "url": "https://teethdreammeaning.com/"},  "headline": "Dreaming of a Wedding: What the Two Arabic Books Actually Say", "url": "https://teethdreammeaning.com/dream/wedding/", "inLanguage": "en", "about": {"@type": "Thing", "name": "dream interpretation"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "author": {"@type": "Organization", "name": "Teeth Dream Meaning", "url": "https://teethdreammeaning.com/"}, "datePublished": "2026-11-03", "dateModified": "2026-11-06", "publisher": {"@type": "Organization", "name": "Teeth Dream Meaning", "url": "https://teethdreammeaning.com/"},  "headline": "Dreaming of a Wedding: What the Two Arabic Books Actually Say", "url": "https://teethdreammeaning.com/dream/wedding/", "inLanguage": "en", "about": {"@type": "Thing", "name": "dream interpretation"}}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What does it mean to dream about getting married?", "acceptedAnswer": {"@type": "Answer", "text": "Both classical Arabic books open on the same side: marriage in a dream represents the providence of God and care for His servants (the Ibn Sirin compilation, printed p. 266) — and in Al-Nabulsi, the same first line: zawaaj in a dream indicates God's care (shamela p. 148, printed 148). Then both books turn: it also means imprisonment, indebtedness, sorrow, distress, depression, carrying a liability, or striving for a high position. What you were married to, in other words, is not a person in these books — it is a state: care, debt, office, or a trade."}}, {"@type": "Question", "name": "What does it mean if the bride is a stranger in the dream?", "acceptedAnswer": {"@type": "Answer", "text": "Both books read the unseen or unknown bride the same way, in the same slot of the entry. The compilation: marrying an unknown woman you could not see denotes the nearing of death, or moving from an old house into a new one. Al-Nabulsi: if he married an unknown woman or saw no woman at all, it indicates the approaching of the term and a journey from one dwelling to another. For a sick dreamer both add the blunt clause: a sick woman marrying a man she does not recognize may die of her illness (compilation); the sick man who marries without seeing or being told her name dies (Al-Nabulsi)."}}, {"@type": "Question", "name": "What does a wedding with music and dancing mean in the dream books?", "acceptedAnswer": {"@type": "Answer", "text": "The books split here, and the split runs against the folk reading. The compilation's Wedding entry: a bridegroom on his wedding night accompanied by musicians and dancers means he may die in that place (printed p. 473). Al-Nabulsi, on the same feature — a wedding procession in the customary way (zifaf) — reads an office, or a good reputation raised high (shamela 145). One book hears the music as a funeral march; the other hears it as a promotion. The Chinese book goes with the ominous side: seeing a marriage or a mourning, it says, is inauspicious."}}, {"@type": "Question", "name": "What does it mean to marry a deceased person in a dream?", "acceptedAnswer": {"@type": "Answer", "text": "A rare agreement, one mirror-image pair. A man marrying a dead woman: the compilation says he will revive a profitable project he had earlier abandoned; Al-Nabulsi says he will come by an abandoned, desperate affair — with a yardstick attached: how much he gets depends on the beauty of the woman, and if he consummates the marriage he gains more than if he does not. A woman marrying a dead man flips negative in both: she will become lost and impoverished (compilation); her ties scatter and she falls into need (Al-Nabulsi)."}}, {"@type": "Question", "name": "Does death mean marriage in these dream books?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, and the logic runs both directions with the same mechanism. The compilation's Death entry: death in a dream also signifies marriage, because the deceased is washed and perfumed and a bridegroom bathes and anoints himself with perfume on his wedding day (printed p. 111). Al-Nabulsi, a thousand years later, prints the same verdict with the same reason in one line: death, unrestricted, is marriage, because the dead need perfume and washing, like the one who marries (shamela 344, printed 347). And the Wedding entry runs the reverse conversion: musicians and dancers at your wedding may mean death in that place."}}, {"@type": "Question", "name": "What does the Chinese Zhou Gong book say about wedding dreams?", "acceptedAnswer": {"@type": "Answer", "text": "One verdict line, not a clause machine. The received Zhou Gong text, chapter 14 (couples, pregnancy, intercourse): seeing a marriage or mourning is inauspicious, and a couples' banquet means parting. The older Dunhuang recension adds a neutral one: seeing a man take a wife means a change. There is no relative-by-relative mapping, no trade correspondence, no beauty yardstick — the Chinese book grades the event, the Arabic books parse it."}}, {"@type": "Question", "name": "What does dream research say about wedding and marriage dreams?", "acceptedAnswer": {"@type": "Answer", "text": "Empirical dream research has never coded the wedding as a symbol — no published study measures what dreaming of a marriage 'means.' What it does measure is the people: in an 11-year, 5,665-dream series, the dreamer's romantic partner appeared in about 20% of dreams during the relationship periods (Schredl & Reinhard, Dreaming 22(4):223-229, 2012, DOI 10.1037/a0030252). And in a sample of 667 adults, couples who shared their dreams more often reported more relationship intimacy (Olsen, Schredl & Carlsson, Dreaming 23(4):245-255, 2013, DOI 10.1037/a0033392). Research counts who shows up; the books assign what it stands for."}}]}</script>
 </head>
 <body>
 <div class="wrap">
-<nav class="top"><a href="/">Teeth Dream Meaning</a> · classical sources, checked page by page</nav>
+<div class="top">
+  <div class="brand"><a href="/">Teeth Dream Meaning</a> <em>· classical sources, checked page by page</em></div>
+  <nav class="topnav"><a href="/about/">About</a><span>·</span><a href="/disclaimer/">Disclaimer</a><span>·</span><a href="/about/">Sources</a></nav>
+</div>
 
+<div class="cols">
+<aside>
+<div class="lbl">On this page</div>
+<ul>
+<li><a href="#the-finding-a-thousand-year-mirror-claus">The finding: a thousand-year mirror, clause for clause</a></li>
+<li><a href="#the-entries-briefly">The entries, briefly</a></li>
+<li><a href="#what-modern-research-adds-and-what-it-do">What modern research adds — and what it doesn&#x27;t</a></li>
+<li><a href="#sources-all-passages-checked-against-the">Sources (all passages checked against the cited pages)</a></li>
+<li><a href="#related-questions">Related questions</a></li>
+</ul>
+</aside>
+<main><article>
 <h1>Dreaming of a Wedding or Marriage: What It Means</h1>
 <p class="lede">Dreaming of a wedding is read by both classical Arabic books as a dream about <strong>what a commitment costs, not whom you love</strong>. The <em>Ibn Sirin</em> compilation and Al-Nabulsi open with the same line — marriage in a dream represents God's care for you — and in the same breath the same second line: it also means imprisonment, debt, sorrow, carrying a liability, or chasing a high office. From there both books run the same machine clause by clause: a known wife means the duties you can carry; an unknown or unseen bride means your term drawing near, or moving house; a dead wife means an abandoned project revived; and music and dancing at your own wedding means death in that place — in one of the two books.</p>
 
@@ -85,35 +141,35 @@ nav.top{font-size:14px;margin-bottom:32px;color:var(--soft)}
 <p>Both books keep the sex-reveal reading, in the same two clauses: the compilation says a pregnant woman marrying "will give birth to a girl," and seeing her wedding night means "she will beget a son." Al-Nabulsi: she delivers a girl — and if she was dressed up like a bride, a boy. A mother with a son who dreams she married, both books add, means she marries off her son.</p>
 </div>
 
-<h2>The finding: a thousand-year mirror, clause for clause</h2>
+<h2 id="the-finding-a-thousand-year-mirror-claus">The finding: a thousand-year mirror, clause for clause</h2>
 <p>Set the two entries side by side and the order of clauses matches: care-of-God, then captivity and debt, known wife = duties you can carry, unknown wife = the term and a move between dwellings, fit-for-office = you get the office, bare-desire marriage = a covenant with God, customary procession = rank or good name, then "marriage is interpreted by the trade," wife-dies = a job that pays only toil, adulteress = you are an adulterer, sharp-tongued wife = a heavy shackle, dead wife = the abandoned affair revived, mother given in marriage = the house sold, pregnant woman = a girl, wedding night = a boy, son's mother = marries off the son, unwed and wed women alike = good, woman-on-dead-man = scattered and poor, scholar's daughter = prosperity, mahram = ties severed or rejoined. Al-Nabulsi (d. 1731) wrote a millennium after the material attributed to Ibn Sirin — and the compilation's English and his Arabic run the same machine in the same order. The differences are where each book adds a room: the compilation alone reads the witnesses-only ceremony as a covenant with God and prints a whole separate Wedding entry about musicians and death; Al-Nabulsi alone prints the commercial variants — marrying a Jewess is a trade heavy with sin, a bathhouse attendant marrying your wife sends you a fever, someone marrying a woman and transferring her to you means money from her husband, and marrying a dog means owning a lowly affair.</p>
 
 <p>And then the two books do something the folk summaries never repeat: they read <strong>death as marriage and marriage as death with one shared mechanism</strong>. The compilation, in its Death entry: "Death in a dream also signifies marriage, for a deceased person is washed and perfumed, and a bridegroom also takes a bath and anoints himself with perfumes on his wedding day." Al-Nabulsi, one line, same reason: death, considered at large, is marriage, because the dead need perfume and washing, like the one who marries. The reverse conversion lives in the Wedding entry — musicians, dancers, bridegroom, death in that place. The books are not saying wedding dreams are bad news. They are saying the ceremony is a symbol of the <em>transition itself</em> — washed, perfumed, dressed, moved from one house to another — and death and marriage are two exits from the same door.</p>
 
-<h2>The entries, briefly</h2>
+<h2 id="the-entries-briefly">The entries, briefly</h2>
 <p class="src">The Arabic side comes from two books: the compiled English dictionary attributed to Ibn Sirin (Pearl Publishing House, 1992 — "Marriage" entry printed pp. 266–267, "Wedding" printed p. 473, "Bride" printed p. 57, "Death" printed p. 111, "Officiant" printed p. 309, "Dower" printed p. 125, "Wife" printed p. 475, per the book's own end-of-volume page index and printed running heads) and the Arabic original of Al-Nabulsi's <em>Ta'tir al-Anam</em>, whose (زواج) headword sits at shamela.ws/book/1217/145 (printed p. 148, باب الزاي). The Chinese side is one verdict line: the received Zhou Gong book, ch. 14, 见嫁聚及孝主凶 — "seeing a marriage or mourning: inauspicious" (the printed 聚 there is the block-cutting variant of 娶; modern reprints cite the line as 见嫁娶及孝). One sample of each Arabic book, translated, then the full checked passages are in the sources section at the bottom.</p>
 
-<blockquote>
-<p>"Marriage in a dream represents the providence of God Almighty and care for His servants. Marriage in a dream also means imprisonment, indebtedness, sorrow, distress, depression, carrying a liability, or endeavoring to achieve a high ranking position."</p>
-</blockquote>
-<p class="loc">Ibn Seerin's Dictionary of Dreams (Al-Akili compilation, Pearl 1992) — "Marriage," printed p. 266. Translated/compiled English.</p>
-
-<blockquote dir="rtl" lang="ar">
-<p>(زواج) في المنام يدل على العناية من الله تعالى وربما دل الزواج على الأسر والدين والغم والهم والدخول في الضمان أو السعي في تولية المناصب الجليلة</p>
-</blockquote>
-<p class="loc">Al-Nabulsi, Ta'tir al-Anam — shamela.ws/book/1217/145 (printed p. 148), the headword line, verbatim: marriage indicates God's care — and perhaps captivity, debt, grief, worry, entering a guarantee, or pursuing grand offices.</p>
-
-<blockquote>
-<p>"Death in a dream also signifies marriage, for a deceased person is washed and perfumed, and a bridegroom also takes a bath and anoints himself with perfumes on his wedding day."</p>
-</blockquote>
-<p class="loc">Same compilation — "Death" entry, printed p. 111. Al-Nabulsi prints the same verdict and the same reason at shamela.ws/book/1217/344 (printed p. 347); Arabic verbatim in the sources section.</p>
-
+<div class="cites">
+<div class="cite-hd"><div>Text</div><div class="src-hd">Source</div></div>
+<div class="cite-row">
+  <div class="txt"><p>"Marriage in a dream represents the providence of God Almighty and care for His servants. Marriage in a dream also means imprisonment, indebtedness, sorrow, distress, depression, carrying a liability, or endeavoring to achieve a high ranking position."</p></div>
+  <div class="src">Ibn Seerin's Dictionary of Dreams (Al-Akili compilation, Pearl 1992) — "Marriage," printed p. 266. Translated/compiled English.</div>
+</div>
+<div class="cite-row">
+  <div class="txt"><p class="ar">(زواج) في المنام يدل على العناية من الله تعالى وربما دل الزواج على الأسر والدين والغم والهم والدخول في الضمان أو السعي في تولية المناصب الجليلة</p></div>
+  <div class="src">Al-Nabulsi, Ta'tir al-Anam — shamela.ws/book/1217/145 (printed p. 148), the headword line, verbatim: marriage indicates God's care — and perhaps captivity, debt, grief, worry, entering a guarantee, or pursuing grand offices.</div>
+</div>
+<div class="cite-row">
+  <div class="txt"><p>"Death in a dream also signifies marriage, for a deceased person is washed and perfumed, and a bridegroom also takes a bath and anoints himself with perfumes on his wedding day."</p></div>
+  <div class="src">Same compilation — "Death" entry, printed p. 111. Al-Nabulsi prints the same verdict and the same reason at shamela.ws/book/1217/344 (printed p. 347); Arabic verbatim in the sources section.</div>
+</div>
+</div>
 <div class="note"><p>Zhou Gong, stated plainly: the received Chinese dream book carries no clause machine for marriage — one verdict line in ch. 14 (marriage or mourning = inauspicious; a couples' banquet = parting), and the older Dunhuang recension adds a neutral line (seeing a man take a wife = a change). Both are quoted at chapter locations in the sources section; nothing else is claimed for the Chinese side.</p></div>
 
-<h2>What modern research adds — and what it doesn't</h2>
+<h2 id="what-modern-research-adds-and-what-it-do">What modern research adds — and what it doesn't</h2>
 <p>No study in the empirical dream literature codes the wedding as a symbol; there is no published percentage of dreams that contain ceremonies, no research verdict on what marrying in a dream "means." What the research does measure is the people those books turn marriages into. Schredl &amp; Reinhard (<em>Dreaming</em> 22(4):223–229, 2012, DOI 10.1037/a0030252) analyzed a dream series of 5,665 dreams kept over 11 years and found the dreamer's romantic partner appeared in about 20% of the dreams during the relationship periods, declining after separation — the continuity hypothesis working on one specific bond. Olsen, Schredl &amp; Carlsson (<em>Dreaming</em> 23(4):245–255, 2013, DOI 10.1037/a0033392, N = 667 adults) found couples who shared dreams with each other more often reported greater relationship intimacy, women recalled and shared more dreams than men, and dreams were shared mainly with the partner and mainly for entertainment. That is the honest line to draw under this page's mirror: the books ask what the bride stood for; the research asks who actually shows up, and how often — and finds the partner, roughly one dream in five.</p>
 
-<h2>Sources (all passages checked against the cited pages)</h2>
+<h2 id="sources-all-passages-checked-against-the">Sources (all passages checked against the cited pages)</h2>
 <div class="src">
 <p><strong>Ibn Sirin compilation — "Marriage" entry, printed pp. 266–267</strong> (Ibn Seerin's Dictionary of Dreams, compiled by Muhammad M. Al-Akili, Pearl Publishing House 1992, ISBN 1879405032; a later compilation attributed to the 8th-century scholar, not his autograph text; the book's own page index lists Marriage at 266): "Marriage: (Cage; Digging a grave; Duel; Golden cage; Pearl; Sanctuary; Silver cage) Marriage in a dream represents the providence of God Almighty and care for His servants. Marriage in a dream also means imprisonment, indebtedness, sorrow, distress, depression, carrying a liability, or endeavoring to achieve a high ranking position. If one marries a known woman in his dream, it means that he will endeavor to satisfy the normal responsibilities of a husband. If one marries an unknown woman, and if he could not see her in his dream, it denotes the nearing of his death, or it could mean moving from an old house into a new one. If a sick woman sees herself getting married to a man she does not recognize or know his name in a dream, it means that she may die from her illness. If the man who sees himself getting married in the dream qualifies, it means that he will attain a high ranking job or a suitable position. If one's wedding ceremony is made with witnesses only in the dream, it means that he has made a covenant with God Almighty. If he performs a traditional wedding ceremony with its celebrations and festivities in the dream, it means a new job, or it could mean acquiring fame, or becoming renowned for one's good reputation or character. Marriage in a dream is also interpreted in association with a trade. If one marries a woman who dies shortly after her wedding in the dream, it means that he will perform a job that earns him nothing but hard labor, toiling and stress. If one marries an adulteress in a dream, it means that he is an adulterer. If one marries a vicious, aggressive or a dominating wife in a dream, it means that his movements will be hampered with various restrictions. If one marries a deceased woman in a dream, it means that he will revive a profitable project he had earlier abandoned. If a man offers his mother in marriage to one of his friends in a dream, it means that he will sell his house. If a pregnant woman sees herself getting married in a dream, it means that she will give birth to a girl. If she sees herself in her wedding night in a dream, it means that she will beget a son. If a mother who has a son sees herself getting married in a dream, it means that she will marry off her son. In general, the marriage of a married woman, or of an unwed woman in a dream means benefits. If a woman marries a deceased man in a dream, it means that she will become lost and impoverished. If a married man sees himself getting married to a second woman in a dream, it means profits. To marry the daughter of a known man of knowledge in a dream means prosperity. If a sick woman marries a man of knowledge in her dream, it means recovering from her illness. If a man sees himself marrying a living relative who is in a degree of consanguinity that precludes such a marriage in a dream, it means that he will sever his ties with such a relative, or with her family. Otherwise, if that relative is already dead, it means that he will contact her immediate relatives and establish a friendly relationship with them. (Also see Cage; Duel; Sanctuary; Wife; Yoke)"</p>
 <p><strong>Same compilation — "Marriage bond," printed p. 266</strong>: "To rescind one's bond of marriage in a dream means either death or dismissal from work. To revoke the bond of marriage in a dream also may mean selling a product for a term, requiring its return, or it may mean apostasy." <strong>"Wedding," printed p. 473</strong> (index confirms 473): "Wedding: If one sees himself as a bridegroom on his wedding night, accompanied with musicians and dancers in the dream, it means that he may die in that place. If one sees himself having marital intercourse with his bride, but could not see her or recognize her, nor is she named to him in the dream, it also means his death. If one sees and recognizes his bride, or if she is named as his bride in the dream, then it means acquiring wealth. (Also see Bride; Locksmith; Star)" <strong>"Bride," printed p. 57</strong>: "Bride: If one sees a bride on her wedding day, dressed in her beautiful robe, looking beautiful and adorned with flower in a dream, it means wealth in this world. If one sees himself as a bridegroom and could not see his bride or recognize her in the dream, or if she is not named or attributed to him in the dream, it means his death or that he may commit a murder. If one recognizes his bride, looks at her, and if she is named in the dream, it means that he will marry the same woman. If one sees himself getting married in a dream, it means that he will gain power equal to the position of that woman, her role, danger, her family's status, the meaning of her name, and her beauty." <strong>"Death," printed p. 111</strong> (index confirms Death 111; the entry spans pp. 110–114): "Death in a dream also signifies marriage, for a deceased person is washed and perfumed, and a bridegroom also takes a bath and anoints himself with perfumes on his wedding day." <strong>"Officiant," printed p. 309</strong>: "Officiant: (Wedding) An officiant in a dream means a wedding, a divorce, or he could represent a pimp, depending on the mental condition, or the type of work one who is seeing the dream performs." <strong>"Dower," printed p. 125</strong>: "Dower: (Bridal dower) If one gives a dower for an undefined purpose in his dream, it means that he will fulfill his obligatory duties or comply with a religious injunction." <strong>"Wife," printed p. 475</strong> (index confirms 475): "A wife in a dream represents a partner, an enemy, an unjust ruler, one's opponent, prosperity, a vehicle, earthly wealth, worldly pleasures, the combination of comfort and toiling, or she could mean honor, class, or whatever indication of personality or character the wife may stand for in the dream."</p>
@@ -124,8 +180,10 @@ nav.top{font-size:14px;margin-bottom:32px;color:var(--soft)}
 
 <div class="note"><p>This page reports what two classical texts and one Chinese tradition record say about dreams of weddings and marriages, and what adjacent published research can see. It is not a prediction, a medical or religious ruling, and no dream book — classical or modern — settles what a dream means for the person who had it. If this dream unsettled you, note the one clause every tradition here agrees on in some form: the ceremony stands for a transition, washed and perfumed, from one dwelling to another.</p></div>
 
-<section style="border-top:1px solid var(--line);margin-top:40px;padding-top:20px"><h2 style="font-size:18px;font-weight:400">Related questions</h2><ul style="list-style:none;padding:0"><li style="padding:8px 0;border-bottom:1px solid var(--line)"><a href="/dream/dead-person-resurrected/">A dead person coming back to life — the death entry that carries the wedding clause</a></li><li style="padding:8px 0;border-bottom:1px solid var(--line)"><a href="/dream/kaaba/">The Kaaba — the one symbol both books also gloss as "a marrying-off"</a></li><li style="padding:8px 0;border-bottom:1px solid var(--line)"><a href="/dream/snake/">Snake bite dream: disgrace or windfall</a></li><li style="padding:8px 0;border-bottom:1px solid var(--line)"><a href="/dream/water/">Water dreams: fitna or fortune</a></li><li style="padding:8px 0;border-bottom:1px solid var(--line)"><a href="/dream/teeth-falling-out/">Teeth falling out dream — the classic page that started this site</a></li></ul></section>
-<footer>
+<section style="border-top:1px solid var(--line);margin-top:40px;padding-top:20px"><h2 id="related-questions" style="font-size:18px;font-weight:400">Related questions</h2><ul style="list-style:none;padding:0"><li style="padding:8px 0;border-bottom:1px solid var(--line)"><a href="/dream/dead-person-resurrected/">A dead person coming back to life — the death entry that carries the wedding clause</a></li><li style="padding:8px 0;border-bottom:1px solid var(--line)"><a href="/dream/kaaba/">The Kaaba — the one symbol both books also gloss as "a marrying-off"</a></li><li style="padding:8px 0;border-bottom:1px solid var(--line)"><a href="/dream/snake/">Snake bite dream: disgrace or windfall</a></li><li style="padding:8px 0;border-bottom:1px solid var(--line)"><a href="/dream/water/">Water dreams: fitna or fortune</a></li><li style="padding:8px 0;border-bottom:1px solid var(--line)"><a href="/dream/teeth-falling-out/">Teeth falling out dream — the classic page that started this site</a></li></ul></section>
+</article></main>
+</div>
+\1>
 <p>Teeth Dream Meaning · <a href="/">Home</a> · <a href="/dream/dead-person-resurrected/">Dead person coming back to life — recovery, not haunting</a> · <a href="/disclaimer/">Disclaimer</a></p>
 </footer>
 </div>

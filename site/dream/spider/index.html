@@ -16,35 +16,91 @@
 <title>Dreaming of a Spider: What It Means in the Dream Books</title>
 <meta name="description" content="Spider in a dream: the two Arabic books read a weak, perfidious man or a cursed woman; the oldest Chinese dream book reads joy. Every clause checked to its page.">
 <style>
-:root{--ink:#1a1a1a;--paper:#fdfcf9;--accent:#7a5c2e;--line:#e4ddcf;--soft:#6b6357}
+:root{--ink:#1a1a1a;--paper:#fdfcf9;--accent:#7a5c2e;--line:#e4ddcf;--soft:#6b6357;--card:#f9f5f0}
 *{margin:0;padding:0;box-sizing:border-box}
 body{font-family:Georgia,'Times New Roman',serif;background:var(--paper);color:var(--ink);line-height:1.75}
-.wrap{max-width:720px;margin:0 auto;padding:48px 24px}
-h1{font-size:clamp(28px,5vw,38px);font-weight:400;line-height:1.25;margin-bottom:12px}
-.lede{font-size:18px;color:#333;margin-bottom:28px}
+.wrap{max-width:1000px;margin:0 auto;padding:40px 24px 56px}
+.cols{display:grid;grid-template-columns:190px minmax(0,1fr);gap:48px}
+@media(max-width:860px){.cols{grid-template-columns:1fr;gap:0}}
+.top{display:flex;justify-content:space-between;align-items:baseline;gap:20px;
+     border-bottom:2px solid var(--ink);padding-bottom:20px;margin-bottom:36px}
+.top .brand{font-size:16.5px}
+.top .brand a{color:var(--ink);text-decoration:none;font-weight:700}
+.top .brand em{color:#555;font-weight:400}
+.topnav{font-family:Helvetica,Arial,sans-serif;font-size:13.5px;flex-shrink:0}
+.topnav a{color:#555;text-decoration:none}
+.topnav a:hover{color:var(--accent);text-decoration:underline}
+.topnav span{color:#bbb;margin:0 5px}
+aside{position:sticky;top:24px;align-self:start;font-size:15px}
+aside .lbl{font-weight:700;margin-bottom:12px}
+aside ul{list-style:none}
+aside li{margin-bottom:11px}
+aside a{color:#555;text-decoration:none;line-height:1.4;display:block}
+aside a:hover{color:var(--accent);text-decoration:underline}
+@media(max-width:860px){
+  aside{position:static;border:1px solid var(--line);border-radius:6px;background:var(--card);padding:16px 20px;margin-bottom:34px}
+}
+article{max-width:680px}
+h1{font-size:clamp(28px,4.5vw,38px);font-weight:400;line-height:1.25;margin-bottom:12px}
+.lede{font-size:18px;color:#333;margin-bottom:24px}
+.tldr{background:#faf5ed;border:1px solid #e0d9d0;border-radius:4px;padding:18px 22px;margin:0 0 28px}
+.tldr strong{display:block;font-size:13.5px;letter-spacing:.4px;text-transform:uppercase;color:var(--accent);margin-bottom:8px;font-family:Helvetica,Arial,sans-serif}
+.tldr p{font-size:15.5px;line-height:1.65;margin-bottom:10px}
+.tldr p:last-child{margin-bottom:0}
 h2{font-size:22px;font-weight:400;margin:44px 0 16px}
 h3{font-size:17px;font-weight:700;margin:28px 0 8px}
 p{margin-bottom:16px}
-blockquote{border-left:3px solid var(--accent);padding:12px 20px;margin:16px 0 20px;background:#f7f3ea;font-style:italic}
-blockquote p:last-child{margin-bottom:0}
-blockquote[dir="rtl"]{font-style:normal;font-size:17px;text-align:right;border-left:0;border-right:3px solid var(--accent)}
-.loc{font-family:Menlo,Consolas,monospace;font-size:12.5px;color:var(--soft);margin:-8px 0 24px}
 .qa{border-bottom:1px solid var(--line);padding:18px 0}
 .qa h3{margin:0 0 8px}
 .qa p:last-child{margin-bottom:0}
-.note{background:#f5f1e6;border:1px solid var(--line);padding:16px 20px;font-size:14.5px;color:var(--soft);margin:28px 0}
-footer{border-top:1px solid var(--line);margin-top:56px;padding-top:24px;color:var(--soft);font-size:14px}
+.cites{margin:24px 0 0;border-top:2px solid var(--ink)}
+.cite-hd{display:grid;grid-template-columns:minmax(0,1fr) 160px;gap:20px;padding:8px 0;
+         font-family:Helvetica,Arial,sans-serif;font-size:11px;letter-spacing:.8px;text-transform:uppercase;color:#999}
+.cite-row{display:grid;grid-template-columns:minmax(0,1fr) 160px;gap:20px;
+          padding:16px 0;border-bottom:1px solid var(--line)}
+.cite-row .txt{font-size:16px;font-style:italic;color:#2e2a24;line-height:1.7}
+.cite-row .txt p{margin-bottom:0}
+.cite-row .src{font-size:13px;color:#777;align-self:start;line-height:1.5}
+.cite-note{font-size:14.5px;color:#555;margin:14px 0 28px}
+@media(max-width:560px){.cite-row{grid-template-columns:1fr;gap:6px}.cite-hd{grid-template-columns:1fr}.cite-hd .src-hd{display:none}}
+.ar{font-size:16.5px;color:#3a362f;direction:rtl;text-align:right;line-height:2;margin:10px 0 0;font-style:normal}
+/* fallbacks for unpaired legacy elements */
+blockquote{border-left:3px solid var(--accent);padding:12px 20px;margin:16px 0 20px;background:#f7f3ea;font-style:italic}
+blockquote p:last-child{margin-bottom:0}
+.loc{font-family:Menlo,Consolas,monospace;font-size:12.5px;color:var(--soft);margin:-8px 0 24px}
+.note{background:#faf5ed;border:1px solid #e0d9d0;border-radius:4px;padding:16px 20px;font-size:14.5px;color:#555;margin:30px 0}
+.note p:last-child{margin-bottom:0}
+footer{border-top:1px solid var(--line);margin-top:48px;padding-top:20px;
+       font-family:Helvetica,Arial,sans-serif;font-size:13px;color:#777;grid-column:1 / -1}
+footer a{color:#777;text-decoration:none}
+footer a:hover{color:var(--accent)}
+footer span{color:#bbb;margin:0 5px}
 a{color:var(--accent)}
-nav.top{font-size:14px;margin-bottom:32px;color:var(--soft)}
-.src{font-size:14px;color:var(--soft)}
+.rel ul{list-style:none;padding:0}
+.rel li{padding:8px 0;border-bottom:1px solid var(--line)}
 </style>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "author": {"@type": "Organization", "name": "Teeth Dream Meaning", "url": "https://teethdreammeaning.com/"}, "datePublished": "2026-11-05", "dateModified": "2026-11-05", "publisher": {"@type": "Organization", "name": "Teeth Dream Meaning", "url": "https://teethdreammeaning.com/"},  "headline": "Dreaming of a Spider: What the Two Arabic Books Actually Say", "url": "https://teethdreammeaning.com/dream/spider/", "inLanguage": "en", "about": {"@type": "Thing", "name": "dream interpretation"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "author": {"@type": "Organization", "name": "Teeth Dream Meaning", "url": "https://teethdreammeaning.com/"}, "datePublished": "2026-11-05", "dateModified": "2026-11-06", "publisher": {"@type": "Organization", "name": "Teeth Dream Meaning", "url": "https://teethdreammeaning.com/"},  "headline": "Dreaming of a Spider: What the Two Arabic Books Actually Say", "url": "https://teethdreammeaning.com/dream/spider/", "inLanguage": "en", "about": {"@type": "Thing", "name": "dream interpretation"}}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What does it mean to dream of a spider?", "acceptedAnswer": {"@type": "Answer", "text": "Both classical Arabic books open by reading the spider as a person, not an event. The Ibn Sirin compilation: a spider represents a malicious woman, or a weak, perfidious and a distant man. Al-Nabulsi: a cursed woman who deserts her husband's bed; whoever sees a spider sees a scheming man, weak and irresolute. Then both books add the other faces the same insect carries: a spider also stands for a weaver, an ascetic or a monk - and in the compilation, seeing one may mean meeting a pious and religious man, and the spider could even represent a pleasing wife."}}, {"@type": "Question", "name": "What does a spider web mean in a dream in these books?", "acceptedAnswer": {"@type": "Answer", "text": "Weaving a web in a dream means becoming weak - the compilation's clause. Al-Nabulsi grounds the same verdict in the Quran: the spider's house and its weaving are weakness and frailty, quoting the verse 'the weakest of houses is the spider's house' (29:41). Al-Nabulsi adds a trade clause the compilation lacks: the spider can also mean knowledge of weaving and tailoring."}}, {"@type": "Question", "name": "What does it mean if a spider hangs from the ceiling?", "acceptedAnswer": {"@type": "Answer", "text": "This is the one scene clause both books carry in the same shape. The compilation: if one sees a spider hanging down from the ceiling in a dream, it indicates a severe winter in that area. Al-Nabulsi: a spider seen falling from the ceilings is evidence of the severity of winter. A weather omen inside a person-symbol entry - neither book explains it away."}}, {"@type": "Question", "name": "What does the Chinese Zhou Gong book say about spider dreams?", "acceptedAnswer": {"@type": "Answer", "text": "The received Zhou Gong dream book in its 27-chapter form has no spider entry at all - this page states the absence rather than stretching nearby insect lines to fill it. Older material survives: the 10th-century encyclopedia Taiping Yulan quotes two spider-dream lines from an earlier Meng shu dream book - seeing a spider means joyous events on that day, and a second line ties the spider to a worry about a pregnant woman. Folk lore called the long-legged spider 'xiao-zi', little joy, whose arrival announced a visiting relative."}}, {"@type": "Question", "name": "What does dream research say about spider dreams?", "acceptedAnswer": {"@type": "Answer", "text": "No typical-theme survey has published a prevalence figure for spider dreams. The closest measured record is a single dreamer's diary of 8,420 dreams kept over 23 years: animals appeared in about 7% of the dreams, spiders 14 times, and spiders and snakes were the species most often tied to negative interactions - which the diarist had never handled in waking life, leading the author to invoke prepared fears rather than experience (Schredl, International Journal of Dream Research 6(1):59-64, 2013). Epidemiologically, the Swedish study behind the prepared-fear hypothesis (704 adults, random sample; PubMed 8561762) found animal phobia - the spider-and-snake category - in 12.1% of women and 3.3% of men; the widely quoted spider-specific figure is 3.5% point prevalence, a secondary citation of that study."}}]}</script>
 </head>
 <body>
 <div class="wrap">
-<nav class="top"><a href="/">Teeth Dream Meaning</a> · classical sources, checked page by page</nav>
+<div class="top">
+  <div class="brand"><a href="/">Teeth Dream Meaning</a> <em>· classical sources, checked page by page</em></div>
+  <nav class="topnav"><a href="/about/">About</a><span>·</span><a href="/disclaimer/">Disclaimer</a><span>·</span><a href="/about/">Sources</a></nav>
+</div>
 
+<div class="cols">
+<aside>
+<div class="lbl">On this page</div>
+<ul>
+<li><a href="#the-finding-two-books-mirroring-one-entr">The finding: two books mirroring, one entry arguing with itself</a></li>
+<li><a href="#the-entries-briefly">The entries, briefly</a></li>
+<li><a href="#what-modern-research-adds-and-what-it-do">What modern research adds — and what it doesn&#x27;t</a></li>
+<li><a href="#sources-all-passages-checked-against-the">Sources (all passages checked against the cited pages)</a></li>
+<li><a href="#related-questions">Related questions</a></li>
+</ul>
+</aside>
+<main><article>
 <h1>Dreaming of a Spider: What It Means</h1>
 <p class="lede">Both classical Arabic books read a spider in a dream first as a <strong>person, not an omen</strong>. The <em>Ibn Sirin</em> compilation: a spider represents "a malicious woman, or a weak, perfidious and a distant man." Al-Nabulsi: "a cursed woman who deserts her husband's bed." Then the entries widen in the same breath: the spider also stands for a weaver, an ascetic or a monk; seeing one may mean meeting a pious and religious man; the compilation even allows "a pleasing wife." Weaving a web means becoming weak; a spider hanging from the ceiling means a severe winter in that area. And the oldest surviving Chinese dream record flips the verdict — the old <em>Meng shu</em> fragments read seeing a spider as <strong>joyous events on that day</strong>.</p>
 
@@ -75,35 +131,35 @@ nav.top{font-size:14px;margin-bottom:32px;color:var(--soft)}
 <p>Stated plainly: <strong>the received Zhou Gong dream book — the 27-chapter text this site quotes everywhere else — carries no spider entry at all.</strong> We checked the corpus line by line; the word does not appear, and this page does not stretch its beetle or worm lines to fill the gap. Older Chinese material does survive, quoted inside the 10th-century encyclopedia <em>Taiping Yulan</em>: two lines from an earlier <em>Meng shu</em> dream book say that dreaming of a spider brings joyous events on that day — while a second line in the same quotation ties the spider to a worry about a pregnant woman. Same object, two verdicts, same book: exactly the structure the Arabic entries show. Folk lore kept the cheerful reading: the long-legged spider was called "little joy," and its arrival at a person announced a visiting relative.</p>
 </div>
 
-<h2>The finding: two books mirroring, one entry arguing with itself</h2>
+<h2 id="the-finding-two-books-mirroring-one-entr">The finding: two books mirroring, one entry arguing with itself</h2>
 <p>Set the two Arabic entries side by side and the clause order rhymes: cursed / malicious woman first, then the weak scheming man, then the weaver, then the ascetic or monk, and finally the ceiling clause and its severe winter. Al-Nabulsi (d. 1731) wrote a millennium after the material attributed to Ibn Sirin, and his Arabic and the compilation's English run the same machine — with each book holding one card the other does not: the compilation alone offers "a pleasing wife," and alone prices the bite through its separate Tarantula entry; Al-Nabulsi alone brands the spider "the sorceress woman," adds the weaving-trade clause, and quotes the Quran to prove the web is frailty. The deeper disagreement is inside each entry, not between them: the same paragraph that calls the spider a malicious woman calls it a pious man's counterpart a sentence later, and Al-Nabulsi's cursed woman who deserts her husband's bed shares one headword with the devout ascetic whose company you keep. These books are not deciding whether the spider is good or bad. They are saying the spider is a mask — and what wears it, woman, craftsman, monk or season, is the actual content of the dream.</p>
 
 <p>And the Chinese record adds the reversal no folk summary of "spider dream meaning" repeats: the oldest quoted dream book on the spider — older than the received Zhou Gong text, preserved only because an imperial encyclopedia copied it — reads the insect as <strong>joy arriving that day</strong>, while the Arabic books read it as a deceiver. And even that old Chinese dream book carries two lines that disagree with each other — joy that day, and a worry about a pregnancy. The long-legged "little joy" announces a guest; Al-Nabulsi's spider deserts a marital bed. Same eight legs, opposite door.</p>
 
-<h2>The entries, briefly</h2>
+<h2 id="the-entries-briefly">The entries, briefly</h2>
 <p class="src">The Arabic side comes from two books: the compiled English dictionary attributed to Ibn Sirin (Pearl Publishing House, 1992 — "Spider" entry printed p. 404, "Tarantula" entry printed p. 429, "Weaver" entry printed p. 473, per the book's own end-of-volume page index and printed running heads) and the Arabic original of Al-Nabulsi's <em>Ta'tir al-Anam</em>, whose (عنكبوت) headword begins at shamela.ws/book/1217/247 (printed p. 250, باب العين) and runs over onto shamela.ws/book/1217/248 (printed p. 251). The Chinese side is an honest absence in the received Zhou Gong book, plus two quoted lines of the older <em>Meng shu</em> preserved in the <em>Taiping Yulan</em> (juǎn 948). One sample of each book, translated, then the full checked passages in the sources section at the bottom.</p>
 
-<blockquote>
-<p>"Spider: In a dream, a spider represents a malicious woman, or a weak, perfidious and a distant man. A spider in a dream also represents a weaver, an ascetic or a monk. If one sees a spider in his dream, it may mean that he will meet a pious and a religious man. Weaving a web in a dream means becoming weak. A spider in a dream also could represent a pleasing wife. If one sees a spider hanging down from the ceiling in a dream, it indicates a severe winter in that area. (Also see Tarantula)"</p>
-</blockquote>
-<p class="loc">Ibn Seerin's Dictionary of Dreams (Al-Akili compilation, Pearl 1992) — "Spider," printed p. 404, full entry. Translated/compiled English.</p>
-
-<blockquote dir="rtl" lang="ar">
-<p>(عنكبوت) هو في المنام امرأة ملعونة تهجر فراش زوجها.</p>
-</blockquote>
-<p class="loc">Al-Nabulsi, Ta'tir al-Anam — shamela.ws/book/1217/247 (printed p. 250), the headword line, verbatim: the spider in a dream is a cursed woman who deserts her husband's bed.</p>
-
-<blockquote dir="rtl" lang="ar">
-<p>(ومن رأى) بيت العنكبوت ونسجها ضعف ووهن لقوله تعالى: {وإن أوهن البيوت لبيت العنكبوت} .</p>
-</blockquote>
-<p class="loc">Same book — shamela.ws/book/1217/248 (printed p. 251), the web clause verbatim: the spider's house and its weaving are weakness and frailty, because of the saying of the Most High — "and indeed the weakest of houses is the spider's house" (Quran 29:41, Surat al-Ankabut — "the Spider"; translation ours).</p>
-
+<div class="cites">
+<div class="cite-hd"><div>Text</div><div class="src-hd">Source</div></div>
+<div class="cite-row">
+  <div class="txt"><p>"Spider: In a dream, a spider represents a malicious woman, or a weak, perfidious and a distant man. A spider in a dream also represents a weaver, an ascetic or a monk. If one sees a spider in his dream, it may mean that he will meet a pious and a religious man. Weaving a web in a dream means becoming weak. A spider in a dream also could represent a pleasing wife. If one sees a spider hanging down from the ceiling in a dream, it indicates a severe winter in that area. (Also see Tarantula)"</p></div>
+  <div class="src">Ibn Seerin's Dictionary of Dreams (Al-Akili compilation, Pearl 1992) — "Spider," printed p. 404, full entry. Translated/compiled English.</div>
+</div>
+<div class="cite-row">
+  <div class="txt"><p class="ar">(عنكبوت) هو في المنام امرأة ملعونة تهجر فراش زوجها.</p></div>
+  <div class="src">Al-Nabulsi, Ta'tir al-Anam — shamela.ws/book/1217/247 (printed p. 250), the headword line, verbatim: the spider in a dream is a cursed woman who deserts her husband's bed.</div>
+</div>
+<div class="cite-row">
+  <div class="txt"><p class="ar">(ومن رأى) بيت العنكبوت ونسجها ضعف ووهن لقوله تعالى: {وإن أوهن البيوت لبيت العنكبوت} .</p></div>
+  <div class="src">Same book — shamela.ws/book/1217/248 (printed p. 251), the web clause verbatim: the spider's house and its weaving are weakness and frailty, because of the saying of the Most High — "and indeed the weakest of houses is the spider's house" (Quran 29:41, Surat al-Ankabut — "the Spider"; translation ours).</div>
+</div>
+</div>
 <div class="note"><p>Zhou Gong, stated plainly: the received Chinese dream book this site quotes chapter by chapter carries <strong>no spider entry</strong> — checked against the full 27-chapter corpus, zero occurrences. What the Chinese tradition does record sits in the older <em>Meng shu</em>, quoted in the <em>Taiping Yulan</em> (983 CE): seeing a spider means joyous events that day; a second quoted line reads it as a worry about a pregnant woman; and the encyclopedia's folk-lore citations call the long-legged spider "little joy," an arrival of kinsmen. All quoted at location in the sources section; nothing else is claimed for the Chinese side.</p></div>
 
-<h2>What modern research adds — and what it doesn't</h2>
+<h2 id="what-modern-research-adds-and-what-it-do">What modern research adds — and what it doesn't</h2>
 <p>No typical-theme survey has published a prevalence figure for dreams of spiders: the standard questionnaires (the 55-item Typical Dreams Questionnaire and its relatives) ask about being chased, falling, and teeth — not about species. The closest measured record is a single-case diary analyzed by Schredl (<em>International Journal of Dream Research</em> 6(1):59–64, 2013, DOI 10.11588/ijodr.2013.1.9609): 8,420 dreams recorded by one man over 23 years — animals present in about 7% of the dreams (577 of them), spiders appearing 14 times, and spiders and snakes topping the table of species involved in negative interactions (the spider was the most named species among dreams of killing or hurting an animal, and among fighting). The paper is explicit that these negative spider and snake contacts had no counterpart in the dreamer's waking life — he kept cats and a hamster, not arachnids — and attributes them to phylogenetic prepared fears rather than waking-life contact. The fear side is well measured, at the group level: in the Swedish community sample behind that hypothesis (704 adults aged 18–70, randomly drawn; abstract re-pulled today from PubMed 8561762), animal phobia — the category Fredrikson and colleagues' factor analysis puts spiders and snakes in, with spiders being the field's standard exemplar — had a point prevalence of 12.1% in women and 3.3% in men (Fredrikson et al., <em>Behaviour Research and Therapy</em> 34(1):33–39, 1996; the spider-specific 3.5% — 5.6% of women, 1.2% of men — is how that paper is quoted in later review literature and is reported here as a secondary figure, not as text we re-read from the primary table). Specific phobia overall runs at 7.4% lifetime across 22 countries, with a median onset age of 8 (Wardenaar et al., <em>Psychological Medicine</em> 47:1744–1760, 2017, PubMed 28222820 — abstract re-read today). One further paper belongs on a spider page by sheer symmetry: jumping-spider spiderlings cycle through regular bouts of retinal movement and leg curling during night rest — an REM sleep-like state in an invertebrate (Rößler et al., <em>PNAS</em> 119(33):e2204754119, 2022, PubMed 35939710) — a finding about the spider's own sleep, not about anyone's dream of it. That is the honest line under this page's mirror: research counts how often the insect appears and how many people fear it; the classical books assign what the mask is worn by — and neither layer contains a variable called "what the dream means."</p>
 
-<h2>Sources (all passages checked against the cited pages)</h2>
+<h2 id="sources-all-passages-checked-against-the">Sources (all passages checked against the cited pages)</h2>
 <div class="src">
 <p><strong>Ibn Sirin compilation — "Spider" entry, printed p. 404</strong> (Ibn Seerin's Dictionary of Dreams, compiled by Muhammad M. Al-Akili, Pearl Publishing House 1992, ISBN 1879405032; a later compilation attributed to the 8th-century scholar, not his autograph text; the book's own page index lists Spider at 404): "Spider: In a dream, a spider represents a malicious woman, or a weak, perfidious and a distant man. A spider in a dream also represents a weaver, an ascetic or a monk. If one sees a spider in his dream, it may mean that he will meet a pious and a religious man. Weaving a web in a dream means becoming weak. A spider in a dream also could represent a pleasing wife. If one sees a spider hanging down from the ceiling in a dream, it indicates a severe winter in that area. (Also see Tarantula)". Related entries, same compilation — "Tarantula," printed p. 429: "Tarantula: (Hairy spider; Spider) A tarantula in a dream represents a loathsome and an evil woman who interferes with people's business and damages their interests, or who destroys what they repair and denies having anything to do with their sufferings. In a dream, this interpretation is based on the legendary nervous disease, formerly believed to be caused by a poisonous bite of a tarantula. Thus, when this harmless hairy spider is seen in a dream, it also could represent a lethal enemy of a fierce sting, scowling, or a despising look. (Also see Spider)". — "Weaver," printed p. 473: "Weaver: (Knitting) In a dream, a weaver represents a problem solver, garments, travels, or hesitation. Seeing a weaver in a dream also may indicate the death of sick person, or lowering his corps into his grave."</p>
 <p><strong>Al-Nabulsi — (عنكبوت), shamela.ws/book/1217/247, printed p. 250, continuing at /248, printed p. 251</strong> (Ta'tir al-Anam fi Ta'bir al-Manam, Abd al-Ghani al-Nabulsi d. 1731 CE, Dar al-Fikr edition; باب العين; translation ours): "‏(عنكبوت) هو في المنام امرأة ملعونة تهجر فراش زوجها. (ومن رأى) عنكبوتاً فإنه يرى رجلاً مكايداً ضعيفاً متوانياً وقيل العنكبوت رجل نساج وقيل هو رجل عابد زاهد فمن أصاب عنكبوتاً صاحب رجلاً عابداً زاهداً. (ومن رأى) بيت العنكبوت ونسجها ضعف ووهن لقوله تعالى: {وإن أوهن البيوت لبيت العنكبوت} . والعنكبوت يدل على المرأة السحارة وربما دل على معرفة النسج والحياكة. (ومن رأى) العنكبوت ساقطاً من السقوف فذلك دليل على شدة الشتاء. — the spider in a dream: a cursed woman who deserts her husband's bed; whoever sees a spider sees a scheming man, weak and irresolute; it is said the spider is a weaver, and it is said he is a devout ascetic — whoever comes across a spider keeps the company of a devout ascetic; the spider's house and its weaving are weakness and frailty, for the saying of the Most High: 'and indeed the weakest of houses is the spider's house'; the spider also indicates the sorceress woman, and perhaps knowledge of weaving and needlework; and a spider seen falling from the ceilings is evidence of the severity of winter. (The headword sentence runs across the page break: p. 250 ends at مكايداً and p. 251 resumes at ضعيفاً.)</p>
@@ -113,8 +169,10 @@ nav.top{font-size:14px;margin-bottom:32px;color:var(--soft)}
 
 <div class="note"><p>This page reports what two classical Arabic texts, the received Chinese dream book (including its honest silence on the spider), and adjacent published research can see about dreams of spiders. It is not a prediction, a medical or religious ruling, and no dream book — classical or modern — settles what a dream means for the person who had it. If this dream unsettled you, note the one move every source on this page makes in its own form: the spider is read as whatever is wearing it — a person, a trade, a season, a guest — not as the animal itself.</p></div>
 
-<section style="border-top:1px solid var(--line);margin-top:40px;padding-top:20px"><h2 style="font-size:18px;font-weight:400">Related questions</h2><ul style="list-style:none;padding:0"><li style="padding:8px 0;border-bottom:1px solid var(--line)"><a href="/dream/snake/">Snake bite dream: disgrace or windfall — the other animal the research layer calls a prepared fear</a></li><li style="padding:8px 0;border-bottom:1px solid var(--line)"><a href="/dream/wedding/">Dreaming of a wedding — the book whose marriage entry shares the unfaithful-woman clause</a></li><li style="padding:8px 0;border-bottom:1px solid var(--line)"><a href="/dream/teeth-three-traditions/">Teeth dreams across the three traditions — how this page reads every symbol</a></li><li style="padding:8px 0;border-bottom:1px solid var(--line)"><a href="/dream/teeth-falling-out/">Teeth falling out dream — the classic page that started this site</a></li></ul></section>
-<footer>
+<section style="border-top:1px solid var(--line);margin-top:40px;padding-top:20px"><h2 id="related-questions" style="font-size:18px;font-weight:400">Related questions</h2><ul style="list-style:none;padding:0"><li style="padding:8px 0;border-bottom:1px solid var(--line)"><a href="/dream/snake/">Snake bite dream: disgrace or windfall — the other animal the research layer calls a prepared fear</a></li><li style="padding:8px 0;border-bottom:1px solid var(--line)"><a href="/dream/wedding/">Dreaming of a wedding — the book whose marriage entry shares the unfaithful-woman clause</a></li><li style="padding:8px 0;border-bottom:1px solid var(--line)"><a href="/dream/teeth-three-traditions/">Teeth dreams across the three traditions — how this page reads every symbol</a></li><li style="padding:8px 0;border-bottom:1px solid var(--line)"><a href="/dream/teeth-falling-out/">Teeth falling out dream — the classic page that started this site</a></li></ul></section>
+</article></main>
+</div>
+\1>
 <p>Teeth Dream Meaning · <a href="/">Home</a> · <a href="/dream/snake/">Snake dream</a> · <a href="/disclaimer/">Disclaimer</a></p>
 </footer>
 </div>
