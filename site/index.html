@@ -63,12 +63,14 @@ main h2{font-size:22px;font-weight:700;margin:44px 0 6px}
 a{color:var(--accent)}
 .coming{font-size:15.5px;color:#333;max-width:70ch}
 
-/* ---- other symbols: inline bullet list ---- */
+/* ---- other symbols: pill chips ---- */
 .syms{margin-top:36px;border-top:1px solid var(--line);padding-top:22px}
-.syms .lbl{font-family:Helvetica,Arial,sans-serif;font-size:13px;color:#777;margin-bottom:8px}
-.syms p{font-family:Helvetica,Arial,sans-serif;font-size:14px;color:#555;line-height:2}
-.syms a{color:#555;text-decoration:none}
-.syms a:hover{color:var(--accent);text-decoration:underline}
+.syms .lbl{font-family:Helvetica,Arial,sans-serif;font-size:13px;color:#777;margin-bottom:12px}
+.syms p{display:flex;flex-wrap:wrap;gap:10px}
+.syms a{font-family:Helvetica,Arial,sans-serif;font-size:14px;color:var(--accent);text-decoration:none;
+        border:1px solid var(--line);border-radius:999px;padding:7px 16px;background:var(--card);
+        display:inline-block;transition:border-color .15s,background .15s}
+.syms a:hover{border-color:var(--accent);background:#f7f3e8}
 .syms span{color:#bbb;margin:0 7px}
 
 .disc{font-size:13.5px;color:var(--soft);border-top:1px solid var(--line);margin-top:40px;padding-top:16px}
@@ -158,7 +160,7 @@ footer span{color:#bbb;margin:0 6px}
 
 <section class="syms">
 <div class="lbl">Other symbols</div>
-<p><a href="/dream/snake/">Snake</a><span>·</span><a href="/dream/water/">Water</a><span>·</span><a href="/dream/blood/">Blood</a><span>·</span><a href="/dream/gold/">Gold</a><span>·</span><a href="/dream/hair/">Hair falling out</a><span>·</span><a href="/dream/dead-person-resurrected/">A dead person alive again</a><span>·</span><a href="/dream/wedding/">Wedding</a><span>·</span><a href="/dream/kaaba/">The Kaaba</a><span>·</span><a href="/dream/spider/">Spider</a></p>
+<p><a href="/dream/snake/">Snake</a><a href="/dream/water/">Water</a><a href="/dream/blood/">Blood</a><a href="/dream/gold/">Gold</a><a href="/dream/hair/">Hair falling out</a><a href="/dream/dead-person-resurrected/">A dead person alive again</a><a href="/dream/wedding/">Wedding</a><a href="/dream/kaaba/">The Kaaba</a><a href="/dream/spider/">Spider</a></p>
 </section>
 
 </main>
