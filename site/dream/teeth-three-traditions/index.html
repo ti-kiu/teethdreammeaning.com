@@ -78,9 +78,43 @@ footer span{color:#bbb;margin:0 5px}
 a{color:var(--accent)}
 .rel ul{list-style:none;padding:0}
 .rel li{padding:8px 0;border-bottom:1px solid var(--line)}
+
+/* ---- zones (v3 template) ---- */
+.zone{display:inline-flex;align-items:center;gap:6px;font-family:Helvetica,Arial,sans-serif;
+      font-size:11px;letter-spacing:.8px;text-transform:uppercase;color:#fff;
+      border-radius:3px;padding:3px 9px;margin:0 0 10px}
+.zone svg{flex-shrink:0}
+.z-text{background:var(--accent)}
+.z-reading{background:#6b6357}
+.z-research{background:#4a6b6b}
+h2{margin-top:38px}
+h2 + .zone{margin-top:-6px}
+.reading{background:#f5f1e6;border-left:3px solid #6b6357;padding:14px 18px;margin:14px 0 28px}
+.reading .rlbl{display:block;font-family:Helvetica,Arial,sans-serif;font-size:11.5px;font-weight:700;letter-spacing:.8px;text-transform:uppercase;color:#6b6357;margin-bottom:6px}
+.reading p{font-size:15px;line-height:1.65;margin-bottom:10px}
+.reading p:last-child{margin-bottom:0}
+aside .g{font-family:Helvetica,Arial,sans-serif;font-size:10.5px;letter-spacing:.6px;text-transform:uppercase;color:#666;margin:14px 0 6px}
+.cite-hd{color:#666}
+/* mobile order: title -> quick answer -> toc -> lede -> body */
+.mhead{display:contents}
+aside details summary{font-weight:700;cursor:pointer;list-style:none}
+aside details summary::-webkit-details-marker{display:none}
+aside details summary::after{content:"▾";color:#666;margin-left:6px;font-size:12px}
+aside details[open] summary::after{content:"▴"}
+@media(min-width:861px){
+  aside{grid-column:1;grid-row:1}
+  .mhead{grid-column:2;grid-row:1}
+  main{grid-column:2;grid-row:2}
+}
+@media(max-width:860px){
+  .mhead{order:0}
+  aside{order:1;position:static;border:1px solid var(--line);border-radius:6px;background:var(--card);padding:12px 20px;margin:0 0 28px}
+  main{order:2}
+  .top .brand em{display:none}
+}
 </style>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "author": {"@type": "Organization", "name": "Teeth Dream Meaning", "url": "https://teethdreammeaning.com/"}, "datePublished": "2026-10-31", "dateModified": "2026-11-06", "publisher": {"@type": "Organization", "name": "Teeth Dream Meaning", "url": "https://teethdreammeaning.com/"},  "headline": "Teeth Dreams: How Three Traditions Read the Same Dream Differently", "url": "https://teethdreammeaning.com/dream/teeth-three-traditions/", "inLanguage": "en", "about": {"@type": "Thing", "name": "dream interpretation"}}</script>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "If you're pregnant", "acceptedAnswer": {"@type": "Answer", "text": "The Chinese system is the one that reads teeth as offspring directly: 齿落更生子孙兴 makes regrowth a fertility sign, and the chapter's hair/teeth block is part of a body-symbol set the tradition uses for pregnancy and children. The Arabic books have no pregnancy clause for teeth at all — the child reading comes only through the lap-landing line (a tooth falling into the lap = a male child, Ibn Sirin compilation \"Teeth\"; Al-Nabulsi prints the same trio, with his caught-teeth reversal). Neither system was written for the modern \"pregnancy = losing something\" reading you'll find on today's blogs; that idea is 20th-century, not classical."}}, {"@type": "Question", "name": "If you're elderly", "acceptedAnswer": {"@type": "Answer", "text": "Al-Nabulsi's age-hedge matters most here: his entry explicitly routes the death-term reading toward the sick and old, while the longevity reading in Ibn Sirin's compilation is aimed at exactly the same demographic — living past your contemporaries. Read together, the two Arabic pages tell an older dreamer the same dream is either his lifespan or his survivability of others. The Chinese block's \"parents\" line has no age condition at all — it speaks to anyone whose parents are alive."}}, {"@type": "Question", "name": "If you keep having it", "acceptedAnswer": {"@type": "Answer", "text": "Calvin Kai-Ching Yu's Dream Motif Scale survey (Dreaming 22:1, 2012, DOI 10.1037/a0026171) found 39.0% of respondents had a teeth dream at least once, 16.2% recurrently, 8.2% regularly — making it one of the most common body dreams in the sample. Rozen &amp; Soffer-Dudek (Frontiers in Psychology 9:1812, 2018, PubMed 30319507, n=210) then measured the recurrent dreamers: teeth dreams tracked with waking jaw/tooth/gum tension (r = 0.21) but not with psychological distress (r = 0.02). The recurrence literature is the one place where all three classical traditions are silent — none of them treat repetition as changing the reading; the modern data treats the body as the repeating cause."}}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "If you're pregnant", "acceptedAnswer": {"@type": "Answer", "text": "The Chinese system is the one that reads teeth as offspring directly: 齿落更生子孙兴 makes regrowth a fertility sign, and the chapter's hair/teeth block is part of a body-symbol set the tradition uses for pregnancy and children. The Arabic books have no pregnancy clause for teeth at all — the child reading comes only through the lap-landing line (a tooth falling into the lap = a male child, Ibn Sirin compilation \"Teeth\"; Al-Nabulsi prints the same trio, with his caught-teeth reversal). Neither system was written for the modern \"pregnancy = losing something\" reading you'll find on today's blogs; that idea is 20th-century, not classical."}}, {"@type": "Question", "name": "If you're elderly", "acceptedAnswer": {"@type": "Answer", "text": "Al-Nabulsi's age-hedge matters most here: his entry explicitly routes the death-term reading toward the sick and old, while the longevity reading in Ibn Sirin's compilation is aimed at exactly the same demographic — living past your contemporaries. Read together, the two Arabic pages tell an older dreamer the same dream is either his lifespan or his survivability of others. The Chinese block's \"parents\" line has no age condition at all — it speaks to anyone whose parents are alive."}}, {"@type": "Question", "name": "If you keep having it", "acceptedAnswer": {"@type": "Answer", "text": "Calvin Kai-Ching Yu's Dream Motif Scale survey (Dreaming 22:1, 2012, <a href="https://doi.org/10.1037/a0026171">DOI 10.1037/a0026171</a>) found 39.0% of respondents had a teeth dream at least once, 16.2% recurrently, 8.2% regularly — making it one of the most common body dreams in the sample. Rozen &amp; Soffer-Dudek (Frontiers in Psychology 9:1812, 2018, <a href="https://pubmed.ncbi.nlm.nih.gov/30319507/">PubMed 30319507</a>, n=210) then measured the recurrent dreamers: teeth dreams tracked with waking jaw/tooth/gum tension (r = 0.21) but not with psychological distress (r = 0.02). The recurrence literature is the one place where all three classical traditions are silent — none of them treat repetition as changing the reading; the modern data treats the body as the repeating cause."}}]}</script>
 </head>
 <body>
 <div class="wrap">
@@ -90,21 +124,31 @@ a{color:var(--accent)}
 </div>
 
 <div class="cols">
+<div class="mhead">
+<h1>Teeth Dreams: Three Traditions, Two Different Machines</h1>
+<p class="lede">This is a comparison page — if you want the full walkthrough of the teeth-falling dream, start at the <a href="/dream/teeth-falling-out/">main teeth page</a>. Here the question is narrower: the Arabic dream dictionaries read teeth by <strong>counting</strong> — one tooth = one debt, one creditor, one relative, and the tooth's position names which. The Chinese Zhou Gong book reads the same dream with <strong>two lines only</strong>: teeth that fall by themselves mean misfortune touching the parents; teeth that fall and grow back mean the descendants thrive. Same dream, two completely different machines — and both are quoted below with their sources.</p>
+</div>
 <aside>
-<div class="lbl">On this page</div>
+<details class="tocd" open>
+<summary>On this page</summary>
 <ul>
+<div class="g">Classical texts</div>
 <li><a href="#the-zhou-gong-lines">The Zhou Gong lines</a></li>
+<div class="g">This site's reading</div>
 <li><a href="#where-all-three-traditions-agree">Where all three traditions agree</a></li>
+<div class="g">Classical texts</div>
 <li><a href="#the-age-reading-one-arabic-book-hedges-t">The age reading: one Arabic book hedges, the other counts years</a></li>
 <li><a href="#who-actually-gets-the-teeth-pregnant-wom">Who actually gets the teeth: pregnant women, elders, the recurrent dreamer</a></li>
+<div class="g">This site's reading</div>
 <li><a href="#what-a-modern-reader-can-actually-do-wit">What a modern reader can actually do with three systems</a></li>
 <li><a href="#related-questions">Related questions</a></li>
 </ul>
+</details>
 </aside>
 <main><article>
-<h1>Teeth Dreams: Three Traditions, Two Different Machines</h1>
-<p class="lede">This is a comparison page — if you want the full walkthrough of the teeth-falling dream, start at the <a href="/dream/teeth-falling-out/">main teeth page</a>. Here the question is narrower: the Arabic dream dictionaries read teeth by <strong>counting</strong> — one tooth = one debt, one creditor, one relative, and the tooth's position names which. The Chinese Zhou Gong book reads the same dream with <strong>two lines only</strong>: teeth that fall by themselves mean misfortune touching the parents; teeth that fall and grow back mean the descendants thrive. Same dream, two completely different machines — and both are quoted below with their sources.</p>
 
+
+<span class="zone z-text"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 6.2C10.4 5 8 4.2 4.8 4.2v13.6c3.2 0 5.6.8 7.2 2 1.6-1.2 4-2 7.2-2V4.2C16 4.2 13.6 5 12 6.2zM12 6.2v13.6"/></svg>Classical text</span>
 <h2 id="the-zhou-gong-lines">The Zhou Gong lines</h2>
 <div class="cites">
 <div class="cite-hd"><div>Text</div><div class="src-hd">Source</div></div>
@@ -115,8 +159,9 @@ a{color:var(--accent)}
 </div>
 </div>
 <h3>What the Chinese book does NOT have</h3>
-<p>The contrast is what makes this worth a page. In the Zhou Gong chapter on teeth there is no counting rule, no hand/lap/ground landing rule, no burial switch, no jaw-to-relative map. Teeth dreams carry exactly two verdicts: <em>fallen-and-gone</em> targets the parents; <em>fallen-and-regrown</em> targets the descendants. Meanwhile the whole elaborate per-tooth machinery — the father is the right front tooth, one tooth paid is one creditor, thirty are thirty dinars — exists only in the Arabic books (Ibn Sirin compilation "Teeth," pp. 349–352; Al-Nabulsi's "سن" entry at shamela.ws/book/1217/177, printed p. 180).</p>
+<p>The contrast is what makes this worth a page. In the Zhou Gong chapter on teeth there is no counting rule, no hand/lap/ground landing rule, no burial switch, no jaw-to-relative map. Teeth dreams carry exactly two verdicts: <em>fallen-and-gone</em> targets the parents; <em>fallen-and-regrown</em> targets the descendants. Meanwhile the whole elaborate per-tooth machinery — the father is the right front tooth, one tooth paid is one creditor, thirty are thirty dinars — exists only in the Arabic books (Ibn Sirin compilation "Teeth," pp. 349–352; Al-Nabulsi's "سن" entry at <a href="https://shamela.ws/book/1217/177">shamela.ws/book/1217/177</a>, printed p. 180).</p>
 
+<span class="zone z-reading"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19l7-7-4-4-7 7-1 5zM16 5l2 2M13 8l2 2"/></svg>This site's reading</span>
 <h2 id="where-all-three-traditions-agree">Where all three traditions agree</h2>
 <p>The teeth-falling dream is a <strong>family</strong> dream in every classical system that wrote about it, not a money dream and not (originally) an anxiety dream:</p>
 <ul style="margin:0 0 20px 24px">
@@ -126,13 +171,15 @@ a{color:var(--accent)}
 </ul>
 <p>That three literatures with no contact all landed on "teeth = the people in your family" is the one genuinely cross-cultural fact about this dream before psychology got to it in the 20th century.</p>
 
+<span class="zone z-text"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 6.2C10.4 5 8 4.2 4.8 4.2v13.6c3.2 0 5.6.8 7.2 2 1.6-1.2 4-2 7.2-2V4.2C16 4.2 13.6 5 12 6.2zM12 6.2v13.6"/></svg>Classical text</span>
 <h2 id="the-age-reading-one-arabic-book-hedges-t">The age reading: one Arabic book hedges, the other counts years</h2>
 <h3>Al-Nabulsi's first line vs. Ibn Sirin's first line</h3>
 <p>Al-Nabulsi opens his "سن" entry with the hardest claim the literature contains: <blockquote dir="rtl"><p>هي في المنام دالة على منتهى الأجل والسن الذي كتب له</p></blockquote>"the tooth (سن, sin) in a dream points to the end of the appointed term (أجل) and the years (السن) written for the dreamer" — a wordplay: sin means both "tooth" and "year of age." The same page then prints the hedge: age-death readings are for the sick or the elderly; the healthy get a different clause. The Ibn Sirin compilation's opening is the mirror image: "Falling teeth in a dream means longevity" — the dream doesn't take years, it means you keep them.</p>
 
 <h3>Thirty, by any unit</h3>
-<p>The Arabic books share one bizarre detail: the <em>number</em> thirty. Ibn Sirin's teeth entry maps fallen teeth one-to-one onto creditors and debts; Al-Nabulsi's سن page (shamela.ws/book/1217/177) prints a "some say" (وقيل) chain where loose teeth mean either nine-and-twenty or thirty years remaining, or death within thirty days, or a fine of thirty dinars — the same digit doing the work of time, life, and money, because the dream is read as an arithmetical transfer. You will not find this on any Western dream site; it lives on one Arabic page.</p>
+<p>The Arabic books share one bizarre detail: the <em>number</em> thirty. Ibn Sirin's teeth entry maps fallen teeth one-to-one onto creditors and debts; Al-Nabulsi's سن page (<a href="https://shamela.ws/book/1217/177">shamela.ws/book/1217/177</a>) prints a "some say" (وقيل) chain where loose teeth mean either nine-and-twenty or thirty years remaining, or death within thirty days, or a fine of thirty dinars — the same digit doing the work of time, life, and money, because the dream is read as an arithmetical transfer. You will not find this on any Western dream site; it lives on one Arabic page.</p>
 
+<span class="zone z-text"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 6.2C10.4 5 8 4.2 4.8 4.2v13.6c3.2 0 5.6.8 7.2 2 1.6-1.2 4-2 7.2-2V4.2C16 4.2 13.6 5 12 6.2zM12 6.2v13.6"/></svg>Classical text</span>
 <h2 id="who-actually-gets-the-teeth-pregnant-wom">Who actually gets the teeth: pregnant women, elders, the recurrent dreamer</h2>
 <p>Neither classical book is psychology, and neither mentions stress — but their per-person readings differ in ways that matter if you belong to one of these groups:</p>
 <div class="qa">
@@ -145,9 +192,10 @@ a{color:var(--accent)}
 </div>
 <div class="qa">
 <h3>If you keep having it</h3>
-<p>Calvin Kai-Ching Yu's Dream Motif Scale survey (<em>Dreaming</em> 22:1, 2012, DOI 10.1037/a0026171) found 39.0% of respondents had a teeth dream at least once, 16.2% recurrently, 8.2% regularly — making it one of the most common body dreams in the sample. Rozen &amp; Soffer-Dudek (Frontiers in Psychology 9:1812, 2018, PubMed 30319507, n=210) then measured the recurrent dreamers: teeth dreams tracked with waking jaw/tooth/gum tension (r = 0.21) but <em>not</em> with psychological distress (r = 0.02). The recurrence literature is the one place where all three classical traditions are silent — none of them treat repetition as changing the reading; the modern data treats the body as the repeating cause.</p>
+<p>Calvin Kai-Ching Yu's Dream Motif Scale survey (<em>Dreaming</em> 22:1, 2012, <a href="https://doi.org/10.1037/a0026171">DOI 10.1037/a0026171</a>) found 39.0% of respondents had a teeth dream at least once, 16.2% recurrently, 8.2% regularly — making it one of the most common body dreams in the sample. Rozen &amp; Soffer-Dudek (Frontiers in Psychology 9:1812, 2018, <a href="https://pubmed.ncbi.nlm.nih.gov/30319507/">PubMed 30319507</a>, n=210) then measured the recurrent dreamers: teeth dreams tracked with waking jaw/tooth/gum tension (r = 0.21) but <em>not</em> with psychological distress (r = 0.02). The recurrence literature is the one place where all three classical traditions are silent — none of them treat repetition as changing the reading; the modern data treats the body as the repeating cause.</p>
 </div>
 
+<span class="zone z-reading"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19l7-7-4-4-7 7-1 5zM16 5l2 2M13 8l2 2"/></svg>This site's reading</span>
 <h2 id="what-a-modern-reader-can-actually-do-wit">What a modern reader can actually do with three systems</h2>
 <p>Nothing here is one dream's true meaning. What the comparison gives you is three different <em>questions</em> the same dream can be asking: the Zhou Gong book asks whether anything grew back (parents vs. descendants). The Arabic books ask you to count and locate — how many, which jaw, did you catch it. The research layer asks one question none of the books asked: how is your jaw feeling this month. They don't conflict; they were answering different people in different centuries. The one claim all three agree on, after a thousand years and three languages, is that this dream is about the people around you, not about you.</p>
 
@@ -160,5 +208,9 @@ a{color:var(--accent)}
 <p>Teeth Dream Meaning · <a href="/">Home</a> · <a href="/dream/teeth-falling-out/">Teeth falling out: the two Arabic entries</a> · <a href="/dream/snake/">Snake dreams across three traditions</a> · <a href="/dream/water/">Water dreams across three traditions</a> · <a href="/disclaimer/">Disclaimer</a></p>
 </footer>
 </div>
-</body>
+<script>
+if(window.matchMedia("(max-width:860px)").matches){
+  var d=document.querySelector(".tocd"); if(d) d.removeAttribute("open");
+}
+</script></body>
 </html>

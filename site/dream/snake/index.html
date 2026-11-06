@@ -78,6 +78,40 @@ footer span{color:#bbb;margin:0 5px}
 a{color:var(--accent)}
 .rel ul{list-style:none;padding:0}
 .rel li{padding:8px 0;border-bottom:1px solid var(--line)}
+
+/* ---- zones (v3 template) ---- */
+.zone{display:inline-flex;align-items:center;gap:6px;font-family:Helvetica,Arial,sans-serif;
+      font-size:11px;letter-spacing:.8px;text-transform:uppercase;color:#fff;
+      border-radius:3px;padding:3px 9px;margin:0 0 10px}
+.zone svg{flex-shrink:0}
+.z-text{background:var(--accent)}
+.z-reading{background:#6b6357}
+.z-research{background:#4a6b6b}
+h2{margin-top:38px}
+h2 + .zone{margin-top:-6px}
+.reading{background:#f5f1e6;border-left:3px solid #6b6357;padding:14px 18px;margin:14px 0 28px}
+.reading .rlbl{display:block;font-family:Helvetica,Arial,sans-serif;font-size:11.5px;font-weight:700;letter-spacing:.8px;text-transform:uppercase;color:#6b6357;margin-bottom:6px}
+.reading p{font-size:15px;line-height:1.65;margin-bottom:10px}
+.reading p:last-child{margin-bottom:0}
+aside .g{font-family:Helvetica,Arial,sans-serif;font-size:10.5px;letter-spacing:.6px;text-transform:uppercase;color:#666;margin:14px 0 6px}
+.cite-hd{color:#666}
+/* mobile order: title -> quick answer -> toc -> lede -> body */
+.mhead{display:contents}
+aside details summary{font-weight:700;cursor:pointer;list-style:none}
+aside details summary::-webkit-details-marker{display:none}
+aside details summary::after{content:"▾";color:#666;margin-left:6px;font-size:12px}
+aside details[open] summary::after{content:"▴"}
+@media(min-width:861px){
+  aside{grid-column:1;grid-row:1}
+  .mhead{grid-column:2;grid-row:1}
+  main{grid-column:2;grid-row:2}
+}
+@media(max-width:860px){
+  .mhead{order:0}
+  aside{order:1;position:static;border:1px solid var(--line);border-radius:6px;background:var(--card);padding:12px 20px;margin:0 0 28px}
+  main{order:2}
+  .top .brand em{display:none}
+}
 </style>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "author": {"@type": "Organization", "name": "Teeth Dream Meaning", "url": "https://teethdreammeaning.com/"}, "datePublished": "2026-10-31", "dateModified": "2026-11-06", "publisher": {"@type": "Organization", "name": "Teeth Dream Meaning", "url": "https://teethdreammeaning.com/"},  "headline": "Snake Bite Dream Meaning: What It Means When a Snake Bites You", "url": "https://teethdreammeaning.com/dream/snake/", "inLanguage": "en", "about": {"@type": "Thing", "name": "dream interpretation"}}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "A snake bit you and you couldn't get away", "acceptedAnswer": {"@type": "Answer", "text": "Al-Nabulsi's reading, translated: if the snake stings you, expect disgrace or a calamity you don't escape — his exact word for the second is نائبة, a blow that descends. The Ibn Sirin compilation adds a colder detail: the venom itself is the enemy's wealth, so a biting snake often points to a rich adversary. If you woke up already bracing for something — a person, a bill, a conversation you can't dodge — the books are describing exactly that feeling."}}, {"@type": "Question", "name": "You killed the snake", "acceptedAnswer": {"@type": "Answer", "text": "Three printed verdicts, all from real pages: victory over an enemy (both Arabic books agree), marriage — yes, that's what the Ibn Sirin compilation says two lines after the victory line, unreconciled — and, in Al-Nabulsi's serpent entry, because the snake can stand for a small child, killing one can read as a child's death. The Chinese tradition sees none of this ambiguity: killing a snake is simply auspicious, 打杀蛇大吉."}}, {"@type": "Question", "name": "The snake was in your house — or left it", "acceptedAnswer": {"@type": "Answer", "text": "Al-Nabulsi: a snake entering your house means an enemy is scheming against you from close range. Ibn Sirin flips the direction: the snake leaving the house means the house's ruin or demolition. The Chinese book reads an entering snake as wealth arriving through the door. Same doorway, opposite omens — what moves through it decides."}}]}</script>
@@ -90,19 +124,27 @@ a{color:var(--accent)}
 </div>
 
 <div class="cols">
+<div class="mhead">
+<h1>Snake Bite Dream: What It Means</h1>
+<p class="lede">If a snake bites you in a dream, both oldest traditions agree the dream carries weight — but they put that weight on opposite sides of the scale. The Arabic dream books put it on the loss side: the bite is disgrace, a scandal, a loss you don't get away from — the enemy's move landing. The Chinese Zhou Gong tradition puts it on the gain side: 蛇咬人主得大财 — the bite is money latching onto you, a windfall notice. Same snake, same bite, opposite verdicts. And if you <em>killed</em> the snake, the books split three ways: victory over an enemy, a marriage, or — on one harsh page of Al-Nabulsi — the death of a small child.</p>
+</div>
 <aside>
-<div class="lbl">On this page</div>
+<details class="tocd" open>
+<summary>On this page</summary>
 <ul>
+<div class="g">This site's reading</div>
 <li><a href="#so-which-reading-is-yours">So which reading is yours?</a></li>
+<div class="g">Classical texts</div>
 <li><a href="#the-entries-briefly">The entries, briefly</a></li>
+<div class="g">Modern research</div>
 <li><a href="#what-modern-research-adds-and-what-it-do">What modern research adds — and what it doesn&#x27;t</a></li>
 <li><a href="#sources-all-passages-checked-against-the">Sources (all passages checked against the cited pages)</a></li>
 <li><a href="#related-questions">Related questions</a></li>
 </ul>
+</details>
 </aside>
 <main><article>
-<h1>Snake Bite Dream: What It Means</h1>
-<p class="lede">If a snake bites you in a dream, both oldest traditions agree the dream carries weight — but they put that weight on opposite sides of the scale. The Arabic dream books put it on the loss side: the bite is disgrace, a scandal, a loss you don't get away from — the enemy's move landing. The Chinese Zhou Gong tradition puts it on the gain side: 蛇咬人主得大财 — the bite is money latching onto you, a windfall notice. Same snake, same bite, opposite verdicts. And if you <em>killed</em> the snake, the books split three ways: victory over an enemy, a marriage, or — on one harsh page of Al-Nabulsi — the death of a small child.</p>
+
 
 <p>So the honest first answer is: <strong>which book you consult changes the verdict, and the details of your dream decide which page applies.</strong> The three scenarios people actually dream are below — no Arabic on this screen, plain answers first, every quote checked to its printed page.</p>
 
@@ -121,12 +163,14 @@ a{color:var(--accent)}
 <p>Al-Nabulsi: a snake entering your house means an enemy is scheming against you from close range. Ibn Sirin flips the direction: the snake <em>leaving</em> the house means the house's ruin or demolition. The Chinese book reads an entering snake as wealth arriving through the door. Same doorway, opposite omens — what moves through it decides.</p>
 </div>
 
+<span class="zone z-reading"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19l7-7-4-4-7 7-1 5zM16 5l2 2M13 8l2 2"/></svg>This site's reading</span>
 <h2 id="so-which-reading-is-yours">So which reading is yours?</h2>
 <p>The Arabic books are asking: who around you is not what they claim to be? Both define the snake as a hidden enemy — one who "conceals his enmity" — often family, in-laws, or a neighbor. The Chinese book is asking: is money or a child coming? Its snake lines are mostly good news — wealth, a noble son, advancement. If your snake dream scared you, that fear matches the Arabic reading's assumption; if it was strange but not frightening, the Chinese set fits better. Neither book settles it for you — they show what generations of dreamers were told.</p>
 <p>What the science adds: nothing about enemies or money. Primates detect snake shapes faster than flowers (Isbell's snake detection theory, Harvard UP 2009), and Revonsuo's threat simulation theory (2000) argues dreams rehearse exactly such ancestral dangers — which explains why the image is everywhere, without telling you which meaning, if any, is yours.</p>
 
+<span class="zone z-text"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 6.2C10.4 5 8 4.2 4.8 4.2v13.6c3.2 0 5.6.8 7.2 2 1.6-1.2 4-2 7.2-2V4.2C16 4.2 13.6 5 12 6.2zM12 6.2v13.6"/></svg>Classical text</span>
 <h2 id="the-entries-briefly">The entries, briefly</h2>
-<p class="src">The Arabic side comes from two books: the compiled English dictionary attributed to Ibn Sirin (Pearl Publishing House, 1992, "Snake" entry, printed p. 398) and the Arabic original of Al-Nabulsi's <em>Ta'tir al-Anam</em>, which carries two snake headwords — ثعبان at shamela.ws/book/1217/54 and حية at shamela.ws/book/1217/94. The Chinese side is the Zhou Gong dream book, chapter 25 (dragons and snakes). One sample of each, translated, so you can see the register; the full checked passages are in the sources section at the bottom.</p>
+<p class="src">The Arabic side comes from two books: the compiled English dictionary attributed to Ibn Sirin (Pearl Publishing House, 1992, "Snake" entry, printed p. 398) and the Arabic original of Al-Nabulsi's <em>Ta'tir al-Anam</em>, which carries two snake headwords — ثعبان at <a href="https://shamela.ws/book/1217/54">shamela.ws/book/1217/54</a> and حية at <a href="https://shamela.ws/book/1217/94">shamela.ws/book/1217/94</a>. The Chinese side is the Zhou Gong dream book, chapter 25 (dragons and snakes). One sample of each, translated, so you can see the register; the full checked passages are in the sources section at the bottom.</p>
 
 <div class="cites">
 <div class="cite-hd"><div>Text</div><div class="src-hd">Source</div></div>
@@ -136,16 +180,21 @@ a{color:var(--accent)}
 </div>
 <div class="cite-row">
   <div class="txt"><p>[The snake] may indicate enmity from family, spouses or children; it may be an envious, evil neighbour; and the water-snake is a helper of the oppressor. Whoever owns a snake will attain great authority. Whoever sees a snake swallowing his member — his wife has committed adultery.</p></div>
-  <div class="src">Al-Nabulsi, Ta'tir al-Anam — shamela.ws/book/1217/54 (printed p. 57). Translated from the Arabic.</div>
+  <div class="src">Al-Nabulsi, Ta'tir al-Anam — <a href="https://shamela.ws/book/1217/54">shamela.ws/book/1217/54</a> (printed p. 57). Translated from the Arabic.</div>
 </div>
 <div class="cite-row">
   <div class="txt"><p>The snake bites a person: great wealth. A snake entering the bosom: a noble son will be born. A snake moving in water: advancement and honour. A snake coiling around the body: a noble son. Dragon or snake entering the door: wealth arrives. A snake following another person away: the wife's wandering heart. Many snakes: hidden affairs.</p></div>
   <div class="src">Zhou Gong Jie Meng, ch. 25 龙蛇禽兽等类. Attributed to the Duke of Zhou (c. 1000 BCE), a later compiled text; the same lines appear with variants in the Dunhuang dream manuscript. Translation ours.</div>
 </div>
 </div>
+
+<div class="reading"><span class="rlbl">This site's reading</span>
 <h3>Where the three systems genuinely diverge</h3>
 <p><strong>The bite</strong> — Arabic: disgrace or an inescapable blow, or (compiled Ibn Sirin) a rich enemy, "for its poison means money"; Chinese: wealth arriving. <strong>Killing it</strong> — enemy's defeat + "marriage" on the same compiled page; Al-Nabulsi's child-death clause; Chinese, flatly auspicious. <strong>The house</strong> — entering snake plots against you (Nabulsi), leaving snake demolishes the house (Ibn Sirin), entering snake = wealth (Zhou Gong). <strong>Where they agree</strong> — the snake is hidden (Arabic: one who conceals enmity; Chinese: 阴私事, hidden affairs) and it is a child (a small snake = a little child; the bosom snake = a son). No other dream animal carries a human life inside it in all three books.</p>
+</div>
 
+
+<span class="zone z-research"><svg widtheight="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M9.5 3h5M10.8 3v5.2L5.6 16.8A2.5 2.5 0 0 0 7.8 20.5h8.4a2.5 2.5 0 0 0 2.2-3.7L13.2 8.2V3M8.2 14.5h7.6"/></svg>Modern research</span>
 <h2 id="what-modern-research-adds-and-what-it-do">What modern research adds — and what it doesn't</h2>
 <p>Snakes are among the most-studied dream animals because of the <em>snake detection theory</em> (Lynne Isbell, <em>The Fruit, the Tree, and the Serpent</em>, Harvard University Press, 2009): primates detect snake shapes faster than flowers, even infants and monkeys do, and the hypothesis is that 100+ million years of predation pressure rewired the primate visual system for them. Revonsuo's threat simulation theory (<em>Behavioral and Brain Sciences</em> 23:3, 2000) proposes dreams exist partly to rehearse exactly such ancestral threats — a snake crossing your path is the kind of event the dreaming brain is, by this account, over-prepared to simulate. Population surveys of dream content consistently rank snakes among the most common animals in dreams.</p>
 <p>Notice what this does <em>not</em> settle: nothing in the research tells you whether your snake was an enemy, a son, or a payment. The scientific layer explains why the image is everywhere; the three classical books explain what people did with it once they woke up. This page puts both on the record.</p>
@@ -153,8 +202,8 @@ a{color:var(--accent)}
 <h2 id="sources-all-passages-checked-against-the">Sources (all passages checked against the cited pages)</h2>
 <div class="src">
 <p><strong>Ibn Sirin compilation — "Snake" entry, printed p. 398</strong> (Ibn Seerin's Dictionary of Dreams, compiled by Muhammad M. Al-Akili, Pearl Publishing House 1992, ISBN 1879405032; a later compilation attributed to the 8th-century scholar, not his autograph text): "A snake in dream represents a person who lives in a valley. A snake in a dream also means enmity from one's in-laws or children, or it could represent the evil and jealousy of one's neighbor. … A snake in one's dream also represents a rich enemy, for its poison means money. … A small snake in a dream represents a little child. … A black snake in a dream represents a strong enemy. A white snake in a dream represents a weak enemy. … Owning a snake in a dream means gaining power and authority. … A snake coming out of its hole in a dream represents a son. A snake leaving one's house in a dream means its destruction or demolition. Killing a snake in a dream means marriage. … In general a snake or a serpent in a dream represent jealousy, envy, perfidy, swindling people's properties, deceit and an avowed enmity."</p>
-<p><strong>Al-Nabulsi — ثعبان (Tha'ban), shamela.ws/book/1217/54, printed p. 57</strong> (Ta'tir al-Anam fi Ta'bir al-Manam, Abd al-Ghani al-Nabulsi d. 1731 CE, Dar al-Fikr edition; translation ours): "(ثعبان) يدل في المنام على رجل الوادي وربما دل على العداوة من الأهل والأزواج والأولاد وربما كان جاراً حسوداً شرير وثعبان الماء عون للظالم أو أعلام الحاكم. — (ومن رأى) أنه ملك ثعباناً فإنه يصيب سلطاناً عظيماً. — (ومن رأى) أن الثعبان التقم ذكره فإن امرأته قد زنت." — the man of the valley; enmity from family, spouses or children; an envious evil neighbour; the water-snake a helper of the oppressor or a sign of the ruler; owning one = great authority; one swallowing the dreamer's member = the wife's adultery.</p>
-<p><strong>Al-Nabulsi — حية (Hiyya, serpent), shamela.ws/book/1217/94, printed p. 97</strong>, same edition: "(حية) في المنام عدو أو دولة أو كنز أو امرأة أو ولد والثعبان إذا لم يخف منه الرجل قوته ودولته والحية عدو ذو مال لأن تأويل السم مال وإن رأى أنه أدخلها بيته فإن عدوه يمكر به. - فإن قتلها ظفر بعدو فإن سال الدم على يديه مات عدوه وورث ماله فإن لدغته فإنه ينال معرة. … والحية الغيرة في التأويل ولد صغير ومن قتل حية فهو موت ولد صغير." — the serpent: enemy, state, treasure, woman or child; an enemy with wealth "because the interpretation of venom is money"; entering the house = the enemy's scheming; killing it = triumph (blood on the hands = the enemy dies and his wealth is inherited); its sting = disgrace (معرة); the venomous/proud serpent = a small child, and killing one = a small child's death. Further on the same page: stung = "a calamity he does not escape" (نائبة لا ينجو منها).</p>
+<p><strong>Al-Nabulsi — ثعبان (Tha'ban), <a href="https://shamela.ws/book/1217/54">shamela.ws/book/1217/54</a>, printed p. 57</strong> (Ta'tir al-Anam fi Ta'bir al-Manam, Abd al-Ghani al-Nabulsi d. 1731 CE, Dar al-Fikr edition; translation ours): "(ثعبان) يدل في المنام على رجل الوادي وربما دل على العداوة من الأهل والأزواج والأولاد وربما كان جاراً حسوداً شرير وثعبان الماء عون للظالم أو أعلام الحاكم. — (ومن رأى) أنه ملك ثعباناً فإنه يصيب سلطاناً عظيماً. — (ومن رأى) أن الثعبان التقم ذكره فإن امرأته قد زنت." — the man of the valley; enmity from family, spouses or children; an envious evil neighbour; the water-snake a helper of the oppressor or a sign of the ruler; owning one = great authority; one swallowing the dreamer's member = the wife's adultery.</p>
+<p><strong>Al-Nabulsi — حية (Hiyya, serpent), <a href="https://shamela.ws/book/1217/94">shamela.ws/book/1217/94</a>, printed p. 97</strong>, same edition: "(حية) في المنام عدو أو دولة أو كنز أو امرأة أو ولد والثعبان إذا لم يخف منه الرجل قوته ودولته والحية عدو ذو مال لأن تأويل السم مال وإن رأى أنه أدخلها بيته فإن عدوه يمكر به. - فإن قتلها ظفر بعدو فإن سال الدم على يديه مات عدوه وورث ماله فإن لدغته فإنه ينال معرة. … والحية الغيرة في التأويل ولد صغير ومن قتل حية فهو موت ولد صغير." — the serpent: enemy, state, treasure, woman or child; an enemy with wealth "because the interpretation of venom is money"; entering the house = the enemy's scheming; killing it = triumph (blood on the hands = the enemy dies and his wealth is inherited); its sting = disgrace (معرة); the venomous/proud serpent = a small child, and killing one = a small child's death. Further on the same page: stung = "a calamity he does not escape" (نائبة لا ينجو منها).</p>
 <p><strong>Zhou Gong Jie Meng, ch. 25 龙蛇禽兽等类</strong> (standard one-line recension; later compiled text attributed to the Duke of Zhou; variants in the Dunhuang dream manuscript 敦煌本梦书 and Menglin Xuanjie; translation ours): 蛇咬人主得大财 / 蛇入怀中生贵子 / 蛇行水内主迁荣 / 蛇绕身者生贵子 / 龙蛇入门主得财 / 蛇随人去妻外心 / 蛇多者主阴私事 — bite = great wealth; bosom = noble son; in water = advancement; coiling = noble son; entering the door = wealth; following another away = the wife's wandering heart; many snakes = hidden affairs.</p>
 </div>
 
@@ -167,5 +216,9 @@ a{color:var(--accent)}
 <p>Teeth Dream Meaning · <a href="/">Home</a> · <a href="/dream/water/">Water in the three traditions — fitna or fortune</a> · <a href="/dream/teeth-falling-out/">Teeth falling out dream</a> · <a href="/disclaimer/">Disclaimer</a></p>
 </footer>
 </div>
-</body>
+<script>
+if(window.matchMedia("(max-width:860px)").matches){
+  var d=document.querySelector(".tocd"); if(d) d.removeAttribute("open");
+}
+</script></body>
 </html>

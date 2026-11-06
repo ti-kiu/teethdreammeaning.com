@@ -78,6 +78,40 @@ footer span{color:#bbb;margin:0 5px}
 a{color:var(--accent)}
 .rel ul{list-style:none;padding:0}
 .rel li{padding:8px 0;border-bottom:1px solid var(--line)}
+
+/* ---- zones (v3 template) ---- */
+.zone{display:inline-flex;align-items:center;gap:6px;font-family:Helvetica,Arial,sans-serif;
+      font-size:11px;letter-spacing:.8px;text-transform:uppercase;color:#fff;
+      border-radius:3px;padding:3px 9px;margin:0 0 10px}
+.zone svg{flex-shrink:0}
+.z-text{background:var(--accent)}
+.z-reading{background:#6b6357}
+.z-research{background:#4a6b6b}
+h2{margin-top:38px}
+h2 + .zone{margin-top:-6px}
+.reading{background:#f5f1e6;border-left:3px solid #6b6357;padding:14px 18px;margin:14px 0 28px}
+.reading .rlbl{display:block;font-family:Helvetica,Arial,sans-serif;font-size:11.5px;font-weight:700;letter-spacing:.8px;text-transform:uppercase;color:#6b6357;margin-bottom:6px}
+.reading p{font-size:15px;line-height:1.65;margin-bottom:10px}
+.reading p:last-child{margin-bottom:0}
+aside .g{font-family:Helvetica,Arial,sans-serif;font-size:10.5px;letter-spacing:.6px;text-transform:uppercase;color:#666;margin:14px 0 6px}
+.cite-hd{color:#666}
+/* mobile order: title -> quick answer -> toc -> lede -> body */
+.mhead{display:contents}
+aside details summary{font-weight:700;cursor:pointer;list-style:none}
+aside details summary::-webkit-details-marker{display:none}
+aside details summary::after{content:"▾";color:#666;margin-left:6px;font-size:12px}
+aside details[open] summary::after{content:"▴"}
+@media(min-width:861px){
+  aside{grid-column:1;grid-row:1}
+  .mhead{grid-column:2;grid-row:1}
+  main{grid-column:2;grid-row:2}
+}
+@media(max-width:860px){
+  .mhead{order:0}
+  aside{order:1;position:static;border:1px solid var(--line);border-radius:6px;background:var(--card);padding:12px 20px;margin:0 0 28px}
+  main{order:2}
+  .top .brand em{display:none}
+}
 </style>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "author": {"@type": "Organization", "name": "Teeth Dream Meaning", "url": "https://teethdreammeaning.com/"}, "datePublished": "2026-10-31", "dateModified": "2026-11-06", "publisher": {"@type": "Organization", "name": "Teeth Dream Meaning", "url": "https://teethdreammeaning.com/"},  "headline": "Teeth Falling Into Your Hand, Lap, or the Ground: The Three Classical Rules", "url": "https://teethdreammeaning.com/dream/teeth-falling-into-hand-lap-ground/", "inLanguage": "en", "about": {"@type": "Thing", "name": "dream interpretation"}}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Fell into my hand", "acceptedAnswer": {"@type": "Answer", "text": "Upper teeth falling into the hand are money in Al-Nabulsi (\"a property that comes to him\") and profits in the Ibn Sirin compilation. But if you caught them — took them in your hand as they fell — the same page of Al-Nabulsi says your children are cut off. Landing and catching are not the same event to these books."}}, {"@type": "Question", "name": "Fell into my lap", "acceptedAnswer": {"@type": "Answer", "text": "A son. Both books say it in the three-surface rule; the compilation repeats it twice more elsewhere in the same entry. The caught-version again flips it: teeth taken \"in his lap\" belong to the line-cutting clause."}}, {"@type": "Question", "name": "Fell to the ground / disappeared", "acceptedAnswer": {"@type": "Answer", "text": "Al-Nabulsi calls it \"the calamity of death\"; the compilation says \"they mean death\" for upper teeth on the floor. But the grimmest version needs a missing tooth: in Al-Nabulsi, a tooth that falls and is lost is the death or absence of the relative it stands for — a tooth that falls and stays in your hand has not crossed that line."}}]}</script>
@@ -90,21 +124,29 @@ a{color:var(--accent)}
 </div>
 
 <div class="cols">
+<div class="mhead">
+<h1>Teeth Falling Into Your Hand, Lap, or the Ground</h1>
+<p class="lede">In the classical dream dictionaries, <em>where the tooth lands</em> is half the meaning. Both books give the same three-surface rule — hand, lap, floor — but Al-Nabulsi's page carries a second, opposite rule: teeth that fall <em>while you catch them</em> read nothing like teeth that land. Below is the exact text of each rule, in both books, with the contradictions left visible instead of smoothed over.</p>
+</div>
 <aside>
-<div class="lbl">On this page</div>
+<details class="tocd" open>
+<summary>On this page</summary>
 <ul>
+<div class="g">Classical texts</div>
 <li><a href="#the-three-surfaces-in-both-books">The three surfaces, in both books</a></li>
 <li><a href="#for-the-lower-teeth-neither-book-uses-th">For the lower teeth, neither book uses the surfaces</a></li>
 <li><a href="#where-the-page-rules-against-itself">Where the page rules against itself</a></li>
 <li><a href="#the-pocket-a-fourth-surface">The pocket: a fourth surface</a></li>
+<div class="g">This site's reading</div>
 <li><a href="#the-honest-gap">The honest gap</a></li>
+<div class="g">Modern research</div>
 <li><a href="#why-the-dream-feels-so-physical">Why the dream feels so physical</a></li>
 <li><a href="#related-questions">Related questions</a></li>
 </ul>
+</details>
 </aside>
 <main><article>
-<h1>Teeth Falling Into Your Hand, Lap, or the Ground</h1>
-<p class="lede">In the classical dream dictionaries, <em>where the tooth lands</em> is half the meaning. Both books give the same three-surface rule — hand, lap, floor — but Al-Nabulsi's page carries a second, opposite rule: teeth that fall <em>while you catch them</em> read nothing like teeth that land. Below is the exact text of each rule, in both books, with the contradictions left visible instead of smoothed over.</p>
+
 
 <p>Three quick answers first:</p>
 
@@ -123,6 +165,7 @@ a{color:var(--accent)}
 <p>Al-Nabulsi calls it "the calamity of death"; the compilation says "they mean death" for upper teeth on the floor. But the grimmest version needs a missing tooth: in Al-Nabulsi, a tooth that falls <em>and is lost</em> is the death or absence of the relative it stands for — a tooth that falls and stays in your hand has not crossed that line.</p>
 </div>
 
+<span class="zone z-text"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 6.2C10.4 5 8 4.2 4.8 4.2v13.6c3.2 0 5.6.8 7.2 2 1.6-1.2 4-2 7.2-2V4.2C16 4.2 13.6 5 12 6.2zM12 6.2v13.6"/></svg>Classical text</span>
 <h2 id="the-three-surfaces-in-both-books">The three surfaces, in both books</h2>
 
 <h3>Al-Nabulsi — upper teeth only</h3>
@@ -130,7 +173,7 @@ a{color:var(--accent)}
 <div class="cite-hd"><div>Text</div><div class="src-hd">Source</div></div>
 <div class="cite-row">
   <div class="txt"><p>"If one sees that his upper teeth fell into his hand, it is a property that comes to him; if they fell into his lap, it is a male child; and if they fell to the ground, it is the calamity of death."</p></div>
-  <div class="src">Ta'tir al-Anam fi Ta'bir al-Manam, Abd al-Ghani al-Nabulsi (d. 1143 AH / 1731 CE), Dar al-Fikr edition — shamela.ws/book/1217/177 (printed page ص180), Arabic checked verbatim: "أن أسنانه العليا سقطت في يده فهو مال يصير إليه وإن سقطت في حجره فهو ولد ذكر وإن سقطت إلى الأرض فهي مصيبة الموت". Translated from the Arabic; there is no standard English edition.</div>
+  <div class="src">Ta'tir al-Anam fi Ta'bir al-Manam, Abd al-Ghani al-Nabulsi (d. 1143 AH / 1731 CE), Dar al-Fikr edition — <a href="https://shamela.ws/book/1217/177">shamela.ws/book/1217/177</a> (printed page ص180), Arabic checked verbatim: "أن أسنانه العليا سقطت في يده فهو مال يصير إليه وإن سقطت في حجره فهو ولد ذكر وإن سقطت إلى الأرض فهي مصيبة الموت". Translated from the Arabic; there is no standard English edition.</div>
 </div>
 </div>
 <h3>Ibn Sirin compilation — same trio, same order</h3>
@@ -143,34 +186,40 @@ a{color:var(--accent)}
 </div>
 <p>Same three surfaces, same three outcomes, same order, and both books apply the trio only to the <strong>upper</strong> teeth. That is not coincidence of two independent witnesses — the 1992 compilation drew on the same Arabic dream literature al-Nabulsi (four centuries later than Ibn Sirin's era) belongs to. Read the agreement as inheritance.</p>
 
+<span class="zone z-text"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 6.2C10.4 5 8 4.2 4.8 4.2v13.6c3.2 0 5.6.8 7.2 2 1.6-1.2 4-2 7.2-2V4.2C16 4.2 13.6 5 12 6.2zM12 6.2v13.6"/></svg>Classical text</span>
 <h2 id="for-the-lower-teeth-neither-book-uses-th">For the lower teeth, neither book uses the surfaces</h2>
 <p>Ask "what if the <em>lower</em> teeth fell into my hand?" and both books go quiet on landing. They answer a different question instead:</p>
 <div class="cites">
 <div class="cite-hd"><div>Text</div><div class="src-hd">Source</div></div>
 <div class="cite-row">
   <div class="txt"><p>"If one sees that his lower teeth fell, he will be struck by pain, ache, worry and grief."</p></div>
-  <div class="src">Al-Nabulsi, shamela.ws/book/1217/177 (ص180) — Arabic checked verbatim: "أن أسنانه السفلى سقطت فإنه يصيب وجعاً وألماً وهماً وغماً".</div>
+  <div class="src">Al-Nabulsi, <a href="https://shamela.ws/book/1217/177">shamela.ws/book/1217/177</a> (ص180) — Arabic checked verbatim: "أن أسنانه السفلى سقطت فإنه يصيب وجعاً وألماً وهماً وغماً".</div>
 </div>
 <div class="cite-row">
   <div class="txt"><p>"If the lower teeth fall in the dream, they mean pain, sufferings, sorrows and distress."</p></div>
   <div class="src">Ibn Sirin compilation, "Teeth" entry — English checked verbatim.</div>
 </div>
 </div>
+
+<div class="reading"><span class="rlbl">This site's reading</span>
 <p>Surface matters for the upper jaw; the lower jaw gets read by <em>feel</em> — pain, worry, grief — wherever it falls. One page of Al-Nabulsi even converts a surface-free lower-tooth fall into coin:</p>
+</div>
+
 <div class="cites">
 <div class="cite-hd"><div>Text</div><div class="src-hd">Source</div></div>
 <div class="cite-row">
   <div class="txt"><p>"And whoever saw them fall into his palm without pain or handling, they are dirhams according to their number."</p></div>
-  <div class="src">Al-Nabulsi, shamela.ws/book/1217/177 (ص180) — Arabic checked verbatim: "ومن رآها سقطت بكفه من غير ألم ولا معالجة فإنها دراهم على عددها". Note what qualifies this reading: no pain <em>and</em> no "mu'alaja" — no effort, no handling. The same fallen teeth in the same palm read as dirhams only if you did not reach for them.</div>
+  <div class="src">Al-Nabulsi, <a href="https://shamela.ws/book/1217/177">shamela.ws/book/1217/177</a> (ص180) — Arabic checked verbatim: "ومن رآها سقطت بكفه من غير ألم ولا معالجة فإنها دراهم على عددها". Note what qualifies this reading: no pain <em>and</em> no "mu'alaja" — no effort, no handling. The same fallen teeth in the same palm read as dirhams only if you did not reach for them.</div>
 </div>
 </div>
+<span class="zone z-text"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 6.2C10.4 5 8 4.2 4.8 4.2v13.6c3.2 0 5.6.8 7.2 2 1.6-1.2 4-2 7.2-2V4.2C16 4.2 13.6 5 12 6.2zM12 6.2v13.6"/></svg>Classical text</span>
 <h2 id="where-the-page-rules-against-itself">Where the page rules against itself</h2>
 <p>Further down the same page ص180, Al-Nabulsi states the catching rule:</p>
 <div class="cites">
 <div class="cite-hd"><div>Text</div><div class="src-hd">Source</div></div>
 <div class="cite-row">
   <div class="txt"><p>"If one sees that his teeth fall while he takes them in his hand, or with his beard, or in his lap, that indicates that his children will be cut off and no child will be born to him."</p></div>
-  <div class="src">Al-Nabulsi, shamela.ws/book/1217/177 (ص180) — Arabic checked verbatim: "أن أسنانه تسقط وهو يأخذها بيده أو بلحيته أو في حجره فإن ذلك يدل على أن أولاده تنقطع ولا يولد له".</div>
+  <div class="src">Al-Nabulsi, <a href="https://shamela.ws/book/1217/177">shamela.ws/book/1217/177</a> (ص180) — Arabic checked verbatim: "أن أسنانه تسقط وهو يأخذها بيده أو بلحيته أو في حجره فإن ذلك يدل على أن أولاده تنقطع ولا يولد له".</div>
 </div>
 </div>
 <p>Put the two blocks side by side: a tooth that lands in your lap is a male child; teeth you gather into your lap end your line. The hand that profits is the hand the teeth fell into, not the hand that grabbed them. The book never reconciles this; this page simply does not either. The compiled Ibn Sirin carries the same collision inside one entry:</p>
@@ -183,21 +232,24 @@ a{color:var(--accent)}
 </div>
 <p>Collecting means a crowd of descendants in one line of the same entry and no children at all in another. The compilation prints both, three sentences apart in the flow, and moves on.</p>
 
+<span class="zone z-text"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 6.2C10.4 5 8 4.2 4.8 4.2v13.6c3.2 0 5.6.8 7.2 2 1.6-1.2 4-2 7.2-2V4.2C16 4.2 13.6 5 12 6.2zM12 6.2v13.6"/></svg>Classical text</span>
 <h2 id="the-pocket-a-fourth-surface">The pocket: a fourth surface</h2>
 <p>Al-Nabulsi adds one landing place the trio misses — cloth, i.e. wrapping the tooth up. It reads as gain, not loss:</p>
 <div class="cites">
 <div class="cite-hd"><div>Text</div><div class="src-hd">Source</div></div>
 <div class="cite-row">
   <div class="txt"><p>"If he saw that an incisor fell into his hand or he wrapped it in his garment, he gains a son, or a brother, or a sister."</p></div>
-  <div class="src">Al-Nabulsi, shamela.ws/book/1217/177 (ص180) — Arabic checked verbatim: "وإن رأى أن ثنية سقطت في يده أو صرها في ثوبه فإنه يستفيد ولداً أو أخاً أو أختاً". The verb in the original — "صرها في ثوبه", wringing/twisting it into one's garment — is the operative act: the tooth kept in cloth feeds the family. The entry opens with "the teeth also indicate deposits and secrets" (Arabic checked verbatim: "وتدل الأسنان على الودائع والأسرار"), which fits a symbolism where keeping the fallen thing is what decides its reading.</div>
+  <div class="src">Al-Nabulsi, <a href="https://shamela.ws/book/1217/177">shamela.ws/book/1217/177</a> (ص180) — Arabic checked verbatim: "وإن رأى أن ثنية سقطت في يده أو صرها في ثوبه فإنه يستفيد ولداً أو أخاً أو أختاً". The verb in the original — "صرها في ثوبه", wringing/twisting it into one's garment — is the operative act: the tooth kept in cloth feeds the family. The entry opens with "the teeth also indicate deposits and secrets" (Arabic checked verbatim: "وتدل الأسنان على الودائع والأسرار"), which fits a symbolism where keeping the fallen thing is what decides its reading.</div>
 </div>
 </div>
+<span class="zone z-reading"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19l7-7-4-4-7 7-1 5zM16 5l2 2M13 8l2 2"/></svg>This site's reading</span>
 <h2 id="the-honest-gap">The honest gap</h2>
 <p>Read search questions into these pages and they partly go unanswered. Neither book distinguishes a right hand from a left, or specifies which relative the "son" of a lap-fall is. In Al-Nabulsi, the ground reading ("calamity of death") and the lost-tooth reading ("death of the relative it refers to") are stated as separate rules on one page and never merged. Anyone who tells you the classical books have a settled rule for every hand-and-tooth combination is filling a gap the books left open.</p>
 
+<span class="zone z-research"><svg widtheight="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M9.5 3h5M10.8 3v5.2L5.6 16.8A2.5 2.5 0 0 0 7.8 20.5h8.4a2.5 2.5 0 0 0 2.2-3.7L13.2 8.2V3M8.2 14.5h7.6"/></svg>Modern research</span>
 <h2 id="why-the-dream-feels-so-physical">Why the dream feels so physical</h2>
-<p>The same modern study every mainstream page cites for the stress reading actually points somewhere else. Rozen &amp; Soffer-Dudek (Frontiers in Psychology 9:1812, 2018 — PubMed 30319507) surveyed 210 undergraduates: teeth dreams correlated with <strong>teeth tension</strong> — waking tenderness or tension in teeth, gums, or jaws (r = 0.21, p &lt; 0.005) — but <em>not</em> with the item asking directly about teeth grinding (r = 0.06, not significant), and not with psychological distress (r = 0.02, not significant), while other dream types did correlate with distress. The authors' reading: most people who grind or clench at night don't know they do it, but they wake feeling the tension — and the dream may be that feeling, distorted.</p>
-<p>For scale, they cite sleep-bruxism figures from other research: 85–90% of people grind their teeth at some point in life; active sleep bruxism sits at about 8.6% of the general population (Khoury et al., 2016, as cited in that paper). In Calvin Kai-Ching Yu's Dream Motif Scale survey (<em>Dreaming</em>, 22(1), 2012, pp. 18–52, DOI 10.1037/a0026171), 39.0% of respondents reported teeth dreams at least once, 16.2% recurrently, 8.2% regularly — figures as reported in Rozen &amp; Soffer-Dudek (2018).</p>
+<p>The same modern study every mainstream page cites for the stress reading actually points somewhere else. Rozen &amp; Soffer-Dudek (Frontiers in Psychology 9:1812, 2018 — <a href="https://pubmed.ncbi.nlm.nih.gov/30319507/">PubMed 30319507</a>) surveyed 210 undergraduates: teeth dreams correlated with <strong>teeth tension</strong> — waking tenderness or tension in teeth, gums, or jaws (r = 0.21, p &lt; 0.005) — but <em>not</em> with the item asking directly about teeth grinding (r = 0.06, not significant), and not with psychological distress (r = 0.02, not significant), while other dream types did correlate with distress. The authors' reading: most people who grind or clench at night don't know they do it, but they wake feeling the tension — and the dream may be that feeling, distorted.</p>
+<p>For scale, they cite sleep-bruxism figures from other research: 85–90% of people grind their teeth at some point in life; active sleep bruxism sits at about 8.6% of the general population (Khoury et al., 2016, as cited in that paper). In Calvin Kai-Ching Yu's Dream Motif Scale survey (<em>Dreaming</em>, 22(1), 2012, pp. 18–52, <a href="https://doi.org/10.1037/a0026171">DOI 10.1037/a0026171</a>), 39.0% of respondents reported teeth dreams at least once, 16.2% recurrently, 8.2% regularly — figures as reported in Rozen &amp; Soffer-Dudek (2018).</p>
 <p>Now set the two layers beside each other — this page's actual point. The study never asked where the teeth landed. "Hand, lap, or floor" is not a variable in any modern design; the research tracks a jaw-state on waking, the classical page tracks a family ledger and a debt roll, and the only thing either layer can say about the other is that they are measuring different things. If you woke with a tight jaw and a memory of teeth in your palm, the physical reading and the classical reading are not competing answers; the books were written centuries before bruxism had a name.</p>
 
 <div class="note"><p>This page reports what two classical texts say. It is not a prediction, a medical or religious ruling, and no dream book — classical or modern — settles what a dream means for the person who had it.</p></div>
@@ -209,5 +261,9 @@ a{color:var(--accent)}
 <p>Teeth Dream Meaning · <a href="/">Home</a> · <a href="/dream/teeth-falling-out/">Teeth falling out: the two entries</a> · <a href="/dream/one-tooth-vs-all-teeth/">One tooth vs. the whole mouth</a> · <a href="/dream/teeth-falling-out-with-blood/">Teeth falling out with blood</a> · <a href="/dream/teeth-dreams-and-stress/">Teeth dreams and stress</a> · <a href="/disclaimer/">Disclaimer</a></p>
 </footer>
 </div>
-</body>
+<script>
+if(window.matchMedia("(max-width:860px)").matches){
+  var d=document.querySelector(".tocd"); if(d) d.removeAttribute("open");
+}
+</script></body>
 </html>
