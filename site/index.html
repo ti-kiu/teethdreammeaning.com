@@ -52,9 +52,32 @@ main h2{font-size:22px;font-weight:700;margin:44px 0 6px}
 .card{background:var(--card);border:1px solid var(--line);border-radius:6px;padding:20px 22px;
       text-decoration:none;color:var(--ink);display:block;transition:border-color .15s}
 .card:hover{border-color:var(--accent)}
-.card .c-h{font-size:18.5px;font-weight:700;margin-bottom:5px}
+.card .c-top{display:flex;align-items:center;gap:10px;margin-bottom:6px}
+.card .c-ic{flex-shrink:0}
+.card .c-h{font-size:18.5px;font-weight:700}
 .card .c-d{font-size:15px;color:#555;line-height:1.55;margin-bottom:10px}
 .card .c-s{font-size:12.5px;color:#777;font-style:italic}
+
+/* ---- scenario finder ---- */
+.finder{background:var(--card);border:1px solid var(--line);border-radius:6px;padding:22px 24px;margin:26px 0 10px}
+.finder h2{margin-top:0}
+.f-step{display:flex;align-items:baseline;gap:14px;flex-wrap:wrap;padding:10px 0;border-bottom:1px solid var(--line)}
+.f-step:last-of-type{border-bottom:none}
+.f-lbl{font-family:Helvetica,Arial,sans-serif;font-size:14px;color:#333;min-width:180px}
+.f-opts{display:flex;flex-wrap:wrap;gap:8px}
+.f-opts button{font-family:Helvetica,Arial,sans-serif;font-size:13.5px;color:var(--accent);background:#fdfcf9;
+        border:1px solid var(--line);border-radius:999px;padding:6px 14px;cursor:pointer;transition:all .12s}
+.f-opts button:hover{border-color:var(--accent)}
+.f-opts button.on{background:var(--accent);color:#fdfcf9;border-color:var(--accent)}
+.f-res{margin-top:16px;border-top:1px solid var(--line);padding-top:14px}
+.f-res .f-hint{font-family:Helvetica,Arial,sans-serif;font-size:13px;color:#777}
+.f-res ul{list-style:none;padding:0}
+.f-res li{padding:8px 0;border-bottom:1px solid var(--line)}
+.f-res li:last-child{border-bottom:none}
+.f-res a{color:var(--accent);font-weight:700;text-decoration:none}
+.f-res a:hover{text-decoration:underline}
+.f-res .f-d{font-size:14px;color:#555}
+.f-note{font-family:Helvetica,Arial,sans-serif;font-size:12px;color:#999;margin-top:10px}
 
 /* ---- method ---- */
 .method{background:#f5f1e6;border:1px solid #e0d5bd;border-left:3px solid var(--accent);padding:20px 24px;margin:36px 0}
@@ -83,8 +106,107 @@ footer span{color:#bbb;margin:0 6px}
 </style>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebSite", "name": "Teeth Dream Meaning", "url": "https://teethdreammeaning.com/", "description": "Classical dream interpretation from the source books — Ibn Sirin and Al-Nabulsi side by side, with checkable locations."}</script>
 <script src="/webmcp.js"></script>
+<script>
+(function(){
+  function init(){
+  var PAGES = {
+    "/dream/teeth-falling-out/":            {t:"Teeth falling out — the full answer", d:"The plain answer first, then the five scenario branches.", w:{base:1}},
+    "/dream/one-tooth-vs-all-teeth/":       {t:"One tooth or the whole mouth?", d:"The counting rules: one tooth pays one creditor, the whole mouth ends a household.", w:{base:0, one:4, all:4}},
+    "/dream/teeth-falling-out-and-death/":  {t:"Does it mean someone will die?", d:"Only under stated conditions — emigration, sickness and thirty-dinars alternatives in the same entries.", w:{base:0, ground:2, all:1}},
+    "/dream/teeth-falling-out-with-blood/": {t:"Teeth falling out with blood", d:"How blood changes the reading — a debt long before a death omen.", w:{base:0, blood_yes:5}},
+    "/dream/teeth-falling-into-hand-lap-ground/": {t:"Falling into your hand, lap, or the ground", d:"Hand = money, lap = a son, ground = death — the three-surface rule.", w:{base:0, hand:5, lap:5, ground:4}},
+    "/dream/teeth-falling-out-good-or-bad-omen/": {t:"Bad omen or good sign?", d:"Longevity and dirhams by count — death only when the tooth is lost or buried.", w:{base:0, blood_no:1, hand:1, lap:1}},
+    "/dream/teeth-dreams-and-stress/":      {t:"Is it caused by stress?", d:"What the measured studies found — and did not.", w:{base:0}}
+  };
+  var sel = {count:null, blood:null, surface:null};
+  var res = document.getElementById("f-res");
+  function score(w){
+    var s = w.base || 0;
+    if(sel.count && w[sel.count]) s += w[sel.count];
+    if(sel.blood === "yes" && w.blood_yes) s += w.blood_yes;
+    if(sel.blood === "no" && w.blood_no) s += w.blood_no;
+    if(sel.surface && w[sel.surface]) s += w[sel.surface];
+    return s;
+  }
+  function render(){
+    var any = sel.count !== null || sel.blood !== null || sel.surface !== null;
+    if(!any){ return; }
+    var items = [];
+    for(var u in PAGES){
+      var s = score(PAGES[u].w);
+      if(s > 0) items.push([u, s, PAGES[u]]);
+    }
+    items.sort(function(a,b){return b[1]-a[1];});
+    if(!items.length){
+      res.innerHTML = '<p class="f-hint">Start with the full guide — it covers every version of the dream.</p><ul><li><a href="/dream/teeth-falling-out/">Teeth falling out — the full answer</a><div class="f-d">The plain answer first, then the five scenario branches.</div></li></ul>';
+      return;
+    }
+    var top = items[0][1];
+    var html = '<p class="f-hint">Best match first:</p><ul>';
+    items.forEach(function(it, i){
+      var star = (i === 0 && top > 1) ? " — closest match" : "";
+      html += '<li><a href="'+it[0]+'">'+it[2].t+star+'</a><div class="f-d">'+it[2].d+'</div></li>';
+    });
+    html += "</ul>";
+    res.innerHTML = html;
+  }
+  document.querySelectorAll(".f-step").forEach(function(step){
+    var q = step.getAttribute("data-q");
+    step.querySelectorAll("button").forEach(function(b){
+      b.addEventListener("click", function(){
+        step.querySelectorAll("button").forEach(function(x){x.classList.remove("on");});
+        b.classList.add("on");
+        sel[q] = b.getAttribute("data-v");
+        render();
+      });
+    });
+  });
+  }
+  if(document.readyState === "loading"){
+    document.addEventListener("DOMContentLoaded", init);
+  } else { init(); }
+})();
+</script>
 </head>
 <body>
+<svg xmlns="http://www.w3.org/2000/svg" style="display:none">
+<!-- Line-icon sprite, teethdreammeaning.com. Single accent color, stroke-based, no gore. -->
+<defs>
+<path id="tooth" d="M12 3c-3.5 0-6 2.6-6 6 0 2.4.9 3.8 1.6 5.2.6 1.2.9 2.3 1 4 .1 1.5 2.1 1.6 2.4 0 .2-1.2.5-2 1-2s.8.8 1 2c.3 1.6 2.3 1.5 2.4 0 .1-1.7.4-2.8 1-4C17.1 12.8 18 11.4 18 9c0-3.4-2.5-6-6-6z"/>
+</defs>
+<symbol id="ic-one" viewBox="0 0 24 24" fill="none" stroke="#7a5c2e" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+<use href="#tooth"/>
+</symbol>
+<symbol id="ic-all" viewBox="0 0 24 24" fill="none" stroke="#7a5c2e" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+<use href="#tooth" transform="translate(-4.5,-3) scale(.55)"/>
+<use href="#tooth" transform="translate(5.5,-3) scale(.55)"/>
+<use href="#tooth" transform="translate(.5,4.5) scale(.55)"/>
+</symbol>
+<symbol id="ic-blood" viewBox="0 0 24 24" fill="none" stroke="#7a5c2e" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+<use href="#tooth" transform="translate(-3,-2.5) scale(.75)"/>
+<path d="M17.5 13.5c-1.7 2.1-2.5 3.4-2.5 4.6a2.5 2.5 0 0 0 5 0c0-1.2-.8-2.5-2.5-4.6z" fill="#7a5c2e" stroke="none" opacity=".25"/>
+<path d="M17.5 13.5c-1.7 2.1-2.5 3.4-2.5 4.6a2.5 2.5 0 0 0 5 0c0-1.2-.8-2.5-2.5-4.6z"/>
+</symbol>
+<symbol id="ic-hand" viewBox="0 0 24 24" fill="none" stroke="#7a5c2e" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+<path d="M8 12V6.2a1.3 1.3 0 0 1 2.6 0V11M10.6 11V4.6a1.3 1.3 0 0 1 2.6 0V11M13.2 11V6a1.3 1.3 0 0 1 2.6 0v6.5"/>
+<path d="M8 12l-1.4-2.2a1.25 1.25 0 0 0-2.1 1.3l2 4.4c1 2.4 2.2 4.1 4.6 4.9 1 .3 2 .5 3.2.5 3.1 0 5.1-1.8 5.1-4.9V13"/>
+</symbol>
+<symbol id="ic-omen" viewBox="0 0 24 24" fill="none" stroke="#7a5c2e" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+<path d="M12 4v16M6.5 20h11M12 5.5 6.8 7.6M12 5.5l5.2 2.1"/>
+<path d="M6.8 7.6 4.5 12.7a2.7 2.7 0 0 0 4.7 0L6.8 7.6zM17.2 7.6 14.9 12.7a2.7 2.7 0 0 0 4.7 0l-2.4-5.1z"/>
+<circle cx="12" cy="4.4" r="1.1"/>
+</symbol>
+<symbol id="ic-hourglass" viewBox="0 0 24 24" fill="none" stroke="#7a5c2e" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+<path d="M6.5 3h11M6.5 21h11M7.5 3v2.8c0 2.4 4.5 4.4 4.5 6.2 0 1.8-4.5 3.8-4.5 6.2V21M16.5 3v2.8c0 2.4-4.5 4.4-4.5 6.2 0 1.8 4.5 3.8 4.5 6.2V21"/>
+</symbol>
+<symbol id="ic-flask" viewBox="0 0 24 24" fill="none" stroke="#7a5c2e" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+<path d="M9.5 3h5M10.8 3v5.2L5.6 16.8A2.5 2.5 0 0 0 7.8 20.5h8.4a2.5 2.5 0 0 0 2.2-3.7L13.2 8.2V3M8.2 14.5h7.6"/>
+</symbol>
+<symbol id="ic-books" viewBox="0 0 24 24" fill="none" stroke="#7a5c2e" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+<path d="M12 6.2C10.4 5 8 4.2 4.8 4.2v13.6c3.2 0 5.6.8 7.2 2 1.6-1.2 4-2 7.2-2V4.2C16 4.2 13.6 5 12 6.2zM12 6.2v13.6"/>
+</symbol>
+</svg>
+
 <div class="wrap">
 
 <header class="head">
@@ -113,41 +235,74 @@ footer span{color:#bbb;margin:0 6px}
 
 <div class="grid">
   <a class="card" href="/dream/one-tooth-vs-all-teeth/">
-    <div class="c-h">One tooth or the whole mouth?</div>
+    <div class="c-top"><svg class="c-ic" width="28" height="28" aria-hidden="true"><use href="/img/scenarios.svg#ic-all"/></svg><div class="c-h">One tooth or the whole mouth?</div></div>
     <div class="c-d">The counting rules: one tooth pays one creditor, the whole mouth ends a household.</div>
     <div class="c-s">Ibn Sirin / Al-Nabulsi</div>
   </a>
   <a class="card" href="/dream/teeth-falling-out-and-death/">
-    <div class="c-h">Does it mean someone will die?</div>
+    <div class="c-top"><svg class="c-ic" width="28" height="28" aria-hidden="true"><use href="/img/scenarios.svg#ic-one"/></svg><div class="c-h">Does it mean someone will die?</div></div>
     <div class="c-d">Only under stated conditions, mapped to a specific relative — with emigration, long sickness and thirty-dinars alternatives in the same entries.</div>
     <div class="c-s">Ibn Sirin / Al-Nabulsi</div>
   </a>
   <a class="card" href="/dream/teeth-falling-out-with-blood/">
-    <div class="c-h">With blood</div>
+    <div class="c-top"><svg class="c-ic" width="28" height="28" aria-hidden="true"><use href="/img/scenarios.svg#ic-blood"/></svg><div class="c-h">With blood</div></div>
     <div class="c-d">How blood changes the framing — spoiling the project, flipping a caught tooth to severed ties, reading as a debt first.</div>
     <div class="c-s">Ibn Sirin / Al-Nabulsi</div>
   </a>
   <a class="card" href="/dream/teeth-falling-into-hand-lap-ground/">
-    <div class="c-h">Caught in your hand, lap, or ground</div>
+    <div class="c-top"><svg class="c-ic" width="28" height="28" aria-hidden="true"><use href="/img/scenarios.svg#ic-hand"/></svg><div class="c-h">Caught in your hand, lap, or ground</div></div>
     <div class="c-d">The three-surface rule — hand = money, lap = a son, ground = death — both rule-sets quoted, including where they contradict.</div>
     <div class="c-s">Ibn Sirin / Al-Nabulsi</div>
   </a>
   <a class="card" href="/dream/teeth-falling-out-good-or-bad-omen/">
-    <div class="c-h">Bad omen or good sign?</div>
+    <div class="c-top"><svg class="c-ic" width="28" height="28" aria-hidden="true"><use href="/img/scenarios.svg#ic-omen"/></svg><div class="c-h">Bad omen or good sign?</div></div>
     <div class="c-d">Both verdicts on the same pages: longevity and dirhams by count — death only when the tooth is lost or buried.</div>
     <div class="c-s">Ibn Sirin / Al-Nabulsi</div>
   </a>
   <a class="card" href="/dream/teeth-dreams-and-stress/">
-    <div class="c-h">Is it caused by stress?</div>
+    <div class="c-top"><svg class="c-ic" width="28" height="28" aria-hidden="true"><use href="/img/scenarios.svg#ic-flask"/></svg><div class="c-h">Is it caused by stress?</div></div>
     <div class="c-d">The books never call it a stress dream; the study that measured distress found r&nbsp;=&nbsp;0.02 — no link — but a jaw-tension link.</div>
     <div class="c-s">Research note</div>
   </a>
   <a class="card" href="/dream/teeth-three-traditions/" style="grid-column:1 / -1">
-    <div class="c-h">How three traditions read the same dream</div>
+    <div class="c-h">How three traditions read the same dream</div></div>
     <div class="c-d">Arabic and Chinese traditions placed side by side: the Arabic books count teeth; the Zhou Gong book gives two lines. Same dream, two different machines.</div>
     <div class="c-s">Ibn Sirin / Al-Nabulsi / Zhou Gong</div>
   </a>
 </div>
+
+<section class="finder" id="finder">
+<h2>Not sure which one? Answer three questions</h2>
+<div class="f-step" data-q="count">
+  <span class="f-lbl">How many teeth?</span>
+  <span class="f-opts">
+    <button type="button" data-v="one">One tooth</button>
+    <button type="button" data-v="all">All / many</button>
+    <button type="button" data-v="">Don't remember</button>
+  </span>
+</div>
+<div class="f-step" data-q="blood">
+  <span class="f-lbl">Was there blood?</span>
+  <span class="f-opts">
+    <button type="button" data-v="yes">Yes</button>
+    <button type="button" data-v="no">No</button>
+    <button type="button" data-v="">Don't remember</button>
+  </span>
+</div>
+<div class="f-step" data-q="surface">
+  <span class="f-lbl">Where did they fall?</span>
+  <span class="f-opts">
+    <button type="button" data-v="hand">Into my hand</button>
+    <button type="button" data-v="lap">Into my lap</button>
+    <button type="button" data-v="ground">To the ground</button>
+    <button type="button" data-v="">Don't remember</button>
+  </span>
+</div>
+<div class="f-res" id="f-res">
+  <p class="f-hint">Pick what you remember — every answer is optional. The best-matching pages appear here.</p>
+</div>
+<p class="f-note">This finder only navigates to existing pages. It does not read, store, or interpret your dream.</p>
+</section>
 
 <h2>The method, stated plainly</h2>
 <div class="method">
