@@ -16,152 +16,135 @@
 <title>Teeth Dream Meaning — Classical Sources, Side by Side</title>
 <meta name="description" content="What the classical dream books actually say about teeth falling out — Ibn Sirin and Al-Nabulsi side by side, every quote cited to a page you can check.">
 <style>
-:root{--ink:#1a1a1a;--paper:#fdfcf9;--accent:#7a5c2e;--line:#d8ceba;--soft:#6b6357}
+:root{--ink:#1a1a1a;--paper:#fdfcf9;--accent:#7a5c2e;--line:#e8e3dd;--soft:#6b6357;--card:#f9f5f0}
 *{margin:0;padding:0;box-sizing:border-box}
 body{font-family:Georgia,'Times New Roman',serif;background:var(--paper);color:var(--ink);line-height:1.65;font-size:17px}
-.wrap{max-width:680px;margin:0 auto;padding:48px 24px}
-main p{max-width:70ch}
-header{border-bottom:2px solid var(--ink);padding-bottom:24px;margin-bottom:40px}
-h1{font-size:clamp(28px,5vw,40px);font-weight:400;letter-spacing:-.5px;line-height:1.2}
-.tagline{color:var(--soft);margin-top:12px;font-style:italic;font-size:18px}
-main h2{font-size:26px;font-weight:400;margin:56px 0 18px;letter-spacing:.2px}
-main h2::after{content:"";display:block;width:48px;height:2px;background:var(--accent);margin-top:10px}
-p{margin-bottom:16px}
-.method{background:#f5f1e6;border:1px solid #e0d5bd;border-left:3px solid var(--accent);padding:20px 24px;margin:32px 0}
-.method p:last-child{margin-bottom:0}
-.loc{font-family:Menlo,Consolas,monospace;font-size:13px;color:var(--soft)}
-a{color:var(--accent)}
-/* ---- hub cards ---- */
-.cluster{display:flex;flex-direction:column;gap:14px;margin:24px 0}
-.card{border:1px solid var(--line);border-radius:8px;padding:16px 20px;background:#fffdf8;text-decoration:none;color:var(--ink);transition:border-color .15s}
+.wrap{max-width:920px;margin:0 auto;padding:40px 24px 56px}
+
+/* ---- header: title left, nav right ---- */
+.head{display:flex;justify-content:space-between;align-items:flex-start;gap:24px;
+      border-bottom:2px solid var(--ink);padding-bottom:28px;margin-bottom:40px}
+h1{font-size:clamp(30px,5vw,42px);font-weight:700;letter-spacing:-.5px;line-height:1.15}
+.sub{color:#555;font-style:italic;font-size:17px;margin-top:10px}
+.head-r{text-align:right;flex-shrink:0}
+.nav{font-family:Helvetica,Arial,sans-serif;font-size:14px}
+.nav a{color:#555;text-decoration:none}
+.nav a:hover{color:var(--accent);text-decoration:underline}
+.nav span{color:#bbb;margin:0 6px}
+
+/* ---- CTAs ---- */
+.ctas{margin-top:18px;display:flex;align-items:center;gap:18px;flex-wrap:wrap}
+.btn{display:inline-block;background:var(--accent);color:#fdfcf9;text-decoration:none;
+     font-family:Helvetica,Arial,sans-serif;font-size:15.5px;padding:12px 24px;border-radius:6px;border-bottom:3px solid #5d4522}
+.btn:hover{background:#63481f}
+.cta-link{font-family:Helvetica,Arial,sans-serif;font-size:15.5px;color:var(--accent);text-decoration:underline}
+.cta-link:hover{color:#63481f}
+
+/* ---- start-here lead ---- */
+.lede{max-width:70ch;margin-bottom:8px}
+.lede p{margin-bottom:14px}
+main h2{font-size:22px;font-weight:700;margin:44px 0 6px}
+.sect-sub{color:#555;font-size:15.5px;margin-bottom:18px;max-width:70ch}
+
+/* ---- scenario cards: 2-col desktop, 1-col mobile ---- */
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin:18px 0 8px}
+@media(max-width:680px){.grid{grid-template-columns:1fr}}
+.card{background:var(--card);border:1px solid var(--line);border-radius:6px;padding:20px 22px;
+      text-decoration:none;color:var(--ink);display:block;transition:border-color .15s}
 .card:hover{border-color:var(--accent)}
-.card .card-h{font-size:16.5px;font-weight:700;color:var(--accent);margin-bottom:4px}
-.card .card-q{font-size:15.5px;color:#333;margin-bottom:6px;line-height:1.6}
-.card .card-src{font-size:13.5px;color:var(--soft);font-style:normal}
-.card-row{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:24px 0}
-@media(max-width:600px){.card-row{grid-template-columns:1fr}}
-.syms{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:24px 0}
-@media(max-width:600px){.syms{grid-template-columns:1fr}}
-footer{border-top:1px solid var(--line);margin-top:56px;padding-top:24px;color:var(--soft);font-size:14px}
+.card .c-h{font-size:18.5px;font-weight:700;margin-bottom:5px}
+.card .c-d{font-size:15px;color:#555;line-height:1.55;margin-bottom:10px}
+.card .c-s{font-size:12.5px;color:#777;font-style:italic}
+
+/* ---- method ---- */
+.method{background:#f5f1e6;border:1px solid #e0d5bd;border-left:3px solid var(--accent);padding:20px 24px;margin:36px 0}
+.method p:last-child{margin-bottom:0}
+.method p{max-width:70ch;font-size:15.5px}
+a{color:var(--accent)}
+.coming{font-size:15.5px;color:#333;max-width:70ch}
+
+/* ---- other symbols: inline bullet list ---- */
+.syms{margin-top:36px;border-top:1px solid var(--line);padding-top:22px}
+.syms .lbl{font-family:Helvetica,Arial,sans-serif;font-size:13px;color:#777;margin-bottom:8px}
+.syms p{font-family:Helvetica,Arial,sans-serif;font-size:14px;color:#555;line-height:2}
+.syms a{color:#555;text-decoration:none}
+.syms a:hover{color:var(--accent);text-decoration:underline}
+.syms span{color:#bbb;margin:0 7px}
+
 .disc{font-size:13.5px;color:var(--soft);border-top:1px solid var(--line);margin-top:40px;padding-top:16px}
+footer{border-top:1px solid var(--line);margin-top:24px;padding-top:20px;
+       font-family:Helvetica,Arial,sans-serif;font-size:13px;color:#777}
+footer a{color:#777;text-decoration:none}
+footer a:hover{color:var(--accent)}
+footer span{color:#bbb;margin:0 6px}
+@media(max-width:600px){.wrap{padding:28px 20px 44px}main h2{margin:36px 0 6px}.head{flex-direction:column;gap:10px}.head-r{text-align:left}footer a,.nav a,.syms a{padding:6px 2px;display:inline-block}}
 </style>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebSite", "name": "Teeth Dream Meaning", "url": "https://teethdreammeaning.com/", "description": "Classical dream interpretation from the source books — Ibn Sirin and Al-Nabulsi side by side, with checkable locations."}</script>
 <script src="/webmcp.js"></script>
 </head>
 <body>
 <div class="wrap">
-<header>
-<h1>Teeth Dream Meaning</h1>
-<p class="tagline">Classical dream interpretation, read from the source books — not from other websites.</p>
+
+<header class="head">
+  <div>
+    <h1>Teeth Dream Meaning</h1>
+    <p class="sub">Classical dream interpretation, read from the source books — not from other websites.</p>
+    <div class="ctas">
+      <a class="btn" href="/dream/teeth-falling-out/">Read the full answer</a>
+      <a class="cta-link" href="#scenarios">Choose your scenario</a>
+    </div>
+  </div>
+  <div class="head-r">
+    <nav class="nav"><a href="/about/">About</a><span>·</span><a href="/disclaimer/">Disclaimer</a><span>·</span><a href="/about/">Sources</a></nav>
+  </div>
 </header>
 
 <main>
 
+<section class="lede">
 <h2>Start here: teeth falling out</h2>
-<p>Woke up from a teeth falling out dream? The plainest reading: <strong>something in your life feels like it's slipping out of control</strong> — money going out faster than it should, a family member you're quietly worried about, or a situation you're trying to hold onto that won't hold. The classical books land on that reading again and again. <a href="/dream/teeth-falling-out/">Read the full answer →</a></p>
+<p>Woke up from a teeth falling out dream? The plainest reading: <strong>something in your life feels like it's slipping out of control</strong> — money going out faster than it should, a family member you're quietly worried about, or a situation you're trying to hold onto that won't hold. The classical books land on that reading again and again.</p>
+</section>
 
-<h2>Teeth falling out — by scenario</h2>
-<p>Find the version you actually dreamed. Each card is one page; each page answers one question with the sources cited.</p>
+<h2 id="scenarios">Teeth falling out — by scenario</h2>
+<p class="sect-sub">Find the version you actually dreamed. Each page answers one question with every quote cited to a page you can check.</p>
 
-<div class="cluster">
-<a class="card featured" href="/dream/teeth-falling-out/" style="background:#f7f3e8;border-color:#d8cfbc">
-<div class="card-h">Teeth falling out — the full answer</div>
-<div class="card-q">The main page: the plain answer first, then five scenario branches (one tooth vs. all, blood, pain, catching it, regrowth) — sources at the bottom.</div>
-<div class="card-src">Ibn Sirin compilation "Teeth" p. 349–352 · Al-Nabulsi shamela 177 (ص180)</div>
-</a>
-
-<a class="card" href="/dream/teeth-falling-out-and-death/">
-<div class="card-h">Does it mean someone will die?</div>
-<div class="card-q">Which tooth maps to which relative, when the death reading actually fires, and the emigration, long-sickness and thirty-dinars alternatives printed in the same entries.</div>
-<div class="card-src">Ibn Sirin pp. 349–352 · Al-Nabulsi shamela 177 · 27 Arabic clauses verified</div>
-</a>
-
-<a class="card" href="/dream/teeth-falling-out-with-blood/">
-<div class="card-h">Teeth falling out with blood</div>
-<div class="card-q">What blood actually does: spoils a project at the front teeth, flips a caught tooth from reunion to severed ties, gets re-read as a debt before it ever reads as a death omen.</div>
-<div class="card-src">Ibn Sirin "Teeth" + "Toothbrush" entries · Al-Nabulsi shamela 177</div>
-</a>
-
-<a class="card" href="/dream/teeth-falling-into-hand-lap-ground/">
-<div class="card-h">Falling into your hand, lap, or the ground</div>
-<div class="card-q">The three-surface rule: hand = money, lap = a son, ground = death — and the page where catching the teeth flips a "son" into "your line ends."</div>
-<div class="card-src">Al-Nabulsi shamela 177, two conflicting rule-sets quoted in full</div>
-</a>
-
-<a class="card" href="/dream/one-tooth-vs-all-teeth/">
-<div class="card-h">One tooth or the whole mouth?</div>
-<div class="card-q">The counting rules: one tooth pays one creditor, the whole mouth ends a household — and one page of Al-Nabulsi rules against itself on what catching the teeth means.</div>
-<div class="card-src">Ibn Sirin "Molar Tooth" p. 281 · Al-Nabulsi shamela 177</div>
-</a>
-
-<a class="card" href="/dream/teeth-falling-out-good-or-bad-omen/">
-<div class="card-h">Bad omen or good sign?</div>
-<div class="card-q">Both verdicts are in the books, on the same pages: longevity, dirhams by count, a slave's freedom — death only when the tooth is lost or buried.</div>
-<div class="card-src">Ibn Sirin front matter (the Caliph story) + "Teeth" entry · Al-Nabulsi exceptions</div>
-</a>
-
-<a class="card" href="/dream/teeth-dreams-and-stress/">
-<div class="card-h">Is it caused by stress?</div>
-<div class="card-q">The classical books never call it a stress dream, and the study that measured distress found r = 0.02 — no link — while finding one to jaw tension on waking.</div>
-<div class="card-src">Frontiers in Psychology 9:1812 (2018) · Yu, Dreaming 22:1 (2012)</div>
-</a>
-
-<a class="card" href="/dream/teeth-three-traditions/">
-<div class="card-h">How three traditions read the same dream</div>
-<div class="card-q">Comparison page: the Arabic books count teeth; the Chinese Zhou Gong book gives two lines only (fallen = parents, regrown = descendants). Same dream, two different machines.</div>
-<div class="card-src">Zhou Gong Jie Meng ch. 3 · both Arabic entries cross-referenced</div>
-</a>
-</div>
-
-<h2>Other symbols</h2>
-<p>New pages as their sources are verified — one symbol at a time, three traditions where available.</p>
-
-<div class="syms">
-<a class="card" href="/dream/snake/">
-<div class="card-h">Snake</div>
-<div class="card-q">The bite: Arabic books read disgrace, the Chinese book reads great wealth. Killing it is "marriage" on one line and "a child's death" on another.</div>
-<div class="card-src">Ibn Sirin p. 398 · Al-Nabulsi shamela 54 + 94 · Zhou Gong ch. 25</div>
-</a>
-<a class="card" href="/dream/water/">
-<div class="card-h">Water</div>
-<div class="card-q">Clear water = life, money, marriage. Water closing over you = trouble you're inside. Plus the thirst experiments that put water in dreams without symbolism.</div>
-<div class="card-src">Ibn Sirin p. 470 · Al-Nabulsi shamela 316 · Zhou Gong ch. 23</div>
-</a>
-<a class="card" href="/dream/dead-person-resurrected/">
-<div class="card-h">A dead person coming back to life</div>
-<div class="card-q">Both Arabic books read the revived dead as recovery — wealth after poverty, repentance, the traveler home — never a haunting. Zhou Gong: news arrives. The research layer: 58% of the bereaved have the dream.</div>
-<div class="card-src">Ibn Sirin pp. 111–114 · Al-Nabulsi shamela 344 + 345 · Zhou Gong ch. 18</div>
-</a>
-<a class="card" href="/dream/kaaba/">
-<div class="card-h">The Kaaba</div>
-<div class="card-q">Seeing it means glad tidings and safety from fear; praying inside it means protection from your enemy — but praying on its roof means losing your faith. The tawaf clause grades your religion by the rites you actually did.</div>
-<div class="card-src">Ibn Sirin pp. 237–238 · Al-Nabulsi shamela 289 · Zhou Gong: no such entry (stated)</div>
-</a>
-<a class="card" href="/dream/wedding/">
-<div class="card-h">A wedding or marriage</div>
-<div class="card-q">Both Arabic books open the same way — God's care, then debt and office — and both read death as marriage, washed and perfumed like a bridegroom. Musicians at your wedding mean death in one book and a promotion in the other.</div>
-<div class="card-src">Ibn Sirin pp. 266–267, 473, 111 · Al-Nabulsi shamela 145 + 344 · Zhou Gong ch. 14: marriage = inauspicious</div>
-</a>
-<a class="card" href="/dream/gold/">
-<div class="card-h">Gold</div>
-<div class="card-q">Both books open cold — gold is a disliked element that costs you property — then crown it: a necklace means leadership, spun gold means unbroken provision, and gold turning to silver means your fortunes tipping from increase to decrease.</div>
-<div class="card-src">Ibn Sirin p. 189 · Al-Nabulsi shamela 124 + 125 · Zhou Gong ch. 9: gold and silver treasures = wealth and honor</div>
-</a>
-<a class="card" href="/dream/hair/">
-<div class="card-h">Hair falling out</div>
-<div class="card-q">Both Arabic books: hair means money and longevity, so shedding is a loss of savings, not a death sentence — and shaving means your debts get paid. The Chinese book flips two entries: white hair and regrowth read as long life.</div>
-<div class="card-src">Ibn Sirin p. 198 · Al-Nabulsi shamela 192 + 193 · Zhou Gong ch. 3: baldness and hair fall = inauspicious</div>
-</a>
-<a class="card" href="/dream/spider/">
-<div class="card-h">Spider</div>
-<div class="card-q">Both Arabic books read one spider as three people — a deceiver, a weaver, an ascetic — and a ceiling spider as a severe winter. The received Zhou Gong book has no spider entry at all; the older dream book behind its quotations reads joy arriving that day.</div>
-<div class="card-src">Ibn Sirin p. 404 · Al-Nabulsi shamela 247 + 248 · Zhou Gong: no such entry (stated); Taiping Yulan quotes the older Meng shu</div>
-</a>
-<a class="card" href="/dream/blood/">
-<div class="card-h">Blood</div>
-<div class="card-q">Both Arabic books price blood as unlawful money first — then flip it by three switches: rich or poor, necessary or excess, drawn or spilled. Zhou Gong's two blood lines read it as fortune and high office instead.</div>
-<div class="card-src">Ibn Sirin pp. 42–43 · 106 · 251 · 274 · 459 · Al-Nabulsi shamela 116–118 · Zhou Gong ch. 3 + 26</div>
-</a>
+<div class="grid">
+  <a class="card" href="/dream/one-tooth-vs-all-teeth/">
+    <div class="c-h">One tooth or the whole mouth?</div>
+    <div class="c-d">The counting rules: one tooth pays one creditor, the whole mouth ends a household.</div>
+    <div class="c-s">Ibn Sirin / Al-Nabulsi</div>
+  </a>
+  <a class="card" href="/dream/teeth-falling-out-and-death/">
+    <div class="c-h">Does it mean someone will die?</div>
+    <div class="c-d">Only under stated conditions, mapped to a specific relative — with emigration, long sickness and thirty-dinars alternatives in the same entries.</div>
+    <div class="c-s">Ibn Sirin / Al-Nabulsi</div>
+  </a>
+  <a class="card" href="/dream/teeth-falling-out-with-blood/">
+    <div class="c-h">With blood</div>
+    <div class="c-d">How blood changes the framing — spoiling the project, flipping a caught tooth to severed ties, reading as a debt first.</div>
+    <div class="c-s">Ibn Sirin / Al-Nabulsi</div>
+  </a>
+  <a class="card" href="/dream/teeth-falling-into-hand-lap-ground/">
+    <div class="c-h">Caught in your hand, lap, or ground</div>
+    <div class="c-d">The three-surface rule — hand = money, lap = a son, ground = death — both rule-sets quoted, including where they contradict.</div>
+    <div class="c-s">Ibn Sirin / Al-Nabulsi</div>
+  </a>
+  <a class="card" href="/dream/teeth-falling-out-good-or-bad-omen/">
+    <div class="c-h">Bad omen or good sign?</div>
+    <div class="c-d">Both verdicts on the same pages: longevity and dirhams by count — death only when the tooth is lost or buried.</div>
+    <div class="c-s">Ibn Sirin / Al-Nabulsi</div>
+  </a>
+  <a class="card" href="/dream/teeth-dreams-and-stress/">
+    <div class="c-h">Is it caused by stress?</div>
+    <div class="c-d">The books never call it a stress dream; the study that measured distress found r&nbsp;=&nbsp;0.02 — no link — but a jaw-tension link.</div>
+    <div class="c-s">Research note</div>
+  </a>
+  <a class="card" href="/dream/teeth-three-traditions/" style="grid-column:1 / -1">
+    <div class="c-h">How three traditions read the same dream</div>
+    <div class="c-d">Arabic and Chinese traditions placed side by side: the Arabic books count teeth; the Zhou Gong book gives two lines. Same dream, two different machines.</div>
+    <div class="c-s">Ibn Sirin / Al-Nabulsi / Zhou Gong</div>
+  </a>
 </div>
 
 <h2>The method, stated plainly</h2>
@@ -171,18 +154,21 @@ footer{border-top:1px solid var(--line);margin-top:56px;padding-top:24px;color:v
 </div>
 
 <h2>What's coming</h2>
-<p>Fire, rain, doors, keys, ships, honey, the moon — the three-tradition treatment, one page at a time. No page goes up before its Zhou Gong line and both Arabic pages are verified. The queue and source locations are worked out in advance; publication follows verification.</p>
+<p class="coming">Fire, rain, doors, keys, ships, honey, the moon — the three-tradition treatment, one page at a time. No page goes up before its Zhou Gong line and both Arabic pages are verified. The queue and source locations are worked out in advance; publication follows verification.</p>
+
+<section class="syms">
+<div class="lbl">Other symbols</div>
+<p><a href="/dream/snake/">Snake</a><span>·</span><a href="/dream/water/">Water</a><span>·</span><a href="/dream/blood/">Blood</a><span>·</span><a href="/dream/gold/">Gold</a><span>·</span><a href="/dream/hair/">Hair falling out</a><span>·</span><a href="/dream/dead-person-resurrected/">A dead person alive again</a><span>·</span><a href="/dream/wedding/">Wedding</a><span>·</span><a href="/dream/kaaba/">The Kaaba</a><span>·</span><a href="/dream/spider/">Spider</a></p>
+</section>
+
 </main>
 
 <p class="disc">This site reports what classical texts say about dream symbols. It does not predict anything and does not give medical, psychological, or religious rulings. The books themselves disagree with each other; no dream book settles what a dream means for the person who had it.</p>
 
 <footer>
-<p>Teeth Dream Meaning · Built on the classical sources · <a href="/about/">About</a> · <a href="/disclaimer/">Disclaimer</a> · <a href="/privacy/">Privacy</a> · <a href="/terms/">Terms</a></p>
+Teeth Dream Meaning<span>·</span><a href="/about/">About</a><span>·</span><a href="/disclaimer/">Disclaimer</a><span>·</span><a href="/privacy/">Privacy</a><span>·</span><a href="/terms/">Terms</a>
 </footer>
+
 </div>
 </body>
 </html>
-
-<style>
-@media(max-width:600px){.wrap{padding:32px 20px}main h2{margin:40px 0 14px}footer a{padding:8px 4px;display:inline-block}}
-</style>
