@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PREVIEW — death article with three-zone evidence labels</title>
+<style>
+:root{--ink:#1a1a1a;--paper:#fdfcf9;--accent:#7a5c2e;--line:#e4ddcf;--soft:#6b6357;--card:#f9f5f0;--research:#4a6b6b}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Georgia,'Times New Roman',serif;background:var(--paper);color:var(--ink);line-height:1.75}
+.wrap{max-width:1000px;margin:0 auto;padding:40px 24px 56px}
+.cols{display:grid;grid-template-columns:190px minmax(0,1fr);gap:48px}
+@media(min-width:861px){
+  aside{grid-column:1;grid-row:1}
+  .mhead{grid-column:2;grid-row:1;margin-bottom:0}
+  main{grid-column:2;grid-row:2}
+}
+@media(max-width:860px){.cols{grid-template-columns:1fr;gap:0}}
+.top{display:flex;justify-content:space-between;align-items:baseline;gap:20px;
+     border-bottom:2px solid var(--ink);padding-bottom:20px;margin-bottom:36px}
+.top .brand{font-size:16.5px}
+.top .brand a{color:var(--ink);text-decoration:none;font-weight:700}
+.top .brand em{color:#555;font-weight:400}
+.topnav{font-family:Helvetica,Arial,sans-serif;font-size:13.5px;flex-shrink:0}
+.topnav a{color:#555;text-decoration:none}
+.topnav span{color:#bbb;margin:0 5px}
+.banner{background:#1a1a1a;color:#fdfcf9;font-family:Menlo,Consolas,monospace;font-size:12px;padding:6px 12px;text-align:center}
+body{padding-top:0}
+
+aside{position:sticky;top:24px;align-self:start;font-size:15px}
+aside .lbl{font-weight:700;margin-bottom:12px}
+aside ul{list-style:none}
+aside li{margin-bottom:11px}
+aside a{color:#555;text-decoration:none;line-height:1.4;display:block}
+aside a:hover{color:var(--accent);text-decoration:underline}
+aside .g{font-family:Helvetica,Arial,sans-serif;font-size:10.5px;letter-spacing:.6px;text-transform:uppercase;color:#666;margin:14px 0 6px}
+@media(max-width:860px){
+  .mhead{order:0}
+  aside{order:1;position:static;border:1px solid var(--line);border-radius:6px;background:var(--card);padding:12px 20px;margin:0 0 28px}
+  main{order:2}
+  .top .brand em{display:none}
+}
+aside details summary{font-weight:700;cursor:pointer;list-style:none}
+aside details summary::-webkit-details-marker{display:none}
+aside details summary::after{content:"▾";color:#666;margin-left:6px;font-size:12px}
+aside details[open] summary::after{content:"▴"}
+article{max-width:680px}
+h1{font-size:clamp(28px,4.5vw,38px);font-weight:400;line-height:1.25;margin-bottom:12px}
+.lede{font-size:18px;color:#333;margin-bottom:24px}
+
+/* zone label chips */
+.zone{display:inline-flex;align-items:center;gap:6px;font-family:Helvetica,Arial,sans-serif;
+      font-size:11px;letter-spacing:.8px;text-transform:uppercase;color:#fff;
+      border-radius:3px;padding:3px 9px;margin:0 0 10px}
+.zone svg{flex-shrink:0}
+.z-text{background:var(--accent)}          /* classical text */
+.z-reading{background:#6b6357}             /* this site's reading */
+.z-research{background:var(--research)}    /* modern research */
+h2{font-size:22px;font-weight:400;margin:38px 0 6px}
+h2 + .zone{margin-top:0}
+h3{font-size:17px;font-weight:700;margin:28px 0 8px}
+p{margin-bottom:16px}
+.tldr{background:#faf5ed;border:1px solid #e0d9d0;border-radius:4px;padding:18px 22px;margin:0 0 28px}
+.tldr strong{display:block;font-size:13.5px;letter-spacing:.4px;text-transform:uppercase;color:var(--accent);margin-bottom:8px;font-family:Helvetica,Arial,sans-serif}
+.tldr p{font-size:15.5px;line-height:1.65;margin-bottom:10px}
+.tldr p:last-child{margin-bottom:0}
+.qa{border-bottom:1px solid var(--line);padding:18px 0}
+.qa h3{margin:0 0 8px}
+.qa p:last-child{margin-bottom:0}
+
+/* citation tables = classical text */
+.cites{margin:24px 0 0;border-top:2px solid var(--ink)}
+.cite-hd{display:grid;grid-template-columns:minmax(0,1fr) 160px;gap:20px;padding:8px 0;
+         font-family:Helvetica,Arial,sans-serif;font-size:11px;letter-spacing:.8px;text-transform:uppercase;color:#666}
+.cite-row{display:grid;grid-template-columns:minmax(0,1fr) 160px;gap:20px;
+          padding:16px 0;border-bottom:1px solid var(--line)}
+.cite-row .txt{font-size:16px;font-style:italic;color:#2e2a24;line-height:1.7}
+.cite-row .txt p{margin-bottom:0}
+.cite-row .src{font-size:13px;color:#777;align-self:start;line-height:1.5}
+@media(max-width:560px){.cite-row{grid-template-columns:1fr;gap:6px}.cite-hd{grid-template-columns:1fr}.cite-hd .src-hd{display:none}}
+.ar{font-size:16.5px;color:#3a362f;direction:rtl;text-align:right;line-height:2;margin:10px 0 0;font-style:normal}
+
+/* reading notes = this site's interpretation, visually distinct */
+.reading{background:#f5f1e6;border-left:3px solid #6b6357;padding:14px 18px;margin:14px 0 28px}
+.reading .rlbl{display:block;font-family:Helvetica,Arial,sans-serif;font-size:11.5px;font-weight:700;letter-spacing:.8px;text-transform:uppercase;color:#6b6357;margin-bottom:6px}
+.reading p{font-size:15px;line-height:1.65;margin-bottom:10px}
+.reading p:last-child{margin-bottom:0}
+
+/* inline related links */
+.rel-inline{border:1px dashed var(--line);border-radius:6px;padding:12px 16px;margin:8px 0 30px;font-size:14.5px}
+.rel-inline .rl{font-family:Helvetica,Arial,sans-serif;font-size:10.5px;letter-spacing:.8px;text-transform:uppercase;color:#666;display:block;margin-bottom:6px}
+.rel-inline a{color:var(--accent)}
+.rel-inline ul{list-style:none;padding:0}
+.rel-inline li{padding:4px 0}
+
+.note{background:#faf5ed;border:1px solid #e0d9d0;border-radius:4px;padding:16px 20px;font-size:14.5px;color:#555;margin:30px 0}
+.note p:last-child{margin-bottom:0}
+footer{border-top:1px solid var(--line);margin-top:48px;padding-top:20px;
+       font-family:Helvetica,Arial,sans-serif;font-size:13px;color:#777;grid-column:1 / -1}
+footer a{color:#777;text-decoration:none}
+footer span{color:#bbb;margin:0 5px}
+a{color:var(--accent)}
+</style>
+</head>
+<body>
+<div class="banner">PREVIEW — three-zone evidence layout (classical text / this site's reading / modern research). Not deployed.</div>
+<div class="wrap">
+
+<div class="top">
+  <div class="brand"><a href="/">Teeth Dream Meaning</a> <em>· classical sources, checked page by page</em></div>
+  <nav class="topnav"><a href="/about/">About</a><span>·</span><a href="/disclaimer/">Disclaimer</a><span>·</span><a href="/about/">Sources</a></nav>
+</div>
+
+<div class="cols">
+<div class="mhead">
+<h1>"My Teeth Fell Out — Does That Mean Someone Will Die?"</h1>
+<div class="tldr">
+<strong>Quick answer</strong>
+<p>Neither book ever prints "this dream means someone dies" without conditions. The death reading fires only when the tooth is <em>gone or buried</em>, it names <em>which</em> relative through a tooth-by-tooth family map, and the same entries list emigration, long sickness, thirty dinars, and longevity as the printed alternatives.</p>
+<p>The short version: <strong>lost without a trace or buried → that tooth's relative; kept in hand → a replacement comes; found again → the emigrant returns.</strong></p>
+</div>
+
+</div>
+
+<aside>
+<details class="tocd" open>
+<summary>On this page</summary>
+<ul>
+<li><a href="#quick">Four quick answers</a></li>
+<div class="g">Classical texts</div>
+<li><a href="#longevity">Longevity — the same fact</a></li>
+<li><a href="#map">The "Tooth" entry: the map</a></li>
+<li><a href="#nabulsi">Al-Nabulsi's page ص180</a></li>
+<li><a href="#ground">The one plain-death surface</a></li>
+<div class="g">Modern research</div>
+<li><a href="#research">What the research says</a></li>
+<div class="g">This site's reading</div>
+<li><a href="#collisions">The layers, side by side</a></li>
+<li><a href="#gap">The honest gap</a></li>
+</ul>
+</details>
+</aside>
+
+<main>
+<article>
+
+<p class="lede">The folk answer is a flat yes, and it is the single most repeated claim about this dream in any language. The two classical Arabic dream books this site reads from do contain death readings — but never a flat one. In both books the death reading is <strong>conditional</strong>: it fires only if the tooth is <em>gone</em>, and it names <em>which</em> relative through a tooth-by-tooth family map; and in the very same entries both books print the alternatives — a clan member emigrating instead of dying, a long sickness explicitly <em>without</em> death, and, as the compilation's first sentence, longevity. Below is every death clause quoted exactly, with its conditions, its counter-readings, and the page locations.</p>
+
+<div class="rel-inline">
+<span class="rl">New here?</span>
+If you haven't read it yet, start with <a href="/dream/teeth-falling-out/">Teeth falling out — the full answer</a>: the plain answer first, then the five scenario branches.
+</div>
+
+<h2 id="quick">Four quick answers</h2>
+
+<div class="qa">
+<h3>Does the dream mean a death?</h3>
+<p>In Al-Nabulsi, a tooth that disappears from the dreamer reads: "the people of his household die before him" — and the same clause instantly hedges it: "it may be the death of those of his own age, <em>or the sickness</em> of the people of his household." In the Ibn Sirin compilation the harshest trigger is a search: if you cannot <em>find</em> your fallen teeth, "his family will die before him, <em>or</em> a member of his clan will emigrate." Death is one of at least three listed outcomes in every version of the clause. There is no sentence in either book that says "this dream means someone dies" without naming conditions or alternatives.</p>
+</div>
+
+<div class="qa">
+<h3>Which relative, according to the books?</h3>
+<p>Both books run the same map: each tooth stands for a specific family member. Upper teeth are the father's-side males, lower teeth the mother's-side females; the two upper central incisors are father and paternal uncle, the lower pair mother and aunt; molars are grandparents and the elderly. So in these books the death reading is never generic — it is always <em>that tooth's person</em>: "If one loses a molar tooth in a dream, it means the death of an elderly person in his household."</p>
+</div>
+
+<div class="qa">
+<h3>What flips the death reading off?</h3>
+<p>The dreamer's own act on the fallen tooth. In both books, if you <em>keep</em> the lost tooth and do not bury it, you gain a replacement — "someone will come forth and be to him as good as that relative." If you <em>bury</em> it, the death reading seals. And finding the lost tooth reads as the emigrant's return home. The omen here is a decision tree, not a verdict.</p>
+</div>
+
+<div class="qa">
+<h3>Has any study tested the death claim?</h3>
+<p>No — and the one empirical paper that exists says something adjacent and stranger. Rozen &amp; Soffer-Dudek (<em>Frontiers in Psychology</em> 9:1812, 2018, n=210, <a href="https://pubmed.ncbi.nlm.nih.gov/30319507/">PubMed 30319507</a>) note in their introduction that the teeth-dream-as-death-prophecy reading goes back to the Jewish Talmud and "was a common belief for many years, which Freud (1900) reacted to with irony." Their own data linked teeth dreams to waking teeth-and-gum tension (r = 0.21) and <em>not</em> to psychological distress (r = 0.02, n.s.). The paper's practical proposal for teeth dreams was not omen-screening but dentistry: they "may perhaps serve as indicators of undiagnosed bruxism." The design and full numbers behind these figures are laid out in the <a href="#research">modern-research section</a> below.</p>
+</div>
+
+<!-- ==================== CLASSICAL TEXTS ==================== -->
+
+<h2 id="longevity">The compilation's first word is longevity — and it is the same fact</h2>
+<span class="zone z-text"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 6.2C10.4 5 8 4.2 4.8 4.2v13.6c3.2 0 5.6.8 7.2 2 1.6-1.2 4-2 7.2-2V4.2C16 4.2 13.6 5 12 6.2zM12 6.2v13.6"/></svg>Classical text</span>
+<p>The 1992 Al-Akili compilation opens its "Teeth" entry on the opposite foot from the folk warning:</p>
+
+<div class="cites">
+<div class="cite-hd"><div>Text</div><div class="src-hd">Source</div></div>
+<div class="cite-row">
+  <div class="txt"><p>"Falling teeth in a dream means longevity, or living past one's contemporaries."</p></div>
+  <div class="src">Ibn Seerin's Dictionary of Dreams, comp. Al-Akili, Pearl Publishing House 1992, entry "Teeth 1" (printed p. 431) — English checked verbatim.</div>
+</div>
+<div class="cite-row">
+  <div class="txt"><p>"If one cannot find his teeth in the dream, it means that his family will die before him, or that a member of his clan will emigrate to a new land. If one finds a lost tooth in a dream, it means the return of an immigrant to his homeland."</p></div>
+  <div class="src">Same "Teeth 1" entry — English checked verbatim; both sentences at lines 24598–24600 of the digitized text.</div>
+</div>
+</div>
+
+<div class="reading">
+<span class="rlbl">This site's reading</span>
+<p>It is not a feel-good contradiction. "You outlive your contemporaries" and "your family die before you" are the same proposition seen from two ends of the life — and the book's front matter dramatizes exactly that: a Caliph dreams all his teeth fall out, one interpreter reads the loss of the entire family, the second reads that he will live longest amongst his relatives — and the second one is embraced and rewarded. The death reading and the longevity reading are one datum with two vantages; the folk pages transmit only the vantage that frightens.</p>
+<p>Two features of the second clause are routinely lost when it is quoted online. First, the trigger is <em>the failed search</em> — losing the teeth is not enough; the death reading fires when the dreamer looks for them and cannot find them. Second, death is disjunctive with emigration: a clan member leaving for a new land fills half the slot. In a society where departure was often permanent, the book treats "gone and not found" as ambiguous between a funeral and a farewell.</p>
+</div>
+
+<div class="rel-inline">
+<span class="rl">Related question</span>
+The Caliph story, quoted in full, and every longevity clause: <a href="/dream/teeth-falling-out-good-or-bad-omen/">Bad omen or good sign?</a>
+</div>
+
+<h2 id="map">The "Tooth" entry: the map, and the switch on a buried tooth</h2>
+<span class="zone z-text"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 6.2C10.4 5 8 4.2 4.8 4.2v13.6c3.2 0 5.6.8 7.2 2 1.6-1.2 4-2 7.2-2V4.2C16 4.2 13.6 5 12 6.2zM12 6.2v13.6"/></svg>Classical text</span>
+<p>The same compilation's longer "Tooth" entry is where the family map sits, in the book's own words:</p>
+
+<div class="cites">
+<div class="cite-hd"><div>Text</div><div class="src-hd">Source</div></div>
+<div class="cite-row">
+  <div class="txt"><p>"Teeth in a dream represent one's identity, age, clan, a boy, a girl, his family, money, servants, domestic animals, employees, weapons, life, death, unity, separation, trusts, or savings. In a dream, male's or female's upper teeth represent the male members of one's family from the father's side, and the teeth of the lower jaw represent the female members of one's family from the mother's side. The closer the teeth are to the incisor, the closer is the relative."</p></div>
+  <div class="src">"Tooth" entry (1), printed pp. 440–441 — English checked verbatim.</div>
+</div>
+<div class="cite-row">
+  <div class="txt"><p>"If a tooth moves in its place in the dream, it means an illness. If it falls, or if it is lost, then it means death of the person to whom it is attributed, or it could possibly mean that he will be separated from him and can no longer see him. If one saves his lost tooth and does not bury it in the dream, it means that someone will come forth and be to him as good as that relative. Otherwise, if he does bury it, then it means the death of his relative."</p></div>
+  <div class="src">Same "Tooth" entry — English checked verbatim; the scan's line-break artifact "ifhe" restored.</div>
+</div>
+</div>
+
+<div class="reading">
+<span class="rlbl">This site's reading</span>
+<p>Note the escalation ladder inside one sentence group: <em>tooth moves</em> → illness only. <em>Tooth falls or is lost</em> → death <em>or</em> permanent separation. <em>Kept, not buried</em> → replacement. <em>Buried</em> → death confirmed.</p>
+<p>The entry then gives position-specific deaths: the right/left split ("the teeth of the right side represent the boys, and those on the left side represent the girls" where the mouth stands for the household), and the molar clause — "If one loses a molar tooth in a dream, it means the death of an elderly person in his household." The map cuts both ways: "If extra incisors grow in one's mouth in a dream, it means that one's family will grow by either a new born brother or a new son." Teeth in these books are not a death signal; they are a census of the family, read through which seat went vacant, moved, multiplied, or got buried.</p>
+</div>
+
+<h2 id="nabulsi">Al-Nabulsi's page ص180: the same ladder, plus dirham-money and a thirty-day variant</h2>
+<span class="zone z-text"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 6.2C10.4 5 8 4.2 4.8 4.2v13.6c3.2 0 5.6.8 7.2 2 1.6-1.2 4-2 7.2-2V4.2C16 4.2 13.6 5 12 6.2zM12 6.2v13.6"/></svg>Classical text</span>
+<p>Al-Nabulsi's <em>Ta'tir al-Anam</em> runs the identical machinery on the page this site has been reading all month (<a href="https://shamela.ws/book/1217/177">shamela.ws/book/1217/177</a>). Its death clauses, checked verbatim in Arabic:</p>
+
+<div class="cites">
+<div class="cite-hd"><div>Text</div><div class="src-hd">Source</div></div>
+<div class="cite-row">
+  <div class="txt">
+  <p>"If a tooth vanishes from him, one of his clan will go abroad; and if he finds it after losing it, that one will return — and if not, he will not return."</p>
+  <p class="ar">فإنه يغترب عن عشيرته واحد فإن أصابه بعدما فقده رجع وإلا فلا يرجع</p>
+  </div>
+  <div class="src">Al-Nabulsi (d. 1731 CE), <a href="https://shamela.ws/book/1217/177">shamela.ws/book/1217/177</a> (ص180) — Arabic checked verbatim.</div>
+</div>
+<div class="cite-row">
+  <div class="txt">
+  <p>"If one of these teeth moves and then falls ill, and it falls or is lost, it is the death of the relative it maps to — or his absence: a disappearance after which they will not see him. If he holds it and does not bury it, he will gain in its place someone who stands to him as that relative... and if he buries it, it is the death of that relative."</p>
+  <p class="ar">فإن تحرك منها سن واحدة من هؤلاء فمرض فإن سقطت أو ضاعت فإنه موت من ينسب إليه هؤلاء أو غيبته عنه غيبة لا يرونه بعد ذلك فإن أمسكها ولم يدفنها فإنه يستفيد بدلها من يكون له مثل ذلك القريب الذي ينسب إليه تلك السن في التأويل فإن دفنها فإنه موت ذلك القريب</p>
+  </div>
+  <div class="src">Same page — Arabic checked verbatim. The full tooth-by-tooth map (upper centrals = father and paternal uncle, lower pair = mother and maternal aunt, canine = the lord of the house, premolars = maternal uncles, molars = grandparents and little children) is on the same page and was checked verbatim for this site's earlier pages.</div>
+</div>
+<div class="cite-row">
+  <div class="txt">
+  <p>"If it goes from his sight, the people of his household die before him — and it may be the death of those of his own age, or the sickness of the people of his household."</p>
+  <p class="ar">فإن أهل بيته يموتون قبله وربما كان ذلك موت ذوي سنه أو مرض أهل بيته</p>
+  </div>
+  <div class="src">Same page, its opening line — Arabic checked verbatim. The clause continues a sentence carried over from the facing page about teeth departing from one's sight.</div>
+</div>
+</div>
+
+<div class="reading">
+<span class="rlbl">This site's reading</span>
+<p>Then Al-Nabulsi does something the compilation does not: he prices the disaster. Chained to the lost-teeth passage, a <em>وقيل</em> ("and it was said") variant reads the dream as <em>money owed</em> — "perhaps the debt is according to the legal compensation (diyah) prescribed for a tooth" — checked verbatim: "وربما كان المغرم على قدر دية السن في الشرع". In Islamic jurisprudence a tooth has a fixed blood-money; Al-Nabulsi lets the dream's loss be paid out in currency at that tariff instead of in kin. Another وقيل on the same page floats three more alternative readings: twenty-nine or thirty years left of life; death within thirty days — <em>or</em> thirty dinars in damages (the book itself writes the fork: "يموت إلى ثلاثين يوماً أو يغرم ثلاثين ديناراً"); a well that collapses; a severe illness that spends the fortune and then a new one comes. The page refuses to converge on death even while printing it.</p>
+<p>And the worst case on the page — all teeth falling at once, "all those in that household perish" — is capped in the next clause by "a long sickness <em>without their dying</em>" (checked verbatim: "وتدل هذه الرؤيا منهم على مرض طويل من غير أن يموتوا"), and re-reads, for a slave, as manumission. The compilation agrees from its own entry: "Falling teeth in a dream also denote a long illness that may not necessarily culminate in death."</p>
+</div>
+
+<h2 id="ground">The one surface that does read plain death — and the one line missing from the folk version</h2>
+<span class="zone z-text"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 6.2C10.4 5 8 4.2 4.8 4.2v13.6c3.2 0 5.6.8 7.2 2 1.6-1.2 4-2 7.2-2V4.2C16 4.2 13.6 5 12 6.2zM12 6.2v13.6"/></svg>Classical text</span>
+<p>There is exactly one un-hedged death clause in the shared material: teeth falling <em>to the ground</em>. Al-Nabulsi: "if they fall to the ground, it is the calamity of death" ("وإن سقطت إلى الأرض فهي مصيبة الموت"). The compilation agrees in its three-surface rule — "and if they fall on the floor in the dream, they means death" (the book's own grammar, kept as printed) — while the same sentence reads hand = profits and lap = a son. But when folk pages quote "teeth falling out means death," they quote this fragment and drop the two non-death surfaces it is bolted to in both books. Death is the <em>ground</em> reading. Hand is money. Lap is children. The books are more specific than the superstition.</p>
+
+<div class="rel-inline">
+<span class="rl">Related question</span>
+Both rule-sets on the three surfaces, quoted in full and set against each other: <a href="/dream/teeth-falling-into-hand-lap-ground/">Falling into hand, lap, or ground</a>
+</div>
+
+<!-- ==================== MODERN RESEARCH ==================== -->
+
+<h2 id="research">What the research layer says about death claims</h2>
+<span class="zone z-research"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M9.5 3h5M10.8 3v5.2L5.6 16.8A2.5 2.5 0 0 0 7.8 20.5h8.4a2.5 2.5 0 0 0 2.2-3.7L13.2 8.2V3M8.2 14.5h7.6"/></svg>Modern research</span>
+<p>Nothing measures omens, and that is the honest starting point. Rozen &amp; Soffer-Dudek's design (n=210 undergraduates; 76.7% female, Mage 23.4) tested two hypotheses — teeth dreams as incorporated dental irritation, and teeth dreams as symbolic distress — across self-reported dream themes and waking symptoms. Teeth dreams correlated with morning tension in the teeth, gums or jaws, r = 0.21 (95% CI 0.07–0.33, p &lt; 0.005); not with the direct grinding item, r = 0.06 (ns); not with psychological distress, r = 0.02 (ns) — while falling dreams and smothered dreams in the same battery <em>did</em> track distress. Distress and jaw tension themselves were mildly related (r = 0.14), which is why the authors call the dissociation of the two hypotheses a finding.</p>
+<p>The paper's introduction is also where the death belief gets its academic citation trail: the Jewish Talmud construed teeth dreams "as a prophecy for the impending death of a family member," and "the connection between TD and death was a common belief for many years, which Freud (1900) reacted to with irony." In other words: the folk "someone will die" is not modern anxiety — it is roughly two thousand years old, it was standard learning before the classical Islamic books wrote their conditional versions, and the only empirical design ever run on teeth dreams replaced it with a jaw. The prevalence numbers the paper cites from the Dream Motif Scale (Yu, 2012, <em>Dreaming</em> 22(1), 18–52, DOI 10.1037/a0026171): 39.0% have had teeth dreams at least once, 16.2% recurrently, 8.2% regularly — which means if the flat folk rule were true, a death would sit in a large fraction of every extended family on any given month. The paper's own closing suggestion instead is clinical: since most grinders are unaware of it, teeth dreams "may perhaps serve as indicators of undiagnosed bruxism" and be "utilized by dentists as an aid for screening of dental problems."</p>
+
+<div class="rel-inline">
+<span class="rl">Related question</span>
+The studies behind this section, examined one by one: <a href="/dream/teeth-dreams-and-stress/">Is it caused by stress?</a>
+</div>
+
+<!-- ==================== THIS SITE'S READING ==================== -->
+
+<h2 id="collisions">Set the layers beside each other — where they actually touch</h2>
+<span class="zone z-reading"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19l7-7-4-4-7 7-1 5zM16 5l2 2M13 8l2 2"/></svg>This site's reading</span>
+<p>Collision one. The folk version says <em>death, full stop</em>. Both classical books say: death of a <em>mapped</em> relative, <em>conditional</em> on loss-without-recovery or burial, with emigration, separation, long sickness, thirty dinars, and longevity printed in the same breath as counter-outcomes. The books are not "softer" than the superstition — they are <em>more specific</em>, and specificity is what makes a reading falsifiable by dream details.</p>
+<p>Collision two. The modern paper preserves the death prophecy as history (Talmud → "common belief for many years" → Freud's irony) and then, in its own experiment, dissolves the <em>psychological</em> version of omen theory too: the distress correlation came back null (r = 0.02) while a jaw variable survived (r = 0.21). Death omens and stress symbols both lose to morning gum tension in the one dataset that exists (<a href="#research">see the research section</a> for that dataset's design and limits).</p>
+<p>Collision three — the quiet one. Both classical books' sharpest instrument for reading <em>which</em> person the dream concerns is the tooth map, and the modern paper's sharpest instrument is which tooth <em>aches when you wake</em>. Eight centuries apart, one asks which relative the vacant seat denotes; the other asks whether the teeth were irritated at all. Neither asks what will happen to anyone — and that is precisely the question the searchers typing "teeth falling out dream meaning death" are asking.</p>
+
+<h2 id="gap">The honest gap</h2>
+<span class="zone z-reading"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19l7-7-4-4-7 7-1 5zM16 5l2 2M13 8l2 2"/></svg>This site's reading</span>
+<p>No published study has ever tested whether dreams forecast deaths — nothing in any dream-research design could — and the classical books, for all their conditions, are not predictions either: they are dictionaries of reading conventions, each death clause carrying its stated switch and its printed alternatives. If someone in your life has died shortly after your teeth dream, no book here can tell you whether that is pattern or coincidence, and neither can any study. What the texts <em>can</em> tell you, exactly, is that the flat "it means someone will die" is the one version of this dream that neither of the two classical books ever actually prints.</p>
+
+<div class="note"><p>This page reports what two classical texts and two published studies say. It is not a prediction, a diagnosis, or a medical or religious ruling, and no dream book — classical or modern — settles what a dream means for the person who had it. If your teeth hurt or loosen in waking life, that is a question for a dentist, not a dream dictionary.</p></div>
+
+</article>
+</main>
+
+</div>
+
+<footer>
+Teeth Dream Meaning<span>·</span><a href="/">Home</a><span>·</span><a href="/dream/teeth-falling-out/">Both entries side by side</a><span>·</span><a href="/disclaimer/">Disclaimer</a>
+</footer>
+
+</div>
+<script>
+if(window.matchMedia("(max-width:860px)").matches){
+  var d=document.querySelector(".tocd"); if(d) d.removeAttribute("open");
+}
+</script>
+</body>
+</html>
