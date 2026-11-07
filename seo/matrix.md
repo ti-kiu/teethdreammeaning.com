@@ -16,8 +16,8 @@
 | gold [DONE 2026-11-04 → /dream/gold/] | 189 ✓(索引确认) | shamela 124 (印127) + shamela 125 (印128) |
 | hair [DONE 2026-11-04 → /dream/hair/; 印页核: Hair 198, Braiding 54, Haircut+Hairdresser 200, Shaving 382, Strand of hair 415, 'Aqiqah rites 印15(索引不收); Nabulsi shamela 192(印195)+193(印196) 跨页同条; 诗/发同词(شعر)页192另条已引] | 198 (索引 Hair 198, 原记197作废) | shamela 192 (印195) |
 | spider [DONE 2026-11-05 → /dream/spider/; 印页核: Spider 404, Tarantula 429, Weaver 473; Nabulsi عنكبوت 条跨 shamela 247(印250)→248(印251) 头词句断在 مكايداً/ضعيفاً; 周公27章无蜘蛛条(如实缺席), 更古《梦书》佚文两条见 /root/dream_research/tym_spider_dreambook.txt (太平御览卷948, 四库本shidianguji+guoxue123双源互证)] | 404 (索引 Spider 404, 原记403作废) | shamela 247 (印250) + 248 (印251) |
-| blood | 43 ✓(索引确认) | shamela 113 (印116) + shamela 116 (印119) + shamela 117 (印120) |
-| baby | 80 (索引 Child 80; 原记79作废) | shamela 214 (印217) + shamela 215 (印218) + shamela 218 (印221) |
+| blood [DONE 2026-11-06 → /dream/blood/] | 43 ✓(索引确认) | shamela 113 (印116) + shamela 116 (印119) + shamela 117 (印120)〔实发引用: shamela 117(印120)+118(印121)为主, 116(印119)痈段, 94(印97)蛇条血句〕 |
+| baby [DONE 2026-11-07 → /dream/baby/; 印页核: Child 80 (正文起于印80下半, Childbirth跨80–81), Boy 53, Son 401, Chicks 79; Nabulsi (صبي)条跨 shamela 214(印217)→215(印218), (صبية)在215(印218), (صبيان القمل)在218(印221); 周公三/十四/十八章五句verbatim] | 80 (索引 Child 80; 原记79作废) | shamela 214 (印217) + shamela 215 (印218) |
 | rain | 350 (索引 Rain 350, 原记349作废) | shamela 315 (印318) + shamela 328 (印331) + shamela 338 (印341) |
 | fire | 158 (索引 Fire 158, 原记157作废) | shamela 348 (印351) + shamela 360 (印363) |
 | dog | 123 ✓(索引确认) | shamela 295 (印298) |
