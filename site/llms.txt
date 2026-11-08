@@ -5,7 +5,7 @@ Teeth Dream Meaning (https://teethdreammeaning.com) publishes classical dream-in
 ## What is on the site
 
 - Symbol pages under `/dream/<slug>/` — one symbol per page: plain-language answer first, then clause-by-clause entries, then full verbatim sources with printed-page citations.
-- Published symbols include: teeth falling out (and scenario variants: death, blood, into-hand, one-vs-all, stress), snake, water, dead-person-resurrected, kaaba, wedding, gold.
+- Published symbols include: teeth falling out (and scenario variants: death, blood, into-hand, one-vs-all, stress), snake, water, dead-person-resurrected, kaaba, wedding, gold, hair, spider, blood, baby, rain.
 - A comparison hub at `/dream/teeth-three-traditions/` (structure page, not a search target).
 
 ## Machine-readable lookup

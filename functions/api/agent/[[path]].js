@@ -15,7 +15,8 @@ const SYMBOLS = [
   {slug:'hair', title:'Hair falling out in a dream'},
   {slug:'spider', title:'Spiders in a dream'},
   {slug:'blood', title:'Blood in a dream'},
-  {slug:'baby', title:'A baby in a dream'}
+  {slug:'baby', title:'A baby in a dream'},
+  {slug:'rain', title:'Rain in a dream'}
 ];
 
 export async function onRequestGet(context) {
