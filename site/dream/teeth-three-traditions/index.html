@@ -19,7 +19,7 @@
 :root{--ink:#1a1a1a;--paper:#fdfcf9;--accent:#7a5c2e;--line:#e4ddcf;--soft:#6b6357;--card:#f9f5f0}
 *{margin:0;padding:0;box-sizing:border-box}
 body{font-family:Georgia,'Times New Roman',serif;background:var(--paper);color:var(--ink);line-height:1.75}
-.wrap{max-width:1000px;margin:0 auto;padding:40px 24px 56px}
+.wrap{max-width:1120px;margin:0 auto;padding:40px 24px 56px}
 .cols{display:grid;grid-template-columns:190px minmax(0,1fr);gap:48px}
 @media(max-width:860px){.cols{grid-template-columns:1fr;gap:0}}
 .top{display:flex;justify-content:space-between;align-items:baseline;gap:20px;
@@ -40,7 +40,7 @@ aside a:hover{color:var(--accent);text-decoration:underline}
 @media(max-width:860px){
   aside{position:static;border:1px solid var(--line);border-radius:6px;background:var(--card);padding:16px 20px;margin-bottom:34px}
 }
-article{max-width:680px}
+article{max-width:740px}
 h1{font-size:clamp(28px,4.5vw,38px);font-weight:400;line-height:1.25;margin-bottom:12px}
 .lede{font-size:18px;color:#333;margin-bottom:24px}
 .tldr{background:#faf5ed;border:1px solid #e0d9d0;border-radius:4px;padding:18px 22px;margin:0 0 28px}
@@ -96,7 +96,7 @@ h2 + .zone{margin-top:-6px}
 aside .g{font-family:Helvetica,Arial,sans-serif;font-size:10.5px;letter-spacing:.6px;text-transform:uppercase;color:#666;margin:14px 0 6px}
 .cite-hd{color:#666}
 /* mobile order: title -> quick answer -> toc -> lede -> body */
-.mhead{display:contents}
+/* mhead is a real grid item now (Chrome-translate safe) */
 aside details summary{font-weight:700;cursor:pointer;list-style:none}
 aside details summary::-webkit-details-marker{display:none}
 aside details summary::after{content:"▾";color:#666;margin-left:6px;font-size:12px}
