@@ -15,118 +15,438 @@
 <meta name="twitter:card" content="summary">
 <title>Teeth Falling Out: Bad Omen or Good Sign? Both Are In</title>
 <meta name="description" content="Both verdicts sit in the books on the same pages: longevity, dirhams by count, a slave's freedom — death only when lost or buried.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gloock&family=Instrument+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
 <style>
-:root{--ink:#1a1a1a;--paper:#fdfcf9;--accent:#7a5c2e;--line:#e4ddcf;--soft:#6b6357;--card:#f9f5f0}
-*{margin:0;padding:0;box-sizing:border-box}
-body{font-family:Georgia,'Times New Roman',serif;background:var(--paper);color:var(--ink);line-height:1.75}
-.wrap{max-width:1120px;margin:0 auto;padding:40px 24px 56px}
-.cols{display:grid;grid-template-columns:190px minmax(0,1fr);gap:48px}
-@media(max-width:860px){.cols{grid-template-columns:1fr;gap:0}}
-.top{display:flex;justify-content:space-between;align-items:baseline;gap:20px;
-     border-bottom:2px solid var(--ink);padding-bottom:20px;margin-bottom:36px}
-.top .brand{font-size:16.5px}
-.top .brand a{color:var(--ink);text-decoration:none;font-weight:700}
-.top .brand em{color:#555;font-weight:400}
-.topnav{font-family:Helvetica,Arial,sans-serif;font-size:13.5px;flex-shrink:0}
-.topnav a{color:#555;text-decoration:none}
-.topnav a:hover{color:var(--accent);text-decoration:underline}
-.topnav span{color:#bbb;margin:0 5px}
-aside{position:sticky;top:24px;align-self:start;font-size:15px}
-aside .lbl{font-weight:700;margin-bottom:12px}
-aside ul{list-style:none}
-aside li{margin-bottom:11px}
-aside a{color:#555;text-decoration:none;line-height:1.4;display:block}
-aside a:hover{color:var(--accent);text-decoration:underline}
-@media(max-width:860px){
-  aside{position:static;border:1px solid var(--line);border-radius:6px;background:var(--card);padding:16px 20px;margin-bottom:34px}
-}
-article{max-width:740px}
-h1{font-size:clamp(28px,4.5vw,38px);font-weight:400;line-height:1.25;margin-bottom:12px}
-.lede{font-size:18px;color:#333;margin-bottom:24px}
-.tldr{background:#faf5ed;border:1px solid #e0d9d0;border-radius:4px;padding:18px 22px;margin:0 0 28px}
-.tldr strong{display:block;font-size:13.5px;letter-spacing:.4px;text-transform:uppercase;color:var(--accent);margin-bottom:8px;font-family:Helvetica,Arial,sans-serif}
-.tldr p{font-size:15.5px;line-height:1.65;margin-bottom:10px}
-.tldr p:last-child{margin-bottom:0}
-h2{font-size:22px;font-weight:400;margin:44px 0 16px}
-h3{font-size:17px;font-weight:700;margin:28px 0 8px}
-p{margin-bottom:16px}
-.qa{border-bottom:1px solid var(--line);padding:18px 0}
-.qa h3{margin:0 0 8px}
-.qa p:last-child{margin-bottom:0}
-.cites{margin:24px 0 0;border-top:2px solid var(--ink)}
-.cite-hd{display:grid;grid-template-columns:minmax(0,1fr) 160px;gap:20px;padding:8px 0;
-         font-family:Helvetica,Arial,sans-serif;font-size:11px;letter-spacing:.8px;text-transform:uppercase;color:#999}
-.cite-row{display:grid;grid-template-columns:minmax(0,1fr) 160px;gap:20px;
-          padding:16px 0;border-bottom:1px solid var(--line)}
-.cite-row .txt{font-size:16px;font-style:italic;color:#2e2a24;line-height:1.7}
-.cite-row .txt p{margin-bottom:0}
-.cite-row .src{font-size:13px;color:#777;align-self:start;line-height:1.5}
-.cite-note{font-size:14.5px;color:#555;margin:14px 0 28px}
-@media(max-width:560px){.cite-row{grid-template-columns:1fr;gap:6px}.cite-hd{grid-template-columns:1fr}.cite-hd .src-hd{display:none}}
-.ar{font-size:16.5px;color:#3a362f;direction:rtl;text-align:right;line-height:2;margin:10px 0 0;font-style:normal}
-/* fallbacks for unpaired legacy elements */
-blockquote{border-left:3px solid var(--accent);padding:12px 20px;margin:16px 0 20px;background:#f7f3ea;font-style:italic}
-blockquote p:last-child{margin-bottom:0}
-.loc{font-family:Menlo,Consolas,monospace;font-size:12.5px;color:var(--soft);margin:-8px 0 24px}
-.note{background:#faf5ed;border:1px solid #e0d9d0;border-radius:4px;padding:16px 20px;font-size:14.5px;color:#555;margin:30px 0}
-.note p:last-child{margin-bottom:0}
-footer{border-top:1px solid var(--line);margin-top:48px;padding-top:20px;
-       font-family:Helvetica,Arial,sans-serif;font-size:13px;color:#777;grid-column:1 / -1}
-footer a{color:#777;text-decoration:none}
-footer a:hover{color:var(--accent)}
-footer span{color:#bbb;margin:0 5px}
-a{color:var(--accent)}
-.rel ul{list-style:none;padding:0}
-.rel li{padding:8px 0;border-bottom:1px solid var(--line)}
+  :root {
+    --porcelain: #F3F6F5;
+    --enamel:    #E1EBE8;
+    --enamel-line: #C9D9D4;
+    --ink:       #182430;
+    --ink-soft:  #46586A;
+    --midnight:  #0D1B24;
+    --midnight-soft: #A9BCC2;
+    --amber:     #D89A3F;
+    --amber-deep:#B67F2E;
+    --amber-text:#8F6220;
+    --serif: "Gloock", Georgia, serif;
+    --sans: "Instrument Sans", Helvetica, Arial, sans-serif;
+    --parchment: #F3E8D6;
+    --parchment-line: #E0CDAF;
+    --slate: #E3ECF1;
+    --slate-line: #C3D2DB;
+    --tldr-bg: #F6E5C3;
+    --tldr-line: #E3C48A;
+    --reading-bg: #D8E4DE;
+    --line: var(--enamel-line);
+  }
 
-/* ---- zones (v3 template) ---- */
-.zone{display:inline-flex;align-items:center;gap:6px;font-family:Helvetica,Arial,sans-serif;
-      font-size:11px;letter-spacing:.8px;text-transform:uppercase;color:#fff;
-      border-radius:3px;padding:3px 9px;margin:0 0 10px}
-.zone svg{flex-shrink:0}
-.z-text{background:var(--accent)}
-.z-reading{background:#6b6357}
-.z-research{background:#4a6b6b}
-h2{margin-top:38px}
-h2 + .zone{margin-top:-6px}
-.reading{background:#f5f1e6;border-left:3px solid #6b6357;padding:14px 18px;margin:14px 0 28px}
-.reading .rlbl{display:block;font-family:Helvetica,Arial,sans-serif;font-size:11.5px;font-weight:700;letter-spacing:.8px;text-transform:uppercase;color:#6b6357;margin-bottom:6px}
-.reading p{font-size:15px;line-height:1.65;margin-bottom:10px}
-.reading p:last-child{margin-bottom:0}
-aside .g{font-family:Helvetica,Arial,sans-serif;font-size:10.5px;letter-spacing:.6px;text-transform:uppercase;color:#666;margin:14px 0 6px}
-.cite-hd{color:#666}
-/* mobile order: title -> quick answer -> toc -> lede -> body */
-/* mhead is a real grid item now (Chrome-translate safe) */
-aside details summary{font-weight:700;cursor:pointer;list-style:none}
-aside details summary::-webkit-details-marker{display:none}
-aside details summary::after{content:"▾";color:#666;margin-left:6px;font-size:12px}
-aside details[open] summary::after{content:"▴"}
-@media(min-width:861px){
-  aside{grid-column:1;grid-row:1}
-  .mhead{grid-column:2;grid-row:1}
-  main{grid-column:2;grid-row:2}
-}
-@media(max-width:860px){
-  .mhead{order:0}
-  aside{order:1;position:static;border:1px solid var(--line);border-radius:6px;background:var(--card);padding:12px 20px;margin:0 0 28px}
-  main{order:2}
-  .top .brand em{display:none}
-}
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  html { scroll-behavior: smooth; }
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    *, *::before, *::after { animation: none !important; transition: none !important; }
+  }
+
+  body {
+    font-family: var(--sans);
+    background: var(--porcelain);
+    color: var(--ink);
+    line-height: 1.7;
+    font-size: 17px;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  a { color: inherit; }
+  article a, .tldr a { color: var(--amber-text); }
+  article a:hover, .tldr a:hover { text-decoration: underline; }
+
+  :focus-visible {
+    outline: 3px solid var(--amber-deep);
+    outline-offset: 3px;
+    border-radius: 2px;
+  }
+
+  .skip {
+    position: absolute; left: -9999px; top: 0;
+    background: var(--ink); color: var(--porcelain);
+    padding: 10px 18px; z-index: 100; font-size: 15px;
+  }
+  .skip:focus { left: 12px; top: 12px; }
+
+  .wrap { max-width: 1080px; margin: 0 auto; padding: 0 24px; }
+
+  header {
+    border-bottom: 1px solid var(--enamel-line);
+    background: var(--porcelain);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+  }
+  .site-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 64px;
+  }
+  .wordmark {
+    font-family: var(--serif);
+    font-size: 21px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    letter-spacing: 0.01em;
+  }
+  .wordmark svg { width: 22px; height: 22px; }
+  nav ul {
+    display: flex;
+    gap: 28px;
+    list-style: none;
+    font-size: 15px;
+    font-weight: 500;
+  }
+  nav a { text-decoration: none; color: var(--ink-soft); }
+  nav a:hover { color: var(--ink); }
+  @media (max-width: 640px) { nav { display: none; } }
+
+  .page { padding: 48px 0 80px; }
+  .cols { display: grid; grid-template-columns: 200px minmax(0,1fr); gap: 56px; }
+  @media (max-width: 860px) { .cols { grid-template-columns: 1fr; gap: 0; } }
+
+  aside {
+    position: sticky;
+    top: 88px;
+    align-self: start;
+    font-size: 15px;
+  }
+  aside .lbl { font-weight: 600; margin-bottom: 12px; }
+  aside ul { list-style: none; }
+  aside li { margin-bottom: 10px; }
+  aside a {
+    color: var(--ink-soft);
+    text-decoration: none;
+    line-height: 1.4;
+    display: block;
+  }
+  aside a:hover { color: var(--ink); }
+  aside .g {
+    font-family: var(--sans);
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--amber-text);
+    margin: 16px 0 8px;
+  }
+  aside details summary {
+    font-weight: 600;
+    cursor: pointer;
+    list-style: none;
+    font-size: 15px;
+  }
+  aside details summary::-webkit-details-marker { display: none; }
+  aside details summary::after {
+    content: "▾";
+    color: var(--ink-soft);
+    margin-left: 6px;
+    font-size: 12px;
+  }
+  aside details[open] summary::after { content: "▴"; }
+
+  article { max-width: 740px; }
+
+  h1 {
+    font-family: var(--serif);
+    font-weight: 400;
+    font-size: clamp(32px, 5vw, 48px);
+    line-height: 1.15;
+    letter-spacing: -0.01em;
+    margin-bottom: 16px;
+  }
+
+  .mhead {
+    margin-bottom: 28px;
+    display: grid;
+    grid-template-columns: 1fr 200px;
+    gap: 8px 28px;
+    align-items: start;
+  }
+  .mhead h1 { grid-column: 1; }
+  .mhead-art {
+    grid-column: 2;
+    grid-row: 1 / span 2;
+    align-self: start;
+  }
+  .mhead-art svg { width: 100%; height: auto; display: block; }
+  .mhead .tldr { grid-column: 1; }
+  @media (max-width: 860px) {
+    .mhead { grid-template-columns: 1fr 108px; gap: 12px 16px; }
+    .mhead-art { grid-row: 1; }
+    .mhead .tldr { grid-column: 1 / -1; }
+  }
+
+  .tldr {
+    background: var(--tldr-bg);
+    border: 1px solid var(--tldr-line);
+    border-radius: 10px;
+    padding: 18px 22px;
+    margin: 8px 0 0;
+  }
+  .tldr > strong {
+    display: block;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--amber-text);
+    margin-bottom: 8px;
+  }
+  .tldr p { font-size: 16px; line-height: 1.65; margin-bottom: 10px; }
+  .tldr p:last-child { margin-bottom: 0; }
+  .tldr p strong {
+    display: inline;
+    font-size: inherit;
+    font-weight: 600;
+    letter-spacing: normal;
+    text-transform: none;
+    color: inherit;
+    margin: 0;
+  }
+
+  h2 {
+    font-family: var(--serif);
+    font-weight: 400;
+    font-size: clamp(26px, 3.5vw, 34px);
+    line-height: 1.2;
+    margin: 44px 0 16px;
+  }
+  h3 {
+    font-family: var(--sans);
+    font-size: 18px;
+    font-weight: 600;
+    margin: 28px 0 8px;
+  }
+  p { margin-bottom: 16px; }
+
+  .qa {
+    background: var(--enamel);
+    border: 1px solid var(--enamel-line);
+    border-radius: 10px;
+    padding: 18px 22px;
+    margin: 0 0 12px;
+  }
+  .qa h3 { margin: 0 0 8px; }
+  .qa p:last-child { margin-bottom: 0; }
+
+  .cites { margin: 24px 0 0; border-top: 2px solid var(--ink); }
+  .cite-hd {
+    display: grid;
+    grid-template-columns: minmax(0,1fr) 160px;
+    gap: 20px;
+    padding: 10px 0;
+    font-family: var(--sans);
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--amber-text);
+  }
+  .cite-row {
+    display: grid;
+    grid-template-columns: minmax(0,1fr) 160px;
+    gap: 20px;
+    padding: 18px 0;
+    border-bottom: 1px solid var(--enamel-line);
+  }
+  .cite-row .txt { font-size: 16px; font-style: italic; color: var(--ink); line-height: 1.7; }
+  .cite-row .txt p { margin-bottom: 0; }
+  .cite-row .txt p + p { margin-top: 12px; }
+  .cite-row .src { font-size: 13px; color: var(--ink-soft); align-self: start; line-height: 1.5; font-style: normal; }
+  .cite-note { font-size: 14.5px; color: var(--ink-soft); margin: 14px 0 28px; }
+  @media (max-width: 560px) {
+    .cite-row { grid-template-columns: 1fr; gap: 6px; }
+    .cite-hd { grid-template-columns: 1fr; }
+    .cite-hd .src-hd { display: none; }
+  }
+
+  .ar {
+    font-size: 17px;
+    color: var(--ink);
+    direction: rtl;
+    text-align: right;
+    line-height: 2;
+    margin: 10px 0 0;
+    font-style: normal;
+  }
+
+  blockquote {
+    border-left: 3px solid var(--amber-deep);
+    padding: 12px 20px;
+    margin: 16px 0 20px;
+    background: var(--enamel);
+    font-style: italic;
+    border-radius: 0 8px 8px 0;
+  }
+  blockquote p:last-child { margin-bottom: 0; }
+
+  .loc {
+    font-family: Menlo, Consolas, monospace;
+    font-size: 12.5px;
+    color: var(--ink-soft);
+    margin: -8px 0 24px;
+  }
+
+  .note {
+    background: var(--enamel);
+    border: 1px solid var(--enamel-line);
+    border-radius: 10px;
+    padding: 16px 20px;
+    font-size: 15px;
+    color: var(--ink-soft);
+    margin: 30px 0;
+  }
+  .note p:last-child { margin-bottom: 0; }
+
+  .zone {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-family: var(--sans);
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    border-radius: 999px;
+    padding: 4px 12px 4px 10px;
+    margin: 36px 0 0;
+  }
+  .zone + h2 { margin-top: 12px; }
+  .zone svg { flex-shrink: 0; }
+  .z-text { background: var(--amber-deep); color: var(--porcelain); }
+  .z-reading { background: var(--ink); color: var(--porcelain); }
+  .z-research {
+    background: var(--enamel);
+    color: var(--ink);
+    border: 1px solid var(--enamel-line);
+  }
+
+  .band {
+    margin: 32px 0 0;
+    padding: 24px 22px 28px;
+    border-radius: 14px;
+  }
+  .band .zone { margin-top: 0; }
+  .band-text { background: var(--parchment); }
+  .band-text blockquote { background: #FBF6ED; }
+  .band-text .cites { border-top-color: var(--amber-deep); }
+  .band-research { background: var(--slate); }
+  .band-reading { background: var(--reading-bg); }
+  .band-reading .reading,
+  .band-reading .note { background: var(--porcelain); }
+
+
+  .reading {
+    background: var(--enamel);
+    border-left: 3px solid var(--ink);
+    border-radius: 0 10px 10px 0;
+    padding: 14px 18px;
+    margin: 14px 0 28px;
+  }
+  .reading .rlbl {
+    display: block;
+    font-family: var(--sans);
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--amber-text);
+    margin-bottom: 6px;
+  }
+  .reading p { font-size: 15px; line-height: 1.65; margin-bottom: 10px; }
+  .reading p:last-child { margin-bottom: 0; }
+
+  .rel ul { list-style: none; padding: 0; }
+  .rel li { padding: 12px 0; border-bottom: 1px solid var(--enamel-line); }
+  .rel a { text-decoration: none; font-weight: 500; }
+  .rel a:hover { text-decoration: underline; }
+
+  footer {
+    border-top: 1px solid var(--enamel-line);
+    padding: 48px 0 56px;
+    font-size: 14px;
+    color: var(--ink-soft);
+  }
+  .foot-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 32px;
+    flex-wrap: wrap;
+  }
+  .disclaimer { max-width: 58ch; }
+  .foot-links { display: flex; gap: 24px; list-style: none; flex-wrap: wrap; }
+  .foot-links a { text-decoration: none; }
+  .foot-links a:hover { color: var(--ink); }
+
+  /* Desktop: sticky TOC spans title+short answer and the article body */
+  @media (min-width: 861px) {
+    aside { grid-column: 1; grid-row: 1 / span 2; }
+    .mhead { grid-column: 2; grid-row: 1; margin-bottom: 24px; }
+    main { grid-column: 2; grid-row: 2; }
+  }
+  /* Mobile: title + short-answer, then collapsible TOC, then body.
+     Real grid items plus the order property; wrappers stay as grid items. */
+  @media (max-width: 860px) {
+    .mhead { order: 0; }
+    aside {
+      order: 1;
+      position: static;
+      border: 1px solid var(--enamel-line);
+      border-radius: 10px;
+      background: var(--enamel);
+      padding: 14px 20px;
+      margin: 0 0 28px;
+    }
+    main { order: 2; }
+  }
 </style>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "author": {"@type": "Organization", "name": "Teeth Dream Meaning", "url": "https://teethdreammeaning.com/"}, "datePublished": "2026-10-31", "dateModified": "2026-11-06", "publisher": {"@type": "Organization", "name": "Teeth Dream Meaning", "url": "https://teethdreammeaning.com/"},  "headline": "Teeth Falling Out Dream: Bad Omen or Good Sign? Both Classical Books Answer — With Conditions", "url": "https://teethdreammeaning.com/dream/teeth-falling-out-good-or-bad-omen/", "inLanguage": "en", "about": {"@type": "Thing", "name": "dream interpretation"}}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Is it a bad omen?", "acceptedAnswer": {"@type": "Answer", "text": "It can be — under conditions. In Al-Nabulsi, teeth that fall and are gone stand for the death of the relative each tooth maps to, and a tooth that is buried in the dream seals it. In the Ibn Sirin compilation, the harshest reading is triggered by a search: if you cannot find your fallen teeth, \"his family will die before him.\" The common folk belief that any teeth dream forecasts a death skips those conditions."}}, {"@type": "Question", "name": "Is it a good sign, then?", "acceptedAnswer": {"@type": "Answer", "text": "Also yes, in the same books. The compilation opens the entry: falling teeth \"means longevity, or living past one's contemporaries.\" Al-Nabulsi reads teeth falling painlessly into the palm as coin — \"dirhams, in their number\" — and both books give the whole dream a debt-paying reading, which is a relief, not a misfortune. For a slave in the dream-cast, the shower of teeth means manumission."}}, {"@type": "Question", "name": "What decides which reading fires?", "acceptedAnswer": {"@type": "Answer", "text": "Dream details, not the dreamer's mood: caught or lost, buried or kept, with pain or without. And in Al-Nabulsi, the station of the person the teeth represent — the identical shower of teeth that reads as death for the household reads as a long sickness-without-dying, as freedom for a slave, and as a lightened load for a merchant or traveler. One image, four omens."}}, {"@type": "Question", "name": "Does the research settle good or bad?", "acceptedAnswer": {"@type": "Answer", "text": "No — and that is itself the finding. The only study that tested a meaning-claim head-on (Rozen &amp; Soffer-Dudek, Frontiers in Psychology 9:1812, 2018, n=210) checked whether teeth dreams symbolize psychological distress and found r = 0.02, no relationship, while finding a link to jaw and gum tension on waking (r = 0.21). Fortune and calamity are not variables in any published design; the one \"it means your suffering\" hypothesis science tested is the one it failed."}}]}</script>
 </head>
 <body>
-<div class="wrap">
-<div class="top">
-  <div class="brand"><a href="/">Teeth Dream Meaning</a> <em>· classical sources, checked page by page</em></div>
-  <nav class="topnav"><a href="/about/">About</a><span>·</span><a href="/disclaimer/">Disclaimer</a><span>·</span><a href="/about/">Sources</a></nav>
-</div>
+<a class="skip" href="#main">Skip to content</a>
 
+<header>
+  <div class="wrap site-head">
+    <a class="wordmark" href="/">
+      <svg viewBox="0 0 100 100" fill="none" aria-hidden="true">
+        <path d="M30 22 C30 10 45 8 50 16 C55 8 70 10 70 22 C70 32 66 38 63 44 C60 51 58 66 55 74 C53 79 48 79 47 72 C46 79 41 79 39 74 C36 66 34 51 31 44 C28 38 24 32 24 22 Z"
+              stroke="#182430" stroke-width="5" stroke-linejoin="round"/>
+      </svg>
+      teethdreammeaning
+    </a>
+    <nav aria-label="Main">
+      <ul>
+        <li><a href="/#dictionary">Dream Dictionary</a></li>
+        <li><a href="/#featured">Featured Dream</a></li>
+        <li><a href="/#faq">Questions</a></li>
+        <li><a href="/about/">About</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<div class="wrap page">
 <div class="cols">
 <div class="mhead">
 <h1>Teeth Falling Out in a Dream: Bad Omen or Good Sign?</h1>
-<p class="lede">The short classical answer is: <strong>the dream itself has no fixed polarity</strong>. The two dictionaries this site reads from print calamity and fortune readings <em>on the same page</em>, and which one applies is decided by three details: whether the fallen teeth are lost or kept, buried or saved, and what station the dreamer (or the person the tooth represents) occupies. The Ibn Sirin compilation's very first sentence calls the dream an omen of <em>longevity</em>; its own front matter records a famous scholar calling the same dream "a calamity." Here is both sides, quoted exactly, with the conditions under which each one fires.</p>
+<div class="mhead-art" aria-hidden="true"><svg viewBox="0 0 360 300" fill="none"><use href="#illo-teeth-falling-out-good-or-bad-omen"/></svg></div>
+<div class="tldr">
+<strong>The short reading</strong>
+<p>The short classical answer is: <strong>the dream itself has no fixed polarity</strong>. The two dictionaries this site reads from print calamity and fortune readings <em>on the same page</em>, and which one applies is decided by three details: whether the fallen teeth are lost or kept, buried or saved, and what station the dreamer (or the person the tooth represents) occupies. The Ibn Sirin compilation's very first sentence calls the dream an omen of <em>longevity</em>; its own front matter records a famous scholar calling the same dream "a calamity." Here is both sides, quoted exactly, with the conditions under which each one fires.</p>
+</div>
 </div>
 <aside>
 <details class="tocd" open>
@@ -146,9 +466,7 @@ aside details[open] summary::after{content:"▴"}
 </ul>
 </details>
 </aside>
-<main><article>
-
-
+<main id="main"><article>
 <p>Four quick answers first:</p>
 
 <div class="qa">
@@ -171,7 +489,8 @@ aside details[open] summary::after{content:"▴"}
 <p>No — and that is itself the finding. The only study that tested a meaning-claim head-on (Rozen &amp; Soffer-Dudek, <em>Frontiers in Psychology</em> 9:1812, 2018, n=210) checked whether teeth dreams symbolize psychological distress and found r = 0.02, no relationship, while finding a link to jaw and gum tension on waking (r = 0.21). Fortune and calamity are not variables in any published design; the one "it means your suffering" hypothesis science tested is the one it failed. The design and full numbers behind these figures are laid out in the <a href="#what-the-one-empirical-paper-says-about-">modern-research section</a> below.</p>
 </div>
 
-<span class="zone z-text"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 6.2C10.4 5 8 4.2 4.8 4.2v13.6c3.2 0 5.6.8 7.2 2 1.6-1.2 4-2 7.2-2V4.2C16 4.2 13.6 5 12 6.2zM12 6.2v13.6"/></svg>Classical text</span>
+<section class="band band-text">
+<span class="zone z-text"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 6.2C10.4 5 8 4.2 4.8 4.2v13.6c3.2 0 5.6.8 7.2 2 1.6-1.2 4-2 7.2-2V4.2C16 4.2 13.6 5 12 6.2zM12 6.2v13.6"/></svg>Classical text</span>
 <h2 id="the-book-s-own-lesson-same-omen-two-pres">The book's own lesson: same omen, two presentations</h2>
 <p>The 1992 compilation opens its front matter on dream interpretation with a teeth story, and it is exactly the good-or-bad question. A Caliph dreams all his teeth fall out:</p>
 <div class="cites">
@@ -183,7 +502,7 @@ aside details[open] summary::after{content:"▴"}
 </div>
 <p>Read the moral carefully, because it is more interesting than "spin." The book says the two interpretations were <em>the same meaning</em>: to outlive your relatives is, proposition-for-proposition, to survive all of them. The dream did not change polarity; only the vantage did. Whether the omen is "bad" or "good" was a fact about the listener, not about the teeth. Any reader who wants a stable good-or-bad verdict from these books is asking dictionaries eight centuries apart a question they treat as a trick of perspective.</p>
 
-<span class="zone z-text"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 6.2C10.4 5 8 4.2 4.8 4.2v13.6c3.2 0 5.6.8 7.2 2 1.6-1.2 4-2 7.2-2V4.2C16 4.2 13.6 5 12 6.2zM12 6.2v13.6"/></svg>Classical text</span>
+<span class="zone z-text"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 6.2C10.4 5 8 4.2 4.8 4.2v13.6c3.2 0 5.6.8 7.2 2 1.6-1.2 4-2 7.2-2V4.2C16 4.2 13.6 5 12 6.2zM12 6.2v13.6"/></svg>Classical text</span>
 <h2 id="the-calamity-reading-on-the-record">The calamity reading on the record</h2>
 <p>The same compilation's front matter keeps the unsparing version, in its string of interpretation anecdotes, voiced by one of the most celebrated interpreters of the early Muslim community:</p>
 <div class="cites">
@@ -203,7 +522,7 @@ aside details[open] summary::after{content:"▴"}
 </div>
 <p>"The death of those of his own age" is the longevity reading again from inside the death sentence: your peers die, you remain. And "sickness" instead of death softens the blow without canceling it. On one line, Al-Nabulsi stacks calamity, longevity, and illness-instead-of-death.</p>
 
-<span class="zone z-text"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 6.2C10.4 5 8 4.2 4.8 4.2v13.6c3.2 0 5.6.8 7.2 2 1.6-1.2 4-2 7.2-2V4.2C16 4.2 13.6 5 12 6.2zM12 6.2v13.6"/></svg>Classical text</span>
+<span class="zone z-text"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 6.2C10.4 5 8 4.2 4.8 4.2v13.6c3.2 0 5.6.8 7.2 2 1.6-1.2 4-2 7.2-2V4.2C16 4.2 13.6 5 12 6.2zM12 6.2v13.6"/></svg>Classical text</span>
 <h2 id="the-exceptions-clause-fortune-by-station">The exceptions clause: fortune by station</h2>
 <p>The passage the folk pages never reproduce is Al-Nabulsi's run of exceptions attached to the worst case — all teeth falling at once:</p>
 <div class="cites">
@@ -216,7 +535,7 @@ aside details[open] summary::after{content:"▴"}
 <p>Three softenings, one paragraph. The maximum-death reading is immediately capped at sickness-without-death; for a slave, the same dream means <em>freedom</em> — the teeth that stand for the household's people read as the manumission of the least free among them; for the merchant and the traveler, the load gets lighter, which is at once a pun on lost teeth and a good omen for the road. The book is telling you that "is this dream good or bad" cannot be answered before you know <em>who is dreaming it and which people the teeth are</em>.</p>
 <p>And there is a plain fortune line for the hand. Al-Nabulsi: teeth that fall into the palm "with no pain and no pulling" are "dirhams, in their number" — coin, counted — while the upper teeth falling into the hand "is wealth that comes to him." The compilation agrees: "If the upper teeth fall into one's hand in the dream, they represent profits." Both books, no contradiction, all inside the dream everyone calls unlucky.</p>
 
-<span class="zone z-text"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 6.2C10.4 5 8 4.2 4.8 4.2v13.6c3.2 0 5.6.8 7.2 2 1.6-1.2 4-2 7.2-2V4.2C16 4.2 13.6 5 12 6.2zM12 6.2v13.6"/></svg>Classical text</span>
+<span class="zone z-text"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 6.2C10.4 5 8 4.2 4.8 4.2v13.6c3.2 0 5.6.8 7.2 2 1.6-1.2 4-2 7.2-2V4.2C16 4.2 13.6 5 12 6.2zM12 6.2v13.6"/></svg>Classical text</span>
 <h2 id="the-switch-keep-it-or-bury-it">The switch: keep it or bury it</h2>
 <p>The single clearest good-versus-bad lever in either book is one action performed on a fallen tooth, and both dictionaries print it at the same fork:</p>
 <div class="cites">
@@ -232,35 +551,295 @@ aside details[open] summary::after{content:"▴"}
 </div>
 <p>Same dream, same tooth, two fates separated by whether the dreamer digs a hole. The compilation also adds its search-condition variant at the "Teeth" entry: "If one cannot find his teeth in the dream, it means that his family will die before him, or that a member of his clan will emigrate to a new land. If one finds a lost tooth in a dream, it means the return of an immigrant to his homeland." Lost-buried: death. Found-kept: return, replacement. In these books the omen is a decision procedure over dream details, not a mood.</p>
 
-<span class="zone z-research"><svg widtheight="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M9.5 3h5M10.8 3v5.2L5.6 16.8A2.5 2.5 0 0 0 7.8 20.5h8.4a2.5 2.5 0 0 0 2.2-3.7L13.2 8.2V3M8.2 14.5h7.6"/></svg>Modern research</span>
+</section>
+<section class="band band-research">
+<span class="zone z-research"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M9.5 3h5M10.8 3v5.2L5.6 16.8A2.5 2.5 0 0 0 7.8 20.5h8.4a2.5 2.5 0 0 0 2.2-3.7L13.2 8.2V3M8.2 14.5h7.6"/></svg>Modern research</span>
 <h2 id="what-the-one-empirical-paper-says-about-">What the one empirical paper says about omens</h2>
 <p>Rozen &amp; Soffer-Dudek, "Dreams of Teeth Falling Out: An Empirical Investigation of Physiological and Psychological Correlates" (<em>Frontiers in Psychology</em> 9:1812, 2018; <a href="https://pubmed.ncbi.nlm.nih.gov/30319507/">PubMed 30319507</a>; open access CC BY), describes teeth dreams as "one of the most common and universal typical dream themes, yet their source remains unknown" — and their very commonness as "incompatible with the 'continuity hypothesis'," since adults do not usually lose their teeth in waking life. Before testing anything, the paper's introduction runs its own two-thousand-year audit of good-or-bad readings:</p>
 <p>Artemidorus, second century, Ancient Greece — "the earliest documented interpretation" — tied losing teeth in a dream to <em>the payment of debts</em>: a relief reading, the same one both classical Islamic books independently keep. The Jewish Talmud read teeth dreams as "a prophecy for the impending death of a family member": the calamity reading, in the paper's own words, "a common belief for many years, which Freud (1900) reacted to with irony." Jung reportedly read them, in women, as childbirth; Schneck (1967) as "the fear of growing older." The historical record the study walks through is a pendulum — debts, death, birth, aging — with no stable polarity across any two centuries.</p>
 <p>The paper's own test then removed the psychological end of the pendulum. Across 210 undergraduates: teeth dreams related to waking teeth-and-gum tension, r = 0.21 (95% CI 0.07–0.33, p &lt; 0.005), and <em>not</em> to the direct grinding item, r = 0.06 (n.s.), and <em>not</em> to psychological distress, r = 0.02 (n.s.) — while falling dreams and smothered dreams in the same sample did track distress. The authors' conclusion: the findings "support the dental irritation hypothesis and do not support the symbolic hypothesis." Nothing in the design measured fortune; the dream's badness and its goodness are both outside the instrument. What survived measurement is a jaw.</p>
 <p>The prevalence figures the paper cites from the Dream Motif Scale (Yu, 2012, <em>Dreaming</em> 22(1), 18–52, <a href="https://doi.org/10.1037/a0026171">DOI 10.1037/a0026171</a>): 39.0% of respondents had teeth dreams at least once, 16.2% recurrently, 8.2% regularly. About two in five people have had this "omen" at least once — which is also why every culture on record has a good-or-bad argument about it.</p>
 
-<span class="zone z-reading"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19l7-7-4-4-7 7-1 5zM16 5l2 2M13 8l2 2"/></svg>This site's reading</span>
+</section>
+<section class="band band-reading">
+<span class="zone z-reading"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19l7-7-4-4-7 7-1 5zM16 5l2 2M13 8l2 2"/></svg>This site's reading</span>
 <h2 id="set-the-layers-beside-each-other-the-act">Set the layers beside each other — the actual point</h2>
 <p>Collision one. Folk pages near-globally treat the dream as bad-luck news ("someone will die"), and the classical books print that reading only under conditions — lost, buried, unfound — while printing profits, dirhams-by-count, debts paid, a son on the lap, longevity, and a slave's freedom on the same page as counter-readings. The books are not ambivalent by accident; each hard reading carries its stated switch.</p>
 <p>Collision two. The oldest reading the modern paper's introduction preserves — Artemidorus, debts paid — is a <em>fortune</em> reading, and both Islamic books carry it independently: "Falling teeth in a dream also mean paying one's debts" (compilation), "if he is under a debt... it indicates that he will pay his debt" (Al-Nabulsi, Arabic checked verbatim: "فإن ذلك يدل على أنه يقضي دينه"). The popular "death omen" memory and the earliest documented scholarly answer point in opposite directions.</p>
 <p>Collision three. The one study that tested "the dream symbolizes your distress" — the modern soft version of the bad-omen theory — failed to find it (r = 0.02), while finding a physical correlate instead. Neither the calamity nor the comfort reading has any measurement behind it; the books price the dream through its details, the study measures the jaw, and the gap between them is the honest space on this page.</p>
 
-<span class="zone z-reading"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19l7-7-4-4-7 7-1 5zM16 5l2 2M13 8l2 2"/></svg>This site's reading</span>
+<span class="zone z-reading"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19l7-7-4-4-7 7-1 5zM16 5l2 2M13 8l2 2"/></svg>This site's reading</span>
 <h2 id="the-honest-gap">The honest gap</h2>
 <p>No published study tests whether a dream portends anything, and the classical books themselves refuse to fix the polarity: Al-Nabulsi's page runs <em>وقيل</em> — "and it was said" — through a chain of alternative verdicts (a harm to some friends; an obstacle to what he wants; a sign of debts being paid; for the ascetic, an injunction to keep the fast) and closes the worst-case paragraph by capping death at sickness. The compilation prints longevity as its first word and calamity in its front matter, and lets both stand. A page that tells you flatly that the teeth dream is "definitely bad luck" or "actually good news" is choosing one line out of two books and deleting the conditions attached to every other line.</p>
 
 <div class="note"><p>This page reports what two classical texts and two published studies say. It is not a prediction, a diagnosis, or a medical or religious ruling, and no dream book — classical or modern — settles what a dream means for the person who had it. If your teeth hurt or loosen in waking life, that is a question for a dentist, not a dream dictionary.</p></div>
 
+</section>
 <section style="border-top:1px solid var(--line);margin-top:40px;padding-top:20px"><h2 id="related-questions" style="font-size:18px;font-weight:400">Related questions</h2><ul style="list-style:none;padding:0"><li style="padding:8px 0;border-bottom:1px solid var(--line)"><a href="/dream/teeth-falling-out/">Teeth falling out — the full answer</a></li><li style="padding:8px 0;border-bottom:1px solid var(--line)"><a href="/dream/teeth-falling-out-and-death/">Does it mean someone will die?</a></li><li style="padding:8px 0;border-bottom:1px solid var(--line)"><a href="/dream/teeth-three-traditions/">Three traditions compared</a></li><li style="padding:8px 0;border-bottom:1px solid var(--line)"><a href="/dream/snake/">Snake dreams: killing it is "marriage" on one page</a></li></ul></section>
 </article></main>
 </div>
-<footer>
-<p>Teeth Dream Meaning · <a href="/">Home</a> · <a href="/dream/teeth-falling-out/">Teeth falling out: both entries side by side</a> · <a href="/dream/teeth-falling-out-and-death/">Does the dream mean a death? The exact conditions</a> · <a href="/dream/teeth-falling-into-hand-lap-ground/">Hand, lap, or ground</a> · <a href="/dream/teeth-dreams-and-stress/">Teeth dreams and stress: what the research actually found</a> · <a href="/disclaimer/">Disclaimer</a></p>
-</footer>
 </div>
+
+<footer>
+  <div class="wrap foot-grid">
+    <div>
+      <p class="disclaimer">This site reports what classical texts say about dream symbols. It does not predict anything and does not give medical, psychological, or religious rulings. The books themselves disagree with each other; no dream book settles what a dream means for the person who had it.</p>
+      <p style="margin-top:16px;">© 2026 teethdreammeaning.com</p>
+    </div>
+    <ul class="foot-links">
+      <li><a href="/about/">About</a></li>
+      <li><a href="/disclaimer/">Disclaimer</a></li>
+      <li><a href="/privacy/">Privacy</a></li>
+      <li><a href="/terms/">Terms</a></li>
+    </ul>
+  </div>
+</footer>
 <script>
 if(window.matchMedia("(max-width:860px)").matches){
   var d=document.querySelector(".tocd"); if(d) d.removeAttribute("open");
 }
-</script></body>
+</script>
+
+<!-- article line-art sprite -->
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" style="display:none" aria-hidden="true">
+  <!-- Unique line-art per article. Same ink/enamel/amber language as the homepage, but no shared moon-and-molar template. -->
+  <defs>
+    <g id="molar-drawn">
+      <path d="M96 96 C96 52 152 44 172 74 C192 44 248 52 248 96 C248 128 234 148 224 168 C212 192 206 236 194 262 C188 276 172 276 168 254 C164 276 148 276 142 262 C130 236 124 192 112 168 C102 148 96 128 96 96 Z" stroke="#182430" stroke-width="6" stroke-linejoin="round" fill="#E1EBE8"/>
+      <path d="M126 84 C130 72 144 66 154 70" stroke="#182430" stroke-width="5" stroke-linecap="round"/>
+    </g>
+    <g id="molar-sm">
+      <path d="M96 96 C96 52 152 44 172 74 C192 44 248 52 248 96 C248 128 234 148 224 168 C212 192 206 236 194 262 C188 276 172 276 168 254 C164 276 148 276 142 262 C130 236 124 192 112 168 C102 148 96 128 96 96 Z" stroke="#182430" stroke-width="8" stroke-linejoin="round" fill="#E1EBE8"/>
+    </g>
+  </defs>
+
+  <!-- tooth leaving a jaw: falling, not floating beside a moon -->
+  <symbol id="illo-teeth-falling-out" viewBox="0 0 360 300">
+    <path d="M28 70 C70 28 290 28 332 70" stroke="#182430" stroke-width="7" stroke-linecap="round"/>
+    <path d="M52 78 C58 54 86 48 98 76" stroke="#182430" stroke-width="5.5" stroke-linejoin="round" fill="#E1EBE8"/>
+    <path d="M112 78 C118 52 146 48 158 76" stroke="#182430" stroke-width="5.5" stroke-linejoin="round" fill="#E1EBE8"/>
+    <!-- empty socket -->
+    <path d="M186 78 C198 70 222 70 234 78" stroke="#182430" stroke-width="5" stroke-linecap="round" fill="none"/>
+    <path d="M250 78 C256 52 284 48 296 76" stroke="#182430" stroke-width="5.5" stroke-linejoin="round" fill="#E1EBE8"/>
+    <path d="M188 112 v28 M210 104 v34 M232 112 v28" stroke="#182430" stroke-width="4" stroke-linecap="round" opacity="0.45"/>
+    <g transform="translate(36,86) scale(0.62) rotate(18,172,160)">
+      <use href="#molar-drawn"/>
+    </g>
+  </symbol>
+
+  <!-- three teeth in a gum; only the middle one is loose -->
+  <symbol id="illo-loose-teeth" viewBox="0 0 360 300">
+    <path d="M30 250 C70 282 290 282 330 250" stroke="#182430" stroke-width="7" stroke-linecap="round" fill="none"/>
+    <path d="M48 248 C48 168 84 132 110 132 C136 132 162 168 162 248" stroke="#182430" stroke-width="6" stroke-linejoin="round" fill="#E1EBE8"/>
+    <!-- loose, tilted, dropped -->
+    <path d="M168 258 C154 184 186 114 222 128 C258 142 262 206 248 262" stroke="#182430" stroke-width="6" stroke-linejoin="round" fill="#F3E8D6"/>
+    <path d="M198 250 C198 170 234 134 260 134 C286 134 312 170 312 250" stroke="#182430" stroke-width="6" stroke-linejoin="round" fill="#E1EBE8"/>
+    <path d="M222 96 h18 M228 80 h14" stroke="#182430" stroke-width="4" stroke-linecap="round" opacity="0.55"/>
+  </symbol>
+
+  <!-- one large tooth versus a whole set -->
+  <symbol id="illo-one-tooth-vs-all-teeth" viewBox="0 0 360 300">
+    <use href="#molar-drawn" transform="translate(-40,10) scale(0.72)"/>
+    <path d="M200 54 V246" stroke="#182430" stroke-width="4" stroke-linecap="round" opacity="0.3"/>
+    <g transform="translate(188,36) scale(0.32)">
+      <use href="#molar-sm"/>
+    </g>
+    <g transform="translate(248,36) scale(0.32)">
+      <use href="#molar-sm"/>
+    </g>
+    <g transform="translate(218,118) scale(0.32)">
+      <use href="#molar-sm"/>
+    </g>
+    <g transform="translate(188,200) scale(0.32)">
+      <use href="#molar-sm"/>
+    </g>
+    <g transform="translate(248,200) scale(0.32)">
+      <use href="#molar-sm"/>
+    </g>
+  </symbol>
+
+  <!-- a tooth already at rest on still ground; horizontal, not mid-fall -->
+  <symbol id="illo-teeth-falling-out-and-death" viewBox="0 0 360 300">
+    <path d="M24 210 H336" stroke="#182430" stroke-width="6" stroke-linecap="round"/>
+    <g transform="translate(180,200) rotate(98) translate(-172,-200) translate(20,-8)">
+      <use href="#molar-drawn"/>
+    </g>
+  </symbol>
+
+  <!-- a single large drop; no tooth, no moon -->
+  <symbol id="illo-teeth-falling-out-with-blood" viewBox="0 0 360 300">
+    <path d="M180 28 C118 126 92 176 118 228 C140 272 220 272 242 228 C268 176 242 126 180 28 Z" stroke="#182430" stroke-width="6" stroke-linejoin="round" fill="#F3E8D6"/>
+    <path d="M164 86 C148 128 144 164 156 196" stroke="#182430" stroke-width="4.5" stroke-linecap="round" opacity="0.4"/>
+  </symbol>
+
+  <!-- open palm receiving a small tooth -->
+  <symbol id="illo-teeth-falling-into-hand-lap-ground" viewBox="0 0 360 300">
+    <path d="M78 150 V92 A18 18 0 0 1 114 92 V148" stroke="#182430" stroke-width="6" stroke-linecap="round" fill="none"/>
+    <path d="M114 146 V68 A18 18 0 0 1 150 68 V148" stroke="#182430" stroke-width="6" stroke-linecap="round" fill="none"/>
+    <path d="M150 146 V84 A18 18 0 0 1 186 84 V156" stroke="#182430" stroke-width="6" stroke-linecap="round" fill="none"/>
+    <path d="M186 156 V108 A18 18 0 0 1 222 108 V168" stroke="#182430" stroke-width="6" stroke-linecap="round" fill="none"/>
+    <path d="M78 150 C56 128 28 140 36 168 C50 214 82 250 160 260 C236 270 286 236 286 196 V168" stroke="#182430" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" fill="#E1EBE8"/>
+    <g transform="translate(96,-28) scale(0.38)">
+      <use href="#molar-drawn"/>
+    </g>
+    <path d="M168 44 v18 M188 38 v18" stroke="#182430" stroke-width="4" stroke-linecap="round" opacity="0.5"/>
+  </symbol>
+
+  <!-- unbalanced scale: good and bad are both on the beam -->
+  <symbol id="illo-teeth-falling-out-good-or-bad-omen" viewBox="0 0 360 300">
+    <path d="M180 36 V236 M96 258 H264" stroke="#182430" stroke-width="7" stroke-linecap="round"/>
+    <path d="M180 70 L72 104 M180 70 L300 150" stroke="#182430" stroke-width="6" stroke-linecap="round"/>
+    <path d="M72 104 A50 22 0 0 0 72 114 A50 22 0 0 0 72 104 Z" stroke="#182430" stroke-width="5.5" fill="#E1EBE8"/>
+    <path d="M300 150 A50 22 0 0 0 300 160 A50 22 0 0 0 300 150 Z" stroke="#182430" stroke-width="5.5" fill="#F3E8D6"/>
+    <circle cx="180" cy="70" r="10" fill="#D89A3F" stroke="#182430" stroke-width="3.5"/>
+  </symbol>
+
+  <!-- clenched jaws, not a lone molar -->
+  <symbol id="illo-teeth-dreams-and-stress" viewBox="0 0 360 300">
+    <path d="M36 128 C36 88 80 64 180 64 C280 64 324 88 324 128 V148 H36 Z" stroke="#182430" stroke-width="6" stroke-linejoin="round" fill="#E1EBE8"/>
+    <path d="M36 172 H324 V192 C324 232 280 256 180 256 C80 256 36 232 36 192 Z" stroke="#182430" stroke-width="6" stroke-linejoin="round" fill="#E1EBE8"/>
+    <!-- clenched seam -->
+    <path d="M52 160 H308" stroke="#182430" stroke-width="6" stroke-linecap="round"/>
+    <path d="M84 128 V160 M132 124 V160 M180 120 V160 M228 124 V160 M276 128 V160" stroke="#182430" stroke-width="5" stroke-linecap="round"/>
+    <path d="M84 172 V200 M132 172 V204 M180 172 V208 M228 172 V204 M276 172 V200" stroke="#182430" stroke-width="5" stroke-linecap="round"/>
+    <path d="M20 150 C8 128 8 192 20 170" stroke="#182430" stroke-width="4" stroke-linecap="round" opacity="0.5"/>
+    <path d="M340 150 C352 128 352 192 340 170" stroke="#182430" stroke-width="4" stroke-linecap="round" opacity="0.5"/>
+  </symbol>
+
+  <!-- three different books, slightly fanned -->
+  <symbol id="illo-teeth-three-traditions" viewBox="0 0 360 300">
+    <g transform="rotate(-8, 110, 250)">
+      <path d="M58 86 H130 V250 H58 Z" stroke="#182430" stroke-width="6" stroke-linejoin="round" fill="#E1EBE8"/>
+      <path d="M76 86 V250" stroke="#182430" stroke-width="3" opacity="0.3"/>
+    </g>
+    <path d="M148 58 H224 V250 H148 Z" stroke="#182430" stroke-width="6" stroke-linejoin="round" fill="#F3E8D6"/>
+    <path d="M166 58 V250 M206 58 V250" stroke="#182430" stroke-width="3" opacity="0.3"/>
+    <g transform="rotate(8, 260, 250)">
+      <path d="M230 100 H306 V250 H230 Z" stroke="#182430" stroke-width="6" stroke-linejoin="round" fill="#E3ECF1"/>
+      <path d="M248 100 V250" stroke="#182430" stroke-width="3" opacity="0.3"/>
+    </g>
+  </symbol>
+
+  <!-- cradle, no night sky -->
+  <symbol id="illo-baby" viewBox="0 0 360 300">
+    <path d="M40 214 C64 268 296 268 320 214" stroke="#182430" stroke-width="7" stroke-linecap="round" fill="none"/>
+    <path d="M70 206 C104 168 256 168 290 206 C256 230 104 230 70 206 Z" stroke="#182430" stroke-width="6" stroke-linejoin="round" fill="#E1EBE8"/>
+    <circle cx="180" cy="172" r="34" stroke="#182430" stroke-width="6" fill="#F3F6F5"/>
+    <path d="M96 214 H264" stroke="#182430" stroke-width="5" stroke-linecap="round" opacity="0.35"/>
+  </symbol>
+
+  <!-- a drop striking water, not a still drop -->
+  <symbol id="illo-blood" viewBox="0 0 360 300">
+    <path d="M180 16 C152 70 140 96 150 122 C158 144 202 144 210 122 C220 96 208 70 180 16 Z" stroke="#182430" stroke-width="6" stroke-linejoin="round" fill="#F3E8D6"/>
+    <path d="M48 210 C100 168 260 168 312 210" stroke="#182430" stroke-width="6" stroke-linecap="round" fill="none"/>
+    <path d="M20 248 C90 214 270 214 340 248" stroke="#182430" stroke-width="6" stroke-linecap="round" fill="none"/>
+    <path d="M148 210 C156 188 204 188 212 210" stroke="#182430" stroke-width="5" stroke-linecap="round" fill="none"/>
+  </symbol>
+
+  <!-- sitting cat, profile, curled tail -->
+  <symbol id="illo-cat" viewBox="0 0 360 300">
+    <path d="M86 262 C50 262 40 210 78 178 C86 128 132 100 180 108 C228 100 276 128 282 178 C322 210 310 262 274 262 Z" stroke="#182430" stroke-width="6.5" stroke-linejoin="round" fill="#E1EBE8"/>
+    <path d="M92 168 L102 96 L148 140 Z" stroke="#182430" stroke-width="6" stroke-linejoin="round" fill="#E1EBE8"/>
+    <path d="M268 168 L258 96 L212 140 Z" stroke="#182430" stroke-width="6" stroke-linejoin="round" fill="#E1EBE8"/>
+    <path d="M274 252 C340 236 352 168 316 148" stroke="#182430" stroke-width="7" stroke-linecap="round" fill="none"/>
+    <path d="M140 188 C150 198 162 198 172 188 M188 188 C198 198 210 198 220 188" stroke="#182430" stroke-width="4" stroke-linecap="round"/>
+  </symbol>
+
+  <!-- open doorway with warm light inside -->
+  <symbol id="illo-dead-person-resurrected" viewBox="0 0 360 300">
+    <path d="M64 286 V72 C64 32 296 32 296 72 V286" stroke="#182430" stroke-width="7" stroke-linejoin="round" fill="#E1EBE8"/>
+    <path d="M108 286 V102 C108 72 252 72 252 102 V286" stroke="#182430" stroke-width="6" fill="#F6E5C3"/>
+    <path d="M180 54 V28" stroke="#D89A3F" stroke-width="7" stroke-linecap="round"/>
+    <circle cx="180" cy="20" r="10" fill="#D89A3F"/>
+  </symbol>
+
+  <!-- standing dog, distinct from the sitting cat -->
+  <symbol id="illo-dog" viewBox="0 0 360 300">
+    <path d="M70 200 C70 150 120 128 200 136 C260 142 290 168 290 200 V230 C290 242 270 250 200 250 C120 250 70 240 70 220 Z" stroke="#182430" stroke-width="6.5" stroke-linejoin="round" fill="#E1EBE8"/>
+    <path d="M70 214 V272 M120 230 V272 M250 230 V272 M290 214 V272" stroke="#182430" stroke-width="6.5" stroke-linecap="round"/>
+    <path d="M270 160 C270 112 336 108 348 150 C356 174 336 198 300 198 C280 198 270 180 270 160 Z" stroke="#182430" stroke-width="6.5" stroke-linejoin="round" fill="#E1EBE8"/>
+    <path d="M286 140 C270 172 286 200 308 184" stroke="#182430" stroke-width="5.5" stroke-linecap="round" fill="#D8E4DE"/>
+    <path d="M70 180 C28 150 16 210 62 220" stroke="#182430" stroke-width="6.5" stroke-linecap="round" fill="none"/>
+    <circle cx="328" cy="148" r="5" fill="#182430"/>
+  </symbol>
+
+  <!-- fire on logs, so it cannot be read as a drop -->
+  <symbol id="illo-fire" viewBox="0 0 360 300">
+    <path d="M180 20 C140 100 96 146 96 202 C96 252 134 280 180 280 C226 280 264 252 264 202 C264 146 220 100 180 20 Z" stroke="#182430" stroke-width="6.5" stroke-linejoin="round" fill="#F3E8D6"/>
+    <path d="M180 96 C158 140 140 166 140 204 C140 236 158 254 180 254 C202 254 220 236 220 204 C220 166 202 140 180 96 Z" stroke="#182430" stroke-width="5.5" stroke-linejoin="round" fill="#D89A3F"/>
+    <path d="M64 268 L160 292 M200 292 L296 268" stroke="#182430" stroke-width="8" stroke-linecap="round"/>
+  </symbol>
+
+  <!-- stacked coins -->
+  <symbol id="illo-gold" viewBox="0 0 360 300">
+    <ellipse cx="180" cy="86" rx="92" ry="28" stroke="#182430" stroke-width="6" fill="#F3E8D6"/>
+    <path d="M88 86 V130 C88 146 124 158 180 158 C236 158 272 146 272 130 V86" stroke="#182430" stroke-width="6" fill="#E8D7B0"/>
+    <ellipse cx="180" cy="130" rx="92" ry="28" stroke="#182430" stroke-width="6" fill="#D89A3F"/>
+    <path d="M88 130 V176 C88 192 124 204 180 204 C236 204 272 192 272 176 V130" stroke="#182430" stroke-width="6" fill="#C9862E"/>
+    <ellipse cx="180" cy="176" rx="92" ry="28" stroke="#182430" stroke-width="6" fill="#D89A3F"/>
+    <path d="M180 160 V192 M156 176 H204" stroke="#182430" stroke-width="5" stroke-linecap="round" opacity="0.7"/>
+  </symbol>
+
+  <!-- falling strands from a scalp, one loosened -->
+  <symbol id="illo-hair" viewBox="0 0 360 300">
+    <path d="M72 64 C110 18 250 18 288 64" stroke="#182430" stroke-width="7" stroke-linecap="round"/>
+    <path d="M96 72 C84 140 70 200 48 278" stroke="#182430" stroke-width="6" stroke-linecap="round"/>
+    <path d="M140 54 C132 140 120 200 128 280" stroke="#182430" stroke-width="6" stroke-linecap="round"/>
+    <path d="M184 48 C196 140 188 210 176 280" stroke="#182430" stroke-width="6" stroke-linecap="round"/>
+    <path d="M228 54 C250 140 262 200 292 274" stroke="#182430" stroke-width="6" stroke-linecap="round"/>
+    <path d="M268 72 C300 150 312 210 330 260" stroke="#182430" stroke-width="6" stroke-linecap="round"/>
+    <path d="M184 80 C100 130 260 180 96 250" stroke="#D89A3F" stroke-width="6" stroke-linecap="round"/>
+  </symbol>
+
+  <!-- Kaaba: dignified cube only, no decorative stars -->
+  <symbol id="illo-kaaba" viewBox="0 0 360 300">
+    <path d="M78 64 H282 V270 H78 Z" stroke="#182430" stroke-width="7" stroke-linejoin="round" fill="#0D1B24"/>
+    <path d="M78 118 H282" stroke="#D89A3F" stroke-width="20"/>
+    <path d="M78 108 H282 M78 128 H282" stroke="#182430" stroke-width="2" opacity="0.3"/>
+    <path d="M162 196 H198 V270 H162 Z" stroke="#D89A3F" stroke-width="4" fill="#182430"/>
+  </symbol>
+
+  <!-- cloud, slanted rain, puddle — not waves -->
+  <symbol id="illo-rain" viewBox="0 0 360 300">
+    <path d="M96 116 C80 78 120 48 162 66 C176 32 236 32 250 70 C298 58 322 100 300 132 H104 C80 132 80 116 96 116 Z" stroke="#182430" stroke-width="6.5" stroke-linejoin="round" fill="#E1EBE8"/>
+    <path d="M108 168 L86 230 M156 160 L134 232 M204 160 L182 232 M252 168 L230 230" stroke="#182430" stroke-width="6" stroke-linecap="round"/>
+    <path d="M64 268 C120 248 240 248 296 268" stroke="#182430" stroke-width="6" stroke-linecap="round" fill="none"/>
+  </symbol>
+
+  <!-- a large tight coil, no moon -->
+  <symbol id="illo-snake" viewBox="0 0 360 300">
+    <path d="M180 268 C88 268 48 200 88 154 C120 118 200 128 200 176 C200 214 132 220 116 180 C104 148 148 112 204 108 C276 104 316 156 292 214" stroke="#182430" stroke-width="16" stroke-linecap="round" fill="none"/>
+    <path d="M180 268 C88 268 48 200 88 154 C120 118 200 128 200 176 C200 214 132 220 116 180 C104 148 148 112 204 108 C276 104 316 156 292 214" stroke="#E1EBE8" stroke-width="7" stroke-linecap="round" fill="none"/>
+    <ellipse cx="292" cy="230" rx="32" ry="24" transform="rotate(30, 292, 230)" stroke="#182430" stroke-width="6" fill="#E1EBE8"/>
+    <circle cx="304" cy="224" r="5" fill="#182430"/>
+  </symbol>
+
+  <!-- a web fills the frame; the spider is small in it -->
+  <symbol id="illo-spider" viewBox="0 0 360 300">
+    <path d="M180 8 V292 M8 150 H352 M40 40 L320 260 M320 40 L40 260 M180 8 L40 150 M180 8 L320 150 M180 292 L40 150 M180 292 L320 150" stroke="#182430" stroke-width="3" opacity="0.35"/>
+    <circle cx="180" cy="150" r="70" stroke="#182430" stroke-width="3" opacity="0.35" fill="none"/>
+    <circle cx="180" cy="150" r="120" stroke="#182430" stroke-width="3" opacity="0.28" fill="none"/>
+    <ellipse cx="180" cy="168" rx="22" ry="16" stroke="#182430" stroke-width="5" fill="#E1EBE8"/>
+    <circle cx="180" cy="146" r="13" stroke="#182430" stroke-width="5" fill="#E1EBE8"/>
+    <path d="M168 158 C140 148 126 130 118 114 M166 168 C138 170 122 180 108 196 M166 176 C146 190 138 210 134 226 M172 180 C164 200 160 220 160 236" stroke="#182430" stroke-width="3.5" stroke-linecap="round" fill="none"/>
+    <path d="M192 158 C220 148 234 130 242 114 M194 168 C222 170 238 180 252 196 M194 176 C214 190 222 210 226 226 M188 180 C196 200 200 220 200 236" stroke="#182430" stroke-width="3.5" stroke-linecap="round" fill="none"/>
+  </symbol>
+
+  <!-- concentric ripples, not rain and not a moon -->
+  <symbol id="illo-water" viewBox="0 0 360 300">
+    <circle cx="180" cy="160" r="18" stroke="#182430" stroke-width="6" fill="#E3ECF1"/>
+    <circle cx="180" cy="160" r="52" stroke="#182430" stroke-width="6" fill="none"/>
+    <circle cx="180" cy="160" r="90" stroke="#182430" stroke-width="6" fill="none"/>
+    <circle cx="180" cy="160" r="128" stroke="#182430" stroke-width="6" fill="none"/>
+  </symbol>
+
+  <!-- two large interlocking rings -->
+  <symbol id="illo-wedding" viewBox="0 0 360 300">
+    <circle cx="138" cy="160" r="92" stroke="#182430" stroke-width="14" fill="none"/>
+    <circle cx="222" cy="160" r="92" stroke="#D89A3F" stroke-width="14" fill="none"/>
+  </symbol>
+</svg>
+
+
+</body>
 </html>

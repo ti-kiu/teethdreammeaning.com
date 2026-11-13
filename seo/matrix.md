@@ -1,5 +1,8 @@
 # 30 符号双出处定位表 (2026-10-31 全量核对)
 
+> 2026-11-13 队列暂停：RUNBOOK 最高优先级改为牙齿三页（loose-teeth → broken-teeth → rotting-teeth）。本节完成前不开新泛梦页。ladder 及以后仍待日更，本轮不标 DONE。
+
+
 ## 已上线 (9)
 | slug | Ibn Sirin 印页 | Nabulsi |
 |---|---|---|
