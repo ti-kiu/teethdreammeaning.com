@@ -77,6 +77,9 @@
   teeth-falling-out-and-death / 首页。anchor 各用不同变体, 禁"click here"
 - 反向内链: teeth-falling-out 的 by scenario 段加一条指新页 (最有效的收录加速, 不用「请求编入索引」)
 - 每页上线后: gen_sitemap → 部署 → curl 验收(非www 200; www 一跳; canonical 非www; 内链5条逐一 curl -I) → IndexNow → git push
+- 发布闸: 部署前跑 python3 tools/publish_guard.py (非白名单slug直接exit 1拒发; DR≥15后自行更新白名单)
+- QA三查(11-13起, 每页): ① <title>/og:title/JSON-LD headline 三处一致且含完整主词 (snake页三处不一致是前车之鉴)
+  ② canonical 非www绝对地址带尾斜杠 ③ Related questions 零泛梦出链
 - 三页全部进索引后才处理: /dream/baby/ 301 到 teeth-falling-out (www 版与301规则合并后仍须一跳到位)
 - 内链纪律(长期): 新页只纵向连牙齿族, 不链泛梦页; 已上线页面的既有泛梦出链不回改(避免churn已收录页)
 - 冻结项: 首页 "What's coming" 停更; 泛梦页不新增; AdSense 不申请
