@@ -1,5 +1,6 @@
 const SYMBOLS = [
   {slug:'teeth-falling-out', title:'Teeth falling out — the full answer'},
+  {slug:'loose-teeth', title:'Loose teeth in a dream'},
   {slug:'teeth-falling-out-and-death', title:'Teeth falling out and death'},
   {slug:'teeth-falling-out-with-blood', title:'Teeth falling out with blood'},
   {slug:'teeth-falling-into-hand-lap-ground', title:'Teeth falling into hand, lap or ground'},
