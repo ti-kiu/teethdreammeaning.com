@@ -65,3 +65,10 @@
 - 为什么不用 _redirects: 静态资源命中时 redirect 不生效(先资产后规则), www 命中的全是已存在页面。
 - 实测: www 首页/内页/disclaimer 全 301, 非 www 200 不受影响。
 - 下一步: /dream/loose-teeth/ (loose teeth dream meaning 590, +84%/年) -> 内链自 teeth-falling-out -> sitemap 重新提交。不做「请求编入索引」。
+
+## 2026-11-13 首页改版上线 (群主验收通过)
+- 设计: porcelain/enamel 系统 (Gloock+Instrument Sans), 预览 d7825e0 群主逐条核对六修复+阿语原文实测引文后定稿
+- 生产: commit 7f9c996, 摘预览横幅, 资产(og-image/favicon/webmcp.js)全200, 内页未动(计划内)
+- 词典8条真链+4真chip+2虚线soon(loose/broken); Featured=Al-Nabulsi三表面规则真引文(shamela 1217/177)
+- RUNBOOK更新: 首页规则改为新设计口径; 新页上线=chip换真链+词典加条目两件缺一不可
+- 待办: ①loose-teeth页(明天) ②teeth-falling-out范式页改造→群主审→apply批量22页 ③broken/rotting ④baby 301
