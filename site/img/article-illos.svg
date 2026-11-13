@@ -1,0 +1,238 @@
+<svg xmlns="http://www.w3.org/2000/svg" fill="none">
+  <!-- Unique line-art per article. Same ink/enamel/amber language as the homepage, but no shared moon-and-molar template. -->
+  <defs>
+    <g id="molar-drawn">
+      <path d="M96 96 C96 52 152 44 172 74 C192 44 248 52 248 96 C248 128 234 148 224 168 C212 192 206 236 194 262 C188 276 172 276 168 254 C164 276 148 276 142 262 C130 236 124 192 112 168 C102 148 96 128 96 96 Z" stroke="#182430" stroke-width="6" stroke-linejoin="round" fill="#E1EBE8"/>
+      <path d="M126 84 C130 72 144 66 154 70" stroke="#182430" stroke-width="5" stroke-linecap="round"/>
+    </g>
+    <g id="molar-sm">
+      <path d="M96 96 C96 52 152 44 172 74 C192 44 248 52 248 96 C248 128 234 148 224 168 C212 192 206 236 194 262 C188 276 172 276 168 254 C164 276 148 276 142 262 C130 236 124 192 112 168 C102 148 96 128 96 96 Z" stroke="#182430" stroke-width="8" stroke-linejoin="round" fill="#E1EBE8"/>
+    </g>
+  </defs>
+
+  <!-- tooth leaving a jaw: falling, not floating beside a moon -->
+  <symbol id="illo-teeth-falling-out" viewBox="0 0 360 300">
+    <path d="M28 70 C70 28 290 28 332 70" stroke="#182430" stroke-width="7" stroke-linecap="round"/>
+    <path d="M52 78 C58 54 86 48 98 76" stroke="#182430" stroke-width="5.5" stroke-linejoin="round" fill="#E1EBE8"/>
+    <path d="M112 78 C118 52 146 48 158 76" stroke="#182430" stroke-width="5.5" stroke-linejoin="round" fill="#E1EBE8"/>
+    <!-- empty socket -->
+    <path d="M186 78 C198 70 222 70 234 78" stroke="#182430" stroke-width="5" stroke-linecap="round" fill="none"/>
+    <path d="M250 78 C256 52 284 48 296 76" stroke="#182430" stroke-width="5.5" stroke-linejoin="round" fill="#E1EBE8"/>
+    <path d="M188 112 v28 M210 104 v34 M232 112 v28" stroke="#182430" stroke-width="4" stroke-linecap="round" opacity="0.45"/>
+    <g transform="translate(36,86) scale(0.62) rotate(18,172,160)">
+      <use href="#molar-drawn"/>
+    </g>
+  </symbol>
+
+  <!-- three teeth in a gum; only the middle one is loose -->
+  <symbol id="illo-loose-teeth" viewBox="0 0 360 300">
+    <path d="M30 250 C70 282 290 282 330 250" stroke="#182430" stroke-width="7" stroke-linecap="round" fill="none"/>
+    <path d="M48 248 C48 168 84 132 110 132 C136 132 162 168 162 248" stroke="#182430" stroke-width="6" stroke-linejoin="round" fill="#E1EBE8"/>
+    <!-- loose, tilted, dropped -->
+    <path d="M168 258 C154 184 186 114 222 128 C258 142 262 206 248 262" stroke="#182430" stroke-width="6" stroke-linejoin="round" fill="#F3E8D6"/>
+    <path d="M198 250 C198 170 234 134 260 134 C286 134 312 170 312 250" stroke="#182430" stroke-width="6" stroke-linejoin="round" fill="#E1EBE8"/>
+    <path d="M222 96 h18 M228 80 h14" stroke="#182430" stroke-width="4" stroke-linecap="round" opacity="0.55"/>
+  </symbol>
+
+  <!-- one large tooth versus a whole set -->
+  <symbol id="illo-one-tooth-vs-all-teeth" viewBox="0 0 360 300">
+    <use href="#molar-drawn" transform="translate(-40,10) scale(0.72)"/>
+    <path d="M200 54 V246" stroke="#182430" stroke-width="4" stroke-linecap="round" opacity="0.3"/>
+    <g transform="translate(188,36) scale(0.32)">
+      <use href="#molar-sm"/>
+    </g>
+    <g transform="translate(248,36) scale(0.32)">
+      <use href="#molar-sm"/>
+    </g>
+    <g transform="translate(218,118) scale(0.32)">
+      <use href="#molar-sm"/>
+    </g>
+    <g transform="translate(188,200) scale(0.32)">
+      <use href="#molar-sm"/>
+    </g>
+    <g transform="translate(248,200) scale(0.32)">
+      <use href="#molar-sm"/>
+    </g>
+  </symbol>
+
+  <!-- a tooth already at rest on still ground; horizontal, not mid-fall -->
+  <symbol id="illo-teeth-falling-out-and-death" viewBox="0 0 360 300">
+    <path d="M24 210 H336" stroke="#182430" stroke-width="6" stroke-linecap="round"/>
+    <g transform="translate(180,200) rotate(98) translate(-172,-200) translate(20,-8)">
+      <use href="#molar-drawn"/>
+    </g>
+  </symbol>
+
+  <!-- a single large drop; no tooth, no moon -->
+  <symbol id="illo-teeth-falling-out-with-blood" viewBox="0 0 360 300">
+    <path d="M180 28 C118 126 92 176 118 228 C140 272 220 272 242 228 C268 176 242 126 180 28 Z" stroke="#182430" stroke-width="6" stroke-linejoin="round" fill="#F3E8D6"/>
+    <path d="M164 86 C148 128 144 164 156 196" stroke="#182430" stroke-width="4.5" stroke-linecap="round" opacity="0.4"/>
+  </symbol>
+
+  <!-- open palm receiving a small tooth -->
+  <symbol id="illo-teeth-falling-into-hand-lap-ground" viewBox="0 0 360 300">
+    <path d="M78 150 V92 A18 18 0 0 1 114 92 V148" stroke="#182430" stroke-width="6" stroke-linecap="round" fill="none"/>
+    <path d="M114 146 V68 A18 18 0 0 1 150 68 V148" stroke="#182430" stroke-width="6" stroke-linecap="round" fill="none"/>
+    <path d="M150 146 V84 A18 18 0 0 1 186 84 V156" stroke="#182430" stroke-width="6" stroke-linecap="round" fill="none"/>
+    <path d="M186 156 V108 A18 18 0 0 1 222 108 V168" stroke="#182430" stroke-width="6" stroke-linecap="round" fill="none"/>
+    <path d="M78 150 C56 128 28 140 36 168 C50 214 82 250 160 260 C236 270 286 236 286 196 V168" stroke="#182430" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" fill="#E1EBE8"/>
+    <g transform="translate(96,-28) scale(0.38)">
+      <use href="#molar-drawn"/>
+    </g>
+    <path d="M168 44 v18 M188 38 v18" stroke="#182430" stroke-width="4" stroke-linecap="round" opacity="0.5"/>
+  </symbol>
+
+  <!-- unbalanced scale: good and bad are both on the beam -->
+  <symbol id="illo-teeth-falling-out-good-or-bad-omen" viewBox="0 0 360 300">
+    <path d="M180 36 V236 M96 258 H264" stroke="#182430" stroke-width="7" stroke-linecap="round"/>
+    <path d="M180 70 L72 104 M180 70 L300 150" stroke="#182430" stroke-width="6" stroke-linecap="round"/>
+    <path d="M72 104 A50 22 0 0 0 72 114 A50 22 0 0 0 72 104 Z" stroke="#182430" stroke-width="5.5" fill="#E1EBE8"/>
+    <path d="M300 150 A50 22 0 0 0 300 160 A50 22 0 0 0 300 150 Z" stroke="#182430" stroke-width="5.5" fill="#F3E8D6"/>
+    <circle cx="180" cy="70" r="10" fill="#D89A3F" stroke="#182430" stroke-width="3.5"/>
+  </symbol>
+
+  <!-- clenched jaws, not a lone molar -->
+  <symbol id="illo-teeth-dreams-and-stress" viewBox="0 0 360 300">
+    <path d="M36 128 C36 88 80 64 180 64 C280 64 324 88 324 128 V148 H36 Z" stroke="#182430" stroke-width="6" stroke-linejoin="round" fill="#E1EBE8"/>
+    <path d="M36 172 H324 V192 C324 232 280 256 180 256 C80 256 36 232 36 192 Z" stroke="#182430" stroke-width="6" stroke-linejoin="round" fill="#E1EBE8"/>
+    <!-- clenched seam -->
+    <path d="M52 160 H308" stroke="#182430" stroke-width="6" stroke-linecap="round"/>
+    <path d="M84 128 V160 M132 124 V160 M180 120 V160 M228 124 V160 M276 128 V160" stroke="#182430" stroke-width="5" stroke-linecap="round"/>
+    <path d="M84 172 V200 M132 172 V204 M180 172 V208 M228 172 V204 M276 172 V200" stroke="#182430" stroke-width="5" stroke-linecap="round"/>
+    <path d="M20 150 C8 128 8 192 20 170" stroke="#182430" stroke-width="4" stroke-linecap="round" opacity="0.5"/>
+    <path d="M340 150 C352 128 352 192 340 170" stroke="#182430" stroke-width="4" stroke-linecap="round" opacity="0.5"/>
+  </symbol>
+
+  <!-- three different books, slightly fanned -->
+  <symbol id="illo-teeth-three-traditions" viewBox="0 0 360 300">
+    <g transform="rotate(-8, 110, 250)">
+      <path d="M58 86 H130 V250 H58 Z" stroke="#182430" stroke-width="6" stroke-linejoin="round" fill="#E1EBE8"/>
+      <path d="M76 86 V250" stroke="#182430" stroke-width="3" opacity="0.3"/>
+    </g>
+    <path d="M148 58 H224 V250 H148 Z" stroke="#182430" stroke-width="6" stroke-linejoin="round" fill="#F3E8D6"/>
+    <path d="M166 58 V250 M206 58 V250" stroke="#182430" stroke-width="3" opacity="0.3"/>
+    <g transform="rotate(8, 260, 250)">
+      <path d="M230 100 H306 V250 H230 Z" stroke="#182430" stroke-width="6" stroke-linejoin="round" fill="#E3ECF1"/>
+      <path d="M248 100 V250" stroke="#182430" stroke-width="3" opacity="0.3"/>
+    </g>
+  </symbol>
+
+  <!-- cradle, no night sky -->
+  <symbol id="illo-baby" viewBox="0 0 360 300">
+    <path d="M40 214 C64 268 296 268 320 214" stroke="#182430" stroke-width="7" stroke-linecap="round" fill="none"/>
+    <path d="M70 206 C104 168 256 168 290 206 C256 230 104 230 70 206 Z" stroke="#182430" stroke-width="6" stroke-linejoin="round" fill="#E1EBE8"/>
+    <circle cx="180" cy="172" r="34" stroke="#182430" stroke-width="6" fill="#F3F6F5"/>
+    <path d="M96 214 H264" stroke="#182430" stroke-width="5" stroke-linecap="round" opacity="0.35"/>
+  </symbol>
+
+  <!-- a drop striking water, not a still drop -->
+  <symbol id="illo-blood" viewBox="0 0 360 300">
+    <path d="M180 16 C152 70 140 96 150 122 C158 144 202 144 210 122 C220 96 208 70 180 16 Z" stroke="#182430" stroke-width="6" stroke-linejoin="round" fill="#F3E8D6"/>
+    <path d="M48 210 C100 168 260 168 312 210" stroke="#182430" stroke-width="6" stroke-linecap="round" fill="none"/>
+    <path d="M20 248 C90 214 270 214 340 248" stroke="#182430" stroke-width="6" stroke-linecap="round" fill="none"/>
+    <path d="M148 210 C156 188 204 188 212 210" stroke="#182430" stroke-width="5" stroke-linecap="round" fill="none"/>
+  </symbol>
+
+  <!-- sitting cat, profile, curled tail -->
+  <symbol id="illo-cat" viewBox="0 0 360 300">
+    <path d="M86 262 C50 262 40 210 78 178 C86 128 132 100 180 108 C228 100 276 128 282 178 C322 210 310 262 274 262 Z" stroke="#182430" stroke-width="6.5" stroke-linejoin="round" fill="#E1EBE8"/>
+    <path d="M92 168 L102 96 L148 140 Z" stroke="#182430" stroke-width="6" stroke-linejoin="round" fill="#E1EBE8"/>
+    <path d="M268 168 L258 96 L212 140 Z" stroke="#182430" stroke-width="6" stroke-linejoin="round" fill="#E1EBE8"/>
+    <path d="M274 252 C340 236 352 168 316 148" stroke="#182430" stroke-width="7" stroke-linecap="round" fill="none"/>
+    <path d="M140 188 C150 198 162 198 172 188 M188 188 C198 198 210 198 220 188" stroke="#182430" stroke-width="4" stroke-linecap="round"/>
+  </symbol>
+
+  <!-- open doorway with warm light inside -->
+  <symbol id="illo-dead-person-resurrected" viewBox="0 0 360 300">
+    <path d="M64 286 V72 C64 32 296 32 296 72 V286" stroke="#182430" stroke-width="7" stroke-linejoin="round" fill="#E1EBE8"/>
+    <path d="M108 286 V102 C108 72 252 72 252 102 V286" stroke="#182430" stroke-width="6" fill="#F6E5C3"/>
+    <path d="M180 54 V28" stroke="#D89A3F" stroke-width="7" stroke-linecap="round"/>
+    <circle cx="180" cy="20" r="10" fill="#D89A3F"/>
+  </symbol>
+
+  <!-- standing dog, distinct from the sitting cat -->
+  <symbol id="illo-dog" viewBox="0 0 360 300">
+    <path d="M70 200 C70 150 120 128 200 136 C260 142 290 168 290 200 V230 C290 242 270 250 200 250 C120 250 70 240 70 220 Z" stroke="#182430" stroke-width="6.5" stroke-linejoin="round" fill="#E1EBE8"/>
+    <path d="M70 214 V272 M120 230 V272 M250 230 V272 M290 214 V272" stroke="#182430" stroke-width="6.5" stroke-linecap="round"/>
+    <path d="M270 160 C270 112 336 108 348 150 C356 174 336 198 300 198 C280 198 270 180 270 160 Z" stroke="#182430" stroke-width="6.5" stroke-linejoin="round" fill="#E1EBE8"/>
+    <path d="M286 140 C270 172 286 200 308 184" stroke="#182430" stroke-width="5.5" stroke-linecap="round" fill="#D8E4DE"/>
+    <path d="M70 180 C28 150 16 210 62 220" stroke="#182430" stroke-width="6.5" stroke-linecap="round" fill="none"/>
+    <circle cx="328" cy="148" r="5" fill="#182430"/>
+  </symbol>
+
+  <!-- fire on logs, so it cannot be read as a drop -->
+  <symbol id="illo-fire" viewBox="0 0 360 300">
+    <path d="M180 20 C140 100 96 146 96 202 C96 252 134 280 180 280 C226 280 264 252 264 202 C264 146 220 100 180 20 Z" stroke="#182430" stroke-width="6.5" stroke-linejoin="round" fill="#F3E8D6"/>
+    <path d="M180 96 C158 140 140 166 140 204 C140 236 158 254 180 254 C202 254 220 236 220 204 C220 166 202 140 180 96 Z" stroke="#182430" stroke-width="5.5" stroke-linejoin="round" fill="#D89A3F"/>
+    <path d="M64 268 L160 292 M200 292 L296 268" stroke="#182430" stroke-width="8" stroke-linecap="round"/>
+  </symbol>
+
+  <!-- stacked coins -->
+  <symbol id="illo-gold" viewBox="0 0 360 300">
+    <ellipse cx="180" cy="86" rx="92" ry="28" stroke="#182430" stroke-width="6" fill="#F3E8D6"/>
+    <path d="M88 86 V130 C88 146 124 158 180 158 C236 158 272 146 272 130 V86" stroke="#182430" stroke-width="6" fill="#E8D7B0"/>
+    <ellipse cx="180" cy="130" rx="92" ry="28" stroke="#182430" stroke-width="6" fill="#D89A3F"/>
+    <path d="M88 130 V176 C88 192 124 204 180 204 C236 204 272 192 272 176 V130" stroke="#182430" stroke-width="6" fill="#C9862E"/>
+    <ellipse cx="180" cy="176" rx="92" ry="28" stroke="#182430" stroke-width="6" fill="#D89A3F"/>
+    <path d="M180 160 V192 M156 176 H204" stroke="#182430" stroke-width="5" stroke-linecap="round" opacity="0.7"/>
+  </symbol>
+
+  <!-- falling strands from a scalp, one loosened -->
+  <symbol id="illo-hair" viewBox="0 0 360 300">
+    <path d="M72 64 C110 18 250 18 288 64" stroke="#182430" stroke-width="7" stroke-linecap="round"/>
+    <path d="M96 72 C84 140 70 200 48 278" stroke="#182430" stroke-width="6" stroke-linecap="round"/>
+    <path d="M140 54 C132 140 120 200 128 280" stroke="#182430" stroke-width="6" stroke-linecap="round"/>
+    <path d="M184 48 C196 140 188 210 176 280" stroke="#182430" stroke-width="6" stroke-linecap="round"/>
+    <path d="M228 54 C250 140 262 200 292 274" stroke="#182430" stroke-width="6" stroke-linecap="round"/>
+    <path d="M268 72 C300 150 312 210 330 260" stroke="#182430" stroke-width="6" stroke-linecap="round"/>
+    <path d="M184 80 C100 130 260 180 96 250" stroke="#D89A3F" stroke-width="6" stroke-linecap="round"/>
+  </symbol>
+
+  <!-- Kaaba: dignified cube only, no decorative stars -->
+  <symbol id="illo-kaaba" viewBox="0 0 360 300">
+    <path d="M78 64 H282 V270 H78 Z" stroke="#182430" stroke-width="7" stroke-linejoin="round" fill="#0D1B24"/>
+    <path d="M78 118 H282" stroke="#D89A3F" stroke-width="20"/>
+    <path d="M78 108 H282 M78 128 H282" stroke="#182430" stroke-width="2" opacity="0.3"/>
+    <path d="M162 196 H198 V270 H162 Z" stroke="#D89A3F" stroke-width="4" fill="#182430"/>
+  </symbol>
+
+  <!-- cloud, slanted rain, puddle — not waves -->
+  <symbol id="illo-rain" viewBox="0 0 360 300">
+    <path d="M96 116 C80 78 120 48 162 66 C176 32 236 32 250 70 C298 58 322 100 300 132 H104 C80 132 80 116 96 116 Z" stroke="#182430" stroke-width="6.5" stroke-linejoin="round" fill="#E1EBE8"/>
+    <path d="M108 168 L86 230 M156 160 L134 232 M204 160 L182 232 M252 168 L230 230" stroke="#182430" stroke-width="6" stroke-linecap="round"/>
+    <path d="M64 268 C120 248 240 248 296 268" stroke="#182430" stroke-width="6" stroke-linecap="round" fill="none"/>
+  </symbol>
+
+  <!-- a large tight coil, no moon -->
+  <symbol id="illo-snake" viewBox="0 0 360 300">
+    <path d="M180 268 C88 268 48 200 88 154 C120 118 200 128 200 176 C200 214 132 220 116 180 C104 148 148 112 204 108 C276 104 316 156 292 214" stroke="#182430" stroke-width="16" stroke-linecap="round" fill="none"/>
+    <path d="M180 268 C88 268 48 200 88 154 C120 118 200 128 200 176 C200 214 132 220 116 180 C104 148 148 112 204 108 C276 104 316 156 292 214" stroke="#E1EBE8" stroke-width="7" stroke-linecap="round" fill="none"/>
+    <ellipse cx="292" cy="230" rx="32" ry="24" transform="rotate(30, 292, 230)" stroke="#182430" stroke-width="6" fill="#E1EBE8"/>
+    <circle cx="304" cy="224" r="5" fill="#182430"/>
+  </symbol>
+
+  <!-- a web fills the frame; the spider is small in it -->
+  <symbol id="illo-spider" viewBox="0 0 360 300">
+    <path d="M180 8 V292 M8 150 H352 M40 40 L320 260 M320 40 L40 260 M180 8 L40 150 M180 8 L320 150 M180 292 L40 150 M180 292 L320 150" stroke="#182430" stroke-width="3" opacity="0.35"/>
+    <circle cx="180" cy="150" r="70" stroke="#182430" stroke-width="3" opacity="0.35" fill="none"/>
+    <circle cx="180" cy="150" r="120" stroke="#182430" stroke-width="3" opacity="0.28" fill="none"/>
+    <ellipse cx="180" cy="168" rx="22" ry="16" stroke="#182430" stroke-width="5" fill="#E1EBE8"/>
+    <circle cx="180" cy="146" r="13" stroke="#182430" stroke-width="5" fill="#E1EBE8"/>
+    <path d="M168 158 C140 148 126 130 118 114 M166 168 C138 170 122 180 108 196 M166 176 C146 190 138 210 134 226 M172 180 C164 200 160 220 160 236" stroke="#182430" stroke-width="3.5" stroke-linecap="round" fill="none"/>
+    <path d="M192 158 C220 148 234 130 242 114 M194 168 C222 170 238 180 252 196 M194 176 C214 190 222 210 226 226 M188 180 C196 200 200 220 200 236" stroke="#182430" stroke-width="3.5" stroke-linecap="round" fill="none"/>
+  </symbol>
+
+  <!-- concentric ripples, not rain and not a moon -->
+  <symbol id="illo-water" viewBox="0 0 360 300">
+    <circle cx="180" cy="160" r="18" stroke="#182430" stroke-width="6" fill="#E3ECF1"/>
+    <circle cx="180" cy="160" r="52" stroke="#182430" stroke-width="6" fill="none"/>
+    <circle cx="180" cy="160" r="90" stroke="#182430" stroke-width="6" fill="none"/>
+    <circle cx="180" cy="160" r="128" stroke="#182430" stroke-width="6" fill="none"/>
+  </symbol>
+
+  <!-- two large interlocking rings -->
+  <symbol id="illo-wedding" viewBox="0 0 360 300">
+    <circle cx="138" cy="160" r="92" stroke="#182430" stroke-width="14" fill="none"/>
+    <circle cx="222" cy="160" r="92" stroke="#D89A3F" stroke-width="14" fill="none"/>
+  </symbol>
+</svg>
