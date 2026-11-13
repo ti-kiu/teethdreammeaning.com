@@ -64,3 +64,20 @@
   6. 铁律不变: 引文逐字grep核对, 无核对不发; 首页不动(互链句除外); 中文不出现在正文叙述(引文除外)
 - teeth-three-traditions 是对比枢纽页, 不吃搜索词, 不得再动
 - 28天报数照旧, GSC为主
+
+## 11-13起 最高优先级: 牙齿三页 (覆盖上方30符号队列, 本节完成前不开新泛梦页)
+- 群主 11-13 方向确认: 回牙齿专题。matrix.md 队列暂停, 三页按序:
+  1. loose-teeth — "loose teeth dream meaning" (590/月, 年+84%)
+  2. broken-teeth — "dream of broken tooth" (1600, KD 10.8)
+  3. rotting-teeth — "rotting teeth dream" (880, KD 7.2)
+- 每页规格: title≤60字符含完整主词; H1 "Loose Teeth in a Dream: What It Means" 句式; desc≤155; 首屏60词给答案;
+  情境分段(一颗/多颗、松动没掉、松动后掉、假牙牙套松、牙缝变宽); Ibn Sirin+Nabulsi 双标并排(照第22条核对铁律);
+  canonical 非www绝对地址; 结构照抄 teeth-falling-out 骨架
+- 内链5条全纵向(牙齿族内): teeth-falling-out / teeth-falling-out-with-blood / one-tooth-vs-all-teeth /
+  teeth-falling-out-and-death / 首页。anchor 各用不同变体, 禁"click here"
+- 反向内链: teeth-falling-out 的 by scenario 段加一条指新页 (最有效的收录加速, 不用「请求编入索引」)
+- 每页上线后: gen_sitemap → 部署 → curl 验收(非www 200; www 一跳; canonical 非www; 内链5条逐一 curl -I) → IndexNow → git push
+- 三页全部进索引后才处理: /dream/baby/ 301 到 teeth-falling-out (www 版与301规则合并后仍须一跳到位)
+- 内链纪律(长期): 新页只纵向连牙齿族, 不链泛梦页; 已上线页面的既有泛梦出链不回改(避免churn已收录页)
+- 冻结项: 首页 "What's coming" 停更; 泛梦页不新增; AdSense 不申请
+- www 301 已上线 (functions/_middleware.js, www→apex 一跳, path+query 保留)。若将来拿到zone权限改Redirect Rule, 必须先删middleware防两跳
