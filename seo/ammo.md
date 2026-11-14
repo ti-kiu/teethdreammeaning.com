@@ -44,3 +44,11 @@
 - dream of loose teeth | dream of loose teeth meaning / falling out / spiritual meaning / in islam / biblical meaning
 - dream loose tooth | dream loose tooth meaning / pulled out; dream wobbly tooth; dream loose teeth pulling them out
 - teeth loose in dream | teeth loose in dream meaning / islam; tooth loose in dream; teeth loosening in dream
+
+## 2026-11-14 broken teeth (Google suggest, client=firefox hl=en, real dropdown only)
+- dream of broken tooth | dream of broken tooth meaning / dream of broken tooth falling out / dream of broken tooth in islam / dream of broken toothbrush / dream of chipped tooth / dream of cracked tooth / dream of chipped tooth meaning / dream of breaking tooth / dream of chipped tooth spiritual meaning
+- dream of broken teeth | dream of broken teeth meaning / spiritual meaning / falling out / in islam / biblical meaning / in mouth / with blood
+- broken tooth dream meaning | broken tooth dream meaning islam / christianity; also broken teeth dream meaning islam / christianity / biblical / auntyflo / hindu; chipped tooth dream meaning; cracked tooth dream meaning
+- dreaming of broken teeth | dreaming of broken teeth spiritual meaning / meaning / falling out / in islam; dreaming of breaking teeth; dreaming of missing teeth; dreaming of cracked teeth; dreaming of chipped teeth
+- teeth breaking in dream | teeth breaking in dream meaning / islam / islamic interpretation / meaning islam / meaning biblical; teeth breaking in dreams hinduism / meaning christianity; tooth breaking in dream / islam
+注: "dream of broken toothbrush" 下拉真实但本页不覆盖牙刷; "auntyflo"/"hindu"/"christianity"/"biblical"/"spiritual" 下拉真实, 本站无这些体系的古典手册料, 未拉伸。未搜到可核的 reddit 原话本条未记。
