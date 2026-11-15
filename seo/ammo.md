@@ -52,3 +52,19 @@
 - dreaming of broken teeth | dreaming of broken teeth spiritual meaning / meaning / falling out / in islam; dreaming of breaking teeth; dreaming of missing teeth; dreaming of cracked teeth; dreaming of chipped teeth
 - teeth breaking in dream | teeth breaking in dream meaning / islam / islamic interpretation / meaning islam / meaning biblical; teeth breaking in dreams hinduism / meaning christianity; tooth breaking in dream / islam
 注: "dream of broken toothbrush" 下拉真实但本页不覆盖牙刷; "auntyflo"/"hindu"/"christianity"/"biblical"/"spiritual" 下拉真实, 本站无这些体系的古典手册料, 未拉伸。未搜到可核的 reddit 原话本条未记。
+
+## 2026-11-15 rotting teeth (Google suggest, client=firefox hl=en, real dropdown only)
+- rotting teeth dream | rotting teeth dream meaning / rotting teeth dream islam / rotting teeth dream meaning islam / rotten teeth dream meaning / rotten teeth dream / rotten teeth dream spiritual meaning / rotten teeth dream islam / rotten teeth dream biblical meaning / rotten teeth dream meaning christianity
+- rotting teeth dream meaning | rotting teeth dream meaning islam / rotten teeth dream meaning / rotten teeth dream meaning christianity / bad teeth dream meaning / decaying teeth dream meaning / rotten teeth dream spiritual meaning / losing rotten teeth dream meaning / rotten teeth dream biblical meaning / rotten teeth falling dream meaning
+- dream of rotting teeth | dream of rotting teeth meaning / spiritual meaning; also dream of rotten teeth / biblical meaning / falling out / spiritual meaning christianity / meaning
+- dream about rotting teeth | falling out / spiritual meaning / meaning; also dream about rotten teeth / falling out / meaning / islam / biblical meaning; dream about teeth rotting and breaking
+- decaying teeth dream | decaying teeth dream meaning / decaying teeth dream islam / rotting teeth dream / rotten teeth dream meaning
+- teeth rotting in dream | teeth rotting in dream meaning / teeth rotten in dream / tooth rotting in dream / teeth cavity in dream meaning / teeth decaying in dream meaning / rotten teeth in dreams meaning / rotten teeth in dream islamic / rotten teeth in dream biblical meaning
+- rotting teeth in a dream | meaning / rotten teeth in a dream / rotten tooth in a dream / bad teeth in a dream / decaying teeth in a dream / what does rotting teeth in a dream mean
+注: "spiritual"/"biblical"/"christianity"/"islam" 下拉真实, 本站无这些体系的古典手册料, 未拉伸。
+
+## 2026-11-15 reddit原声(搜索快照, 腐牙题)
+- r/Dreams eohffo "Losing Rotten Teeth In Dream": "I dreamed on my teeth becoming rotten and it slowly started falling off, yet there were barely any blood, but soon started growing new ones but it was quite uncomfortable, should I be worried?"
+- r/Dreams bkvbo6 "Rotten Teeth": "last night I dreamed that I had two front rotten teeth and they fell out, it felt real and it's not the first time I dreamed about teeth falling out."
+- r/Dream qjqhgw: "I keep having this dream where I lose all my teeth, but when I do I feel satisfied like all these rotten things that have been loose in my mouth finally fall out" / "loose rotting teeth"
+- r/DreamInterpretation rjl67r "Cement in mouth and rotting teeth": "when I looked in the mirror I could see this build up of cement in my lower right half of my mouth ... and attached to the build up was these rotten teeth."

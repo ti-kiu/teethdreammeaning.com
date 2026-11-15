@@ -3,6 +3,8 @@
 > 2026-11-13 队列暂停：RUNBOOK 最高优先级改为牙齿三页（loose-teeth → broken-teeth → rotting-teeth）。本节完成前不开新泛梦页。ladder 及以后仍待日更，本轮不标 DONE。
 >
 > 2026-11-14：broken-teeth 已上线 → /dream/broken-teeth/。下一项仍为 rotting-teeth。ladder 不标 DONE。
+>
+> 2026-11-15：rotting-teeth 已上线 → /dream/rotting-teeth/。牙齿三页（loose-teeth / broken-teeth / rotting-teeth）均已发布。ladder 及以后仍待日更，本轮不标 DONE。三页收录后再处理 /dream/baby/ 301（见 RUNBOOK）。
 
 
 ## 已上线 (9)
