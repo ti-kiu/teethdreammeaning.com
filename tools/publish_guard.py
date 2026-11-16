@@ -12,9 +12,10 @@ WHITELIST = {
     'teeth-falling-out-and-death', 'teeth-falling-out-good-or-bad-omen',
     'teeth-falling-into-hand-lap-ground', 'one-tooth-vs-all-teeth',
     'teeth-three-traditions', 'teeth-dreams-and-stress',
-    # legacy pan-dream pages (frozen, no new ones allowed)
+    # pan-dream pages already live, plus ladder (30-symbol queue resumed 2026-11-16
+    # after the teeth trio was published; whitelist grows one slug per published page)
     'baby', 'blood', 'cat', 'dead-person-resurrected', 'dog', 'fire',
-    'gold', 'hair', 'kaaba', 'rain', 'snake', 'spider', 'water', 'wedding',
+    'gold', 'hair', 'kaaba', 'ladder', 'rain', 'snake', 'spider', 'water', 'wedding',
 }
 
 unknown = sorted(

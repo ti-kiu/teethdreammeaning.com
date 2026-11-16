@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 """IndexNow submit (Bing/Yandex/Naver). Usage: python3 submit_indexnow.py [urls...]
 Default: homepage + teeth page."""
-import sys, json, urllib.request, urllib.error
+import sys, json, os, urllib.request, urllib.error
 
-BASE = "/root/teethdreammeaning"
-KEY = open(BASE + "/.indexnow_key").read().strip()
+BASE = os.path.dirname(os.path.abspath(__file__))
+KEY = open(os.path.join(BASE, ".indexnow_key")).read().strip()
 HOST = "teethdreammeaning.com"
 urls = sys.argv[1:] or [
     "https://teethdreammeaning.com/",
