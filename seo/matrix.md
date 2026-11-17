@@ -1,6 +1,12 @@
 # 30 符号双出处定位表 (2026-10-31 全量核对)
 
 > 2026-11-13 队列暂停：RUNBOOK 最高优先级改为牙齿三页（loose-teeth → broken-teeth → rotting-teeth）。本节完成前不开新泛梦页。ladder 及以后仍待日更，本轮不标 DONE。
+>
+> 2026-11-14：broken-teeth 已上线 → /dream/broken-teeth/。下一项仍为 rotting-teeth。ladder 不标 DONE。
+>
+> 2026-11-15：rotting-teeth 已上线 → /dream/rotting-teeth/。牙齿三页（loose-teeth / broken-teeth / rotting-teeth）均已发布。ladder 及以后仍待日更，本轮不标 DONE。三页收录后再处理 /dream/baby/ 301（见 RUNBOOK）。
+>
+> 2026-11-16：牙齿三页均已发布，30 符号队列从 ladder 恢复。ladder 已上线 → /dream/ladder/。door 及以后仍待日更。三页收录后再处理 /dream/baby/ 301（见 RUNBOOK）——本条不处理 baby 301。
 
 
 ## 已上线 (9)
@@ -25,8 +31,8 @@
 | fire [DONE 2026-11-09 → /dream/fire/; 印页核: Fire 158(正文跨158–160, running head "DICTIONARY OF DREAMS 159"在条中; 扫描连字offire/Ifone/one'sjob/adjust与两处排印瑕疵adversities.lfit、pIa es and mass loU照录页内注明), Firewood 161, Fireplace跨160–161, Torch 443, Worshipping fire 481(索引收, Gold条189火焚屋句同引); Nabulsi (نار)条跨shamela 348(印351)→349(印352)两-armies句断页在"يخرج إلى المضاف إلى"页内如实注明, (ومن رأى)场景段349–350(印352–353), الواعاء句断页在"والمغرم الذي"→350印353"يرميه السلطان على الناس"同注; نارنج近形词条360(印363)专段引用; 周公火字恰15句判词+1章题(assert count==16), 十三章23章13+船车1+门户1原样并置] | 158 (索引 Fire 158, 原记157作废) | shamela 348 (印351) + 349 (印352) + 350 (印353) + 360 (印363) |
 | dog [DONE 2026-11-10 → /dream/dog/; 印页核: Dog 123(正文跨123–124, running head 124在条尾), Dog star 123, Dogfight 124; 交叉词条Bitch 40/Greyhound 195/Puppy 346/Shepherd's dog 384均"See Dog"; Canines (See Tooth)索引路由=犬齿归牙条; Nabulsi (كلب)条跨shamela 295(印298)→296(印299) 变犬句断页在"علماً عظيماً"页内如实注明; 周公全语料犬2处+狗1处恰3句verbatim(25章豺狼恶狗/26章犬吠犬咬)] | 123 ✓(索引确认) | shamela 295 (印298) + 296 (印299) |
 | cat [DONE 2026-11-12 → /dream/cat/; 印页核: Cat 72 ✓(书末索引line 27802, 正文起于5608行), Tomcat 438, Wildcat 476; Nabulsi (قط)头词条在 shamela 282(印285, 非原记280/283——280为قمل虱条区, 283为قطاة沙鸡条区, 280/282/283是字母区内粗定位), 声音链句(وضغاء الهر صحب ونميمة)在 shamela 188(印191) صوت章; 周公25章猫捕鼠者主得财 verbatim(zhougong line 77)] | 72 ✓ | shamela 282 (印285) + shamela 188 (印191) |
-| ladder | 247 (索引 Ladder 247, 原记245作废) | shamela 163 (印166) |
-| door | 125 ✓(索引 Door 125) | shamela 30 (印33) |
+| ladder [DONE 2026-11-16 → /dream/ladder/; 印页核: 索引 Ladder 247, 正文在 246(Kohl条内页码)与 Lake 条 running head 248 之间; 扫描连字/笔误 ajourney/Aladder/bushiness/assent/Ifone 照录; Nabulsi (سلم الصعود) 在 shamela 163(印166), 同页另有 سلام التحية / سلم البيع 两头词未当梯子引; 周公全语料梯/梯子/楼梯/阶梯/爬梯/登梯=零命中, 页内如实缺席, 不拉伸上天句] | 247 (索引 Ladder 247, 原记245作废) | shamela 163 (印166) |
+| door [DONE 2026-11-17 → /dream/door/; 印页核: 索引 Door 125, 正文在 Donkey 条内页眉 125 与 Dragging 条内页眉 127 之间, 故 Door 至 Doorstep 在印 125–126; 扫描语法/连写 An open doors / others bedroom / Ifone 照录; Nabulsi (باب) 在 shamela 30(印33), 页题 باب الباء 是字母章名不是门条, 引文止于下一条(بيت)之前; 周公第八章门户井灶厨厕有完整门/户条, 页内如实引用, 城门大开=口舌与编译本城门=righteous governor 分歧不拉伸] | 125 ✓(索引 Door 125) | shamela 30 (印33) |
 | key | 238 (索引 Key 238, 原记235作废——235是空页码误读, 与克白同错) | shamela 327 (印330) |
 | ship | 384 (索引 Ship 384, 原记155作废) | shamela 169 (印172) |
 | eggs | 138 (索引 Eggs 138, 原记49作废) | shamela 26 (印29) |

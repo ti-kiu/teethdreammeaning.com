@@ -44,3 +44,62 @@
 - dream of loose teeth | dream of loose teeth meaning / falling out / spiritual meaning / in islam / biblical meaning
 - dream loose tooth | dream loose tooth meaning / pulled out; dream wobbly tooth; dream loose teeth pulling them out
 - teeth loose in dream | teeth loose in dream meaning / islam; tooth loose in dream; teeth loosening in dream
+
+## 2026-11-14 broken teeth (Google suggest, client=firefox hl=en, real dropdown only)
+- dream of broken tooth | dream of broken tooth meaning / dream of broken tooth falling out / dream of broken tooth in islam / dream of broken toothbrush / dream of chipped tooth / dream of cracked tooth / dream of chipped tooth meaning / dream of breaking tooth / dream of chipped tooth spiritual meaning
+- dream of broken teeth | dream of broken teeth meaning / spiritual meaning / falling out / in islam / biblical meaning / in mouth / with blood
+- broken tooth dream meaning | broken tooth dream meaning islam / christianity; also broken teeth dream meaning islam / christianity / biblical / auntyflo / hindu; chipped tooth dream meaning; cracked tooth dream meaning
+- dreaming of broken teeth | dreaming of broken teeth spiritual meaning / meaning / falling out / in islam; dreaming of breaking teeth; dreaming of missing teeth; dreaming of cracked teeth; dreaming of chipped teeth
+- teeth breaking in dream | teeth breaking in dream meaning / islam / islamic interpretation / meaning islam / meaning biblical; teeth breaking in dreams hinduism / meaning christianity; tooth breaking in dream / islam
+注: "dream of broken toothbrush" 下拉真实但本页不覆盖牙刷; "auntyflo"/"hindu"/"christianity"/"biblical"/"spiritual" 下拉真实, 本站无这些体系的古典手册料, 未拉伸。未搜到可核的 reddit 原话本条未记。
+
+## 2026-11-15 rotting teeth (Google suggest, client=firefox hl=en, real dropdown only)
+- rotting teeth dream | rotting teeth dream meaning / rotting teeth dream islam / rotting teeth dream meaning islam / rotten teeth dream meaning / rotten teeth dream / rotten teeth dream spiritual meaning / rotten teeth dream islam / rotten teeth dream biblical meaning / rotten teeth dream meaning christianity
+- rotting teeth dream meaning | rotting teeth dream meaning islam / rotten teeth dream meaning / rotten teeth dream meaning christianity / bad teeth dream meaning / decaying teeth dream meaning / rotten teeth dream spiritual meaning / losing rotten teeth dream meaning / rotten teeth dream biblical meaning / rotten teeth falling dream meaning
+- dream of rotting teeth | dream of rotting teeth meaning / spiritual meaning; also dream of rotten teeth / biblical meaning / falling out / spiritual meaning christianity / meaning
+- dream about rotting teeth | falling out / spiritual meaning / meaning; also dream about rotten teeth / falling out / meaning / islam / biblical meaning; dream about teeth rotting and breaking
+- decaying teeth dream | decaying teeth dream meaning / decaying teeth dream islam / rotting teeth dream / rotten teeth dream meaning
+- teeth rotting in dream | teeth rotting in dream meaning / teeth rotten in dream / tooth rotting in dream / teeth cavity in dream meaning / teeth decaying in dream meaning / rotten teeth in dreams meaning / rotten teeth in dream islamic / rotten teeth in dream biblical meaning
+- rotting teeth in a dream | meaning / rotten teeth in a dream / rotten tooth in a dream / bad teeth in a dream / decaying teeth in a dream / what does rotting teeth in a dream mean
+注: "spiritual"/"biblical"/"christianity"/"islam" 下拉真实, 本站无这些体系的古典手册料, 未拉伸。
+
+## 2026-11-15 reddit原声(搜索快照, 腐牙题)
+- r/Dreams eohffo "Losing Rotten Teeth In Dream": "I dreamed on my teeth becoming rotten and it slowly started falling off, yet there were barely any blood, but soon started growing new ones but it was quite uncomfortable, should I be worried?"
+- r/Dreams bkvbo6 "Rotten Teeth": "last night I dreamed that I had two front rotten teeth and they fell out, it felt real and it's not the first time I dreamed about teeth falling out."
+- r/Dream qjqhgw: "I keep having this dream where I lose all my teeth, but when I do I feel satisfied like all these rotten things that have been loose in my mouth finally fall out" / "loose rotting teeth"
+- r/DreamInterpretation rjl67r "Cement in mouth and rotting teeth": "when I looked in the mirror I could see this build up of cement in my lower right half of my mouth ... and attached to the build up was these rotten teeth."
+
+## 2026-11-16 ladder (Google suggest, client=firefox hl=en, real dropdown only)
+- ladder dream | ladder dream meaning / ladder dream number / ladder dream bible / ladder dream islam / ladder dream symbolism / ladder dream meaning biblical (q=ladder dream). 剔除: "ladder dream's edge" / "ladder dreamcore" / "ladder dream moods"（产品/站名噪音）
+- ladder dream meaning | ladder dream meaning biblical / ladder dream symbolism / climbing ladder dream meaning / broken ladder dream meaning / meaning of jacob's ladder dream / falling ladder dream meaning / step ladder dream meaning / white ladder dream meaning / wooden ladder dream meaning (q=ladder dream meaning)
+- dreaming of a ladder | dreaming of a ladder meaning / dreaming of a ladder spiritual meaning / dreaming of climbing a ladder / dreaming of climbing a ladder spiritual meaning / dreaming of climbing a ladder meaning / dreaming of a step ladder / dreaming of carrying a ladder / dreaming of a broken ladder / dreaming of seeing a ladder (q=dreaming of a ladder)
+- falling off a ladder dream | falling off a ladder dream meaning / falling from a ladder dream / falling from a ladder dream meaning / dreaming of falling off a ladder spiritual meaning / dream of someone falling off a ladder (q=falling off a ladder dream). 剔除后半 "what to do if someone falls off a ladder" 等醒时安全词
+- climbing a ladder in a dream | climbing a ladder in a dream meaning / climbing down a ladder in a dream / spiritual meaning of climbing a ladder in a dream / biblical meaning of climbing a ladder in a dream / climbing ladder in dream islam / climbing down a ladder dream meaning (q=climbing a ladder in a dream)
+- dream of climbing a ladder | dream of climbing a ladder spiritual meaning / dream of climbing a ladder to the top / dream of climbing a ladder meaning / dream of climbing down a ladder / dream of climbing up a ladder / dream of climbing a rope ladder / dream of climbing a tall ladder / dream of climbing a broken ladder (q=dream of climbing a ladder)
+注: "biblical"/"spiritual"/"jacob's ladder" 下拉真实, 本站无这些体系的古典手册料, 未拉伸。来源: suggestqueries.google.com client=firefox hl=en，本轮实地 curl。
+
+## 2026-11-16 reddit原声(搜索快照, 梯子题)
+- r/Dreams 1wfq9wp "Jumping off middle steps after Descending a ladder": "I in all 33 years ive been on this planet have never had or used a ladder in my dream except for last night... I raced to the top and then slowly started coming down when I got to the middle I remember saying fuck it and I jumped off the ladder and landed on my feet."
+- r/Dreams 44dje8 "Looking for any significance if there is any.": "I was trying to climb down a ridiculously high ladder that was built into a rock wall. And at the bottom of the ladder was a half filled swimming pool. But the rungs on the ladder were almost too small for my hands and I was worried I'd fall the whole way down."
+- r/Dreams clb6sf "My weird version of the falling dream": climbed a ladder to a small platform, jumped off onto mattresses; "I kept climbing up the ladder but each time I did it got taller and taller... each fall was between 10 and 20 seconds."
+- r/DreamInterpretation 1eo1y29 "Getting ready to climb a small thin ladder from high up.": "There was a small ladder going all the way down... I became a bit apprehensive... I woke up before climbing down."
+疑问句可用: "climbing ladder dream meaning"（下拉真实, 本页新/旧梯攀升段已答） / "broken ladder dream meaning"（下拉真实, 两书中途折断=对手获胜句已答） / "falling off a ladder dream meaning"（下拉真实, 坠落段已答, 且页内把坠落与折断分读） / "climbing down a ladder in a dream"（下拉真实, 下行=生意亏损段已答） / "wooden ladder dream meaning"（下拉真实, 两书木梯=旅途劳顿+伪君子条款已答）
+下一队列=door（matrix 序, 印页 125=索引 Door; Nabulsi shamela 30 印 33）
+
+## 2026-11-17 door (Google suggest, client=firefox hl=en, real dropdown only)
+- door dream meaning | door dream meaning islam / dream meaning door / dream door meaning in urdu / dream door meaning in hindi / door dream symbol / open door dream meaning islam / broken door dream meaning / open door dream meaning / red door dream meaning (q=door dream meaning)
+- dream of a door | dream of a door opening by itself / dream of a door opening / dream of a doorbell ringing / dream of a door that won t lock / dream of a door knocking / dream of a door that won t close / dream of a door slamming / dream of a doorbell / dream of a door falling off (q=dream of a door)
+- dream of open door | dream of open door with darkness / dream of open door with light / dream of open door meaning / dream of open door with darkness spiritual meaning / dream of open door with light spiritual meaning / dream of open door with key / dream of open doors and windows / dream of opening door for someone / dream of opening door and seeing someone (q=dream of open door)
+- dream of locked door | dream of locking doors spiritual meaning / dream of locking door with key / dream of locking doors and windows / dream of locking door meaning / dream of closed door meaning / dream of closed door / dream of door lock broken / dream of locked gate / dream of locking a door with a key spiritual meaning (q=dream of locked door)
+- dreaming of a door | dreaming of a doorbell ringing / dreaming of a door that won't lock / dreaming of a doorbell ringing spiritual meaning / dreaming of a door breaking / dreaming of a door opening spiritual meaning / dreaming of a door opening / dreaming of a door that won't close / dreaming of a door slamming / dreaming of a door knocking (q=dreaming of a door)
+- closed door dream meaning | closed gate dream meaning / closed door in dream meaning biblical meaning / what does a closed door symbolize / seeing a closed door in your dream / closed door spiritual meaning (q=closed door dream meaning)
+- door opening dream | door opening dream meaning / opening door dream islam / open door dream meaning islam / opening gate dream meaning / opening gate dream meaning christianity / front door open dream meaning / car door open dream meaning / opening door islamic dream interpretation / what does it mean to open a door in a dream (q=door opening dream)
+注: "islam"/"spiritual"/"biblical"/"urdu"/"hindi" 下拉真实, 本站无这些体系的古典手册料, 未拉伸。来源: suggestqueries.google.com client=firefox hl=en，本轮实地 curl。
+
+## 2026-11-17 reddit原声(搜索快照, 门题)
+- r/Dreams u9gzgt "The door won't close!": "my door opened. So I used the switch to close the door. It seemed that the door was about to close, but it suddenly opened again. I tried to close the door multiple times, but it always would open again."
+- r/Dreams 1mv66a: "Doors - I can never shut a door. It's like the door is always to small for the frame. I'm trying to hold something or someone back from getting in but no matter how hard I try I just can't shut the door."
+- r/DreamInterpretation g0djie "The door won’t shut, won’t lock, or won’t fit into the frame.": "the door (front or back) either won’t close, won’t lock, or the door is too small for the frame and is useless at keeping something out. Usually something is trying to get in."
+- r/DreamInterpretation 11m26js "Doors won't stay closed": "recurring dream about doors in my house opening on their own after I close them." / "every time I shut or slam a door closed, I turn my back and it is immediately open."
+疑问句可用: "dream of a door that won't close"（下拉真实, 两书关不上=来自妻子的困难句已答） / "dream of a door opening by itself"（下拉真实, 周公门自开妻有私情已答） / "broken door dream meaning"（下拉真实, 两书破/烧/落=家主之灾已答） / "open door dream meaning"（下拉真实, 开=收入/رزق 已答） / "dream of locked door"（下拉真实, 入而锁=护佑段已答, 与关不上分读）
+下一队列=key（matrix 序, 印页 238=索引 Key, 原记235作废; Nabulsi shamela 327 印 330）
