@@ -32,7 +32,7 @@
 | dog [DONE 2026-11-10 → /dream/dog/; 印页核: Dog 123(正文跨123–124, running head 124在条尾), Dog star 123, Dogfight 124; 交叉词条Bitch 40/Greyhound 195/Puppy 346/Shepherd's dog 384均"See Dog"; Canines (See Tooth)索引路由=犬齿归牙条; Nabulsi (كلب)条跨shamela 295(印298)→296(印299) 变犬句断页在"علماً عظيماً"页内如实注明; 周公全语料犬2处+狗1处恰3句verbatim(25章豺狼恶狗/26章犬吠犬咬)] | 123 ✓(索引确认) | shamela 295 (印298) + 296 (印299) |
 | cat [DONE 2026-11-12 → /dream/cat/; 印页核: Cat 72 ✓(书末索引line 27802, 正文起于5608行), Tomcat 438, Wildcat 476; Nabulsi (قط)头词条在 shamela 282(印285, 非原记280/283——280为قمل虱条区, 283为قطاة沙鸡条区, 280/282/283是字母区内粗定位), 声音链句(وضغاء الهر صحب ونميمة)在 shamela 188(印191) صوت章; 周公25章猫捕鼠者主得财 verbatim(zhougong line 77)] | 72 ✓ | shamela 282 (印285) + shamela 188 (印191) |
 | ladder [DONE 2026-11-16 → /dream/ladder/; 印页核: 索引 Ladder 247, 正文在 246(Kohl条内页码)与 Lake 条 running head 248 之间; 扫描连字/笔误 ajourney/Aladder/bushiness/assent/Ifone 照录; Nabulsi (سلم الصعود) 在 shamela 163(印166), 同页另有 سلام التحية / سلم البيع 两头词未当梯子引; 周公全语料梯/梯子/楼梯/阶梯/爬梯/登梯=零命中, 页内如实缺席, 不拉伸上天句] | 247 (索引 Ladder 247, 原记245作废) | shamela 163 (印166) |
-| door | 125 ✓(索引 Door 125) | shamela 30 (印33) |
+| door [DONE 2026-11-17 → /dream/door/; 印页核: 索引 Door 125, 正文在 Donkey 条内页眉 125 与 Dragging 条内页眉 127 之间, 故 Door 至 Doorstep 在印 125–126; 扫描语法/连写 An open doors / others bedroom / Ifone 照录; Nabulsi (باب) 在 shamela 30(印33), 页题 باب الباء 是字母章名不是门条, 引文止于下一条(بيت)之前; 周公第八章门户井灶厨厕有完整门/户条, 页内如实引用, 城门大开=口舌与编译本城门=righteous governor 分歧不拉伸] | 125 ✓(索引 Door 125) | shamela 30 (印33) |
 | key | 238 (索引 Key 238, 原记235作废——235是空页码误读, 与克白同错) | shamela 327 (印330) |
 | ship | 384 (索引 Ship 384, 原记155作废) | shamela 169 (印172) |
 | eggs | 138 (索引 Eggs 138, 原记49作废) | shamela 26 (印29) |

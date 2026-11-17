@@ -23,7 +23,8 @@ const SYMBOLS = [
   {slug:'cat', title:'A cat in a dream'},
   {slug:'broken-teeth', title:'Broken teeth in a dream'},
   {slug:'rotting-teeth', title:'Rotting teeth in a dream'},
-  {slug:'ladder', title:'A ladder in a dream'}
+  {slug:'ladder', title:'A ladder in a dream'},
+  {slug:'door', title:'A door in a dream'}
 ];
 
 export async function onRequestGet(context) {

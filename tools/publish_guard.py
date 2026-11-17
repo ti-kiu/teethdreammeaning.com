@@ -15,7 +15,7 @@ WHITELIST = {
     # pan-dream pages already live, plus ladder (30-symbol queue resumed 2026-11-16
     # after the teeth trio was published; whitelist grows one slug per published page)
     'baby', 'blood', 'cat', 'dead-person-resurrected', 'dog', 'fire',
-    'gold', 'hair', 'kaaba', 'ladder', 'rain', 'snake', 'spider', 'water', 'wedding',
+    'gold', 'hair', 'kaaba', 'ladder', 'door', 'rain', 'snake', 'spider', 'water', 'wedding',
 }
 
 unknown = sorted(
